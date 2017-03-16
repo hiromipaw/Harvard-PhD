@@ -1,0 +1,1964 @@
+%Reference Database
+%David Rebollo-Monedero, Javier Parra-Arnau
+%111121
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%ABBREVIATED STRINGS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%ABBREVIATION RULES
+%and                                                    ,/(nothing) IEEE
+%on, of, the, in                                        (nothing)   IEEE
+%st,nd,rd,th                                            \textsuperscript{st}
+%~                                                      \textasciitilde, \verb+~+, \~{}
+%& (part of company name, otherwise see rule for 'and') \&
+%Plural words abbreviated as singular words                         IEEE
+%Abstract                                               Abstract
+%Academy                                                Acad.
+%Acoustics                                              Acoust.     IEEE
+%Adapted,adaptive                                Adap.       ISI
+%Advances                                               Adv.        ISI
+%Algorithms                                             Alg.
+%American                                               Amer.
+%Analysis                                               Anal.       IEEE
+%Annals                                                 Annals      IEEE
+%Anonymous                                              Anon.       LTWA
+%Applied, Applications                                  Appl.       ISI
+%Artificial                                             Artif.      ISI
+%Association                                            Assoc.
+%Assurance                                              Assurance
+%Audio                                                      Audio       ISI
+%Automata                                               Automata
+%Autonomous                                     Auton.          ISI
+%Based                                                  Based
+%Biennial                                               Biennial
+%Bulletin                                               Bull.
+%Business                                               Bus.        IEEE
+%Classification                                         Classif.    ISI
+%Coding                                                 Coding
+%Cognitive                                              Cogn.  ISI
+%Collaborative                                          Col.
+%Colloquium                                             Colloq.     ISI
+%Commerce                                               Commer.     ISI
+%Communication                                          Commun.     IEEE
+%Completely                                                 Completely
+%Complexity
+%Compression                                            Compression
+%Computers, Computing, Computational, Computation       Comput.     IEEE
+%Conference                                             Conf.       IEEE
+%Congress                                               Congr.      ISI
+%Control                                                Contr.      IEEE
+%Convention                                             Conv.
+%Corporate, Corporation                     Corp. ISI
+%Correspondence                                         Corresp.    IEEE
+%Cryptography                                           Cryptogr.   ISI
+%Cryptology                                         Cryptology
+%Current                                                Curr    ISI
+%Cybernetics                                            Cybern.     ISI
+%Data                                                   Data        IEEE
+%Database                                               Database
+%Decision                                               Decision
+%Dependable                                             Depend.     ISI
+%Design                                                 Design
+%Designing                                              Design.
+%Development                                            Develop.    IBM
+%Digital                                                Digit.      IEEE
+%Discovery                                              Disc.       ISI
+%Discrete                                               Discr.
+%Distributed                                            Distrib.    IEEE
+%Draft                                                  Draft
+%Education                                              Educ.       IEEE
+%Educational                                            Educ.
+%Electronic                                             Electron.   ISI
+%Engineering                                            Eng.        IEEE
+%Enhancing                                              Enhanc.     ISI
+%Enterprise                                             Enterprise
+%Entropy                                                Ent.
+%Environments                                           Environ.    ISI
+%Ethics                                                  Ethics             ISI
+%Expert                                                 Expert      ISI
+%Eugenics                                               Eugen.      High Google hit Annals Eugen.
+%Factors                                                Fact.       ISI
+%Financial                                              Financ.     ISI
+%Foundation                                             Found.      IEEE
+%Forum                                                      Forum
+%Functions                                              Functions
+%Future                                                    Future ISI
+%Fuzzy                                                  Fuzzy
+%Fuzziness                                              Fuzz.       ISI
+%Generation                                             Gen.        Common abbreviation
+%Geographic                                             Geogr.      ISI
+%Group                                                      Group
+%House                                                      House (Housing is abbreviated as Hous. by ISI)
+%Human                                                  Hum.        ISI
+%Hiding                                                 Hiding
+%History                                                Hist.       ISI
+%Hungarian                                              Hungar.
+%Identity                                                   Identity
+%Inference                                              Infer.
+%Informatics                                            Inform.     ISI
+%Information                                            Inform.     IEEE
+%Infrastructure                                         Infra.       Common abbreviation
+%Institute                                              Inst.
+%Intelligence                                           Intell.     IEEE
+%Interaction                                            Interact.   ISI
+%Interconnected                                     Interconnect. (ISI: Interconnection)
+%Interest                                                     Interest
+%Interface                                                  Interf.     ISI
+%International                                          Int.
+%Internet                                               Internet    ISI
+%Issues                                                 Issues      ISI
+%Journal                                                J.          IEEE
+%Knowledge                                              Knowl.      IEEE
+%Laboratory                                             Lab.
+%Language                                               Lang.       ISI
+%Law                                                    Law
+%Learning                                               Learn.      ISI
+%Lecture                                                Lecture
+%Letter                                                 Lett.       IEEE
+%Linguistics                                            Ling.
+%Magazine                                               Mag.        IEEE
+%Machine                                                Mach.       IEEE
+%Management                                             Manage.     ISI
+%Marketing                                              Market.     ISI
+%Mathematical                                           Math.
+%Maximum                                                Max.
+%Mining                                                 Min.        ISI
+%Meeting                                                Meeting
+%Memorandum                                             Memo.
+%Method                                                 Method      ISI
+%Mobile                                                 Mob.        ISI
+%Modeling                                                   Model. ISI
+%Modern                                                 Mod.        ISI
+%Multimedia                                             Multimedia
+%National, Nation                                       Nat.
+%Natural                                                        Nat.     ISI
+%Network                                                Netw.       ISI, LATW
+%Neural                                                 Neural      IEEE
+%North                                                  N.
+%Notes                                                  Notes
+%Number                                                 No.         IEEE
+%Observability                                          Obser.      ISI
+%Official
+%Ontology
+%Operation                                              Oper.       ISI
+%Optimization                                           Optim.      High Google hit
+%Organization                                           Org.
+%Pattern                                                Pattern     IEEE
+%Packet
+%Parallel
+%Pattern                                                Pattern
+%Performance                                            Perform.    ISI
+%Picture                                                Picture
+%Pervasive                                              Pervas.     ISI
+%Philosophical                                          Philos.     High Google hit for Philos. Mag.
+%Physics                                                Phys.
+%Policy                                                 Policy      ISI
+%Practices                                                  Pract.   ISI
+%Privacy, Private                                       Priv.       (IEEE doesn't abbreviate Security, ISI: Priv.)
+%Principles                                             Prin.       ISI, consistent w/ hyphenation
+%Probability                                            Prob.
+%Proceedings                                            Proc.       IEEE
+%Processing                                             Process.    IEEE
+%Processes                                              Process.    ISI
+%Programming                                            Program.    ISI
+%Protection                                                Prot.        ISI
+%Psychology                                             Psychol.
+%Publication                                            Publ.
+%Publisher                                               Publisher
+%Quarterly                                              Quart.      ISI
+%Random                                                 Random
+%Recommendation                                 Recom.          Perdue
+%Recommender                                            Recommender
+%Recognition                                            Recognit.   LTWA
+%Record                                                 Rec.
+%Report                                                 Rep.        IEEE
+%Research                                               Res.        ISI
+%Retrieval                                              Retrieval
+%Risk                                                   Risk
+%Rough                                              Rough
+%School                                                 Sch.        LTWA
+%Sciences                                               Sci.
+%Scientific                                             Scient.
+%Secure                                                 Secure
+%Security                                               Secur.      (IEEE: Security, ISI: Secur.)
+%Selected                                               Select.     IEEE
+%Sets                                                       Sets
+%Spanish                                                Spanish
+%Speech                                                 Speech      ISI
+%Sequences
+%Sensor                                                 Sensor
+%Series                                                 Ser.
+%Services                                               Serv.       ISI
+%Signal                                                 Signal      IEEE
+%Special                                                Spec.      ISI
+%Spontaneus                                         Spontaneus
+%Standard                                            Stand.     ISI
+%Statistical                                            Stat.
+%Statistics                                             Stat.
+%Street                                                 St.
+%Studies                                                Stud.       ISI
+%Society                                                Soc.
+%Software                                               Softw.      ISI
+%Supplement                                             Suppl.
+%Support                                                 Support
+%Survey                                                 Surv.       ISI
+%Symposium                                              Symp.
+%Systems                                                Syst.       IEEE
+%Technical                                              Tech.       IEEE
+%Technology                                             Technol.    IEEE
+%Telecommunication                                      Telecomm.
+%Theory                                                 Theory      IEEE
+%Theoretic                                              Theor.      ISI, hyphenation inconsistent
+%Translations                                           Transl.
+%Transactions                                           Trans.      IEEE
+%Transportation                                         Transport.  ISI
+%Trends                                             Trends      ISI
+%Trust                                                  Trust
+%Tutorial                                               Tutor.
+%Uncertainty                                            Uncertain.  ISI
+%User                                                       User                ISI
+%Video                                                  Video       IEEE
+%Vision                                                     Vision          ISI
+%Volume                                                 Vol.        IEEE
+%Warehousing                                            Warehous.   ISSN
+%Wireless                                               Wirel.      ISI, LATW
+%World                                                      World       ISI
+%World Wide Web                                         WWW
+%Workshop                                               Workshop
+%Institute of Electrical and Electronics Engineers      IEEE        Official
+%Institute of Electronics and Communication Engineers   IECE        Official
+%Institute of Radio Engineers                           IRE         Official
+%Society for Imaging Science and Technology             IT&S        Official
+%International Society for Optical Engineering          SPIE        Official
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%JOURNALS
+@STRING{J_AAI             = "Adv. Artif. Intell."}
+@STRING{J_ASL             = "Adv. Sci. Lett."}
+@STRING{J_AASF_S_MP       = "Annales Acad. Sci. Fenn., Ser. {A I} Math.-Phys."}
+@STRING{J_AE              = "Annals Eugen."}
+@STRING{J_AI              = "Arbeiten zur Informationstheorie"}
+@STRING{J_AM              = "Annals Math."}
+@STRING{J_AP              = "Annals Prob."}
+@STRING{J_IMS_AMS         = "Annals Math. Stat."}
+@STRING{ACM_J             = "J. {ACM}"}
+@STRING{ACM_J_COM         = "Commun. {ACM}"}
+@STRING{ACM_J_IS          = "{ACM} Trans. Inform. Syst."}
+@STRING{ACM_J_ISS         = "{ACM} Trans. Inform. Syst. Secur."}
+@STRING{ACM_J_SIGIR   = "{ACM} Spec. Interest Group Inform. Retrieval ({SIGIR}) Forum"}
+@STRING{AMS_Tl            = "Amer. Math. Soc. Transl."}
+@STRING{ASIST_J           = "J. Amer. Soc. Inform. Sci., Technol."}
+@STRING{CSIC_J_TDP        = "Trans. Data Priv."} %Sponsored by IIIA-CSIC and other Spanish organizations
+@STRING{Hindawi_J_AAA     = "J. Abstract, Appl. Anal."}
+@STRING{Elsevier_J_CEUS   = "Comput., Environ., Urban Syst."}
+@STRING{Elsevier_J_COMCOM = "Comput. Commun."}
+@STRING{Elsevier_J_CN     = "Compu. Netw."}
+@STRING{Elsevier_J_CMA    = "Comput., Math. with Appl."}
+@STRING{Elsevier_J_DKE    = "Data, Knowl. Eng."}
+@STRING{Elsevier_J_FGCS    = "Future Gen. Comput. Syst."}
+@STRING{Elsevier_J_INS    = "Inform. Sci."}
+@STRING{Elsevier_J_TI     = "Telemat., Informat."}
+@STRING{Elsevier_J_KBS    = "Knowl.-Based Syst."}
+@STRING{Elsevier_J_SCP    = "Sci. Comput. Program."}
+@STRING{Elsevier_J_SS     = "J. Syst., Softw."}
+@STRING{IBM_J_RD          = "{IMB} J. Res. Develop."}
+@STRING{IEEE_J_AC          = "{IEEE} Trans. Autom. Control"}
+@STRING{IEEE_J_ASSP       = "{IEEE} Trans. Acoust., Speech, Signal Process."}
+@STRING{IEEE_J_ASLP       = "{IEEE} Trans. Audio, Speech, Lang. Process."}
+@STRING{IEEE_J_C          = "{IEEE} Trans. Comput."}
+@STRING{IEEE_J_CAS        = "{IEEE} Trans. Circuits Syst."}
+@STRING{IEEE_J_CASVT      = "{IEEE} Trans. Circuits Syst. Video Technol."}
+@STRING{IEEE_J_COM        = "{IEEE} Trans. Commun."}
+@STRING{IEEE_J_COML       = "{IEEE} Commun. Lett."}
+@STRING{IEEE_J_CS         = "{IEEE} Trans. Commun. Syst."}
+@STRING{IEEE_J_CST        = "{IEEE} Commun. Surv., Tutor."}
+@STRING{IEEE_J_DSC        = "{IEEE} Trans. Depend., Secure Comput."}
+@STRING{IEEE_J_JSAC       = "{IEEE} J. Select. Areas Commun."}
+@STRING{IEEE_J_IP         = "{IEEE} Trans. Image Process."}
+@STRING{IEEE_J_IT         = "{IEEE} Trans. Inform. Theory"}
+@STRING{IEEE_J_IS         = "{IEEE} J. Intelligent Syst."}
+@STRING{IEEE_J_ISI        = "{IEEE} J. Intell., Secur. Inform."}
+@STRING{IEEE_J_KDE        = "{IEEE} Trans. Knowl. Data Eng."}
+@STRING{IEEE_J_MC         = "{IEEE} Trans. Mob. Comput."}
+@STRING{IEEE_J_NN         = "{IEEE} Trans. Neural Netw."}
+@STRING{IEEE_J_PAMI       = "{IEEE} Trans. Pattern Anal., Mach. Intell."}
+@STRING{IEEE_J_SMC        = "{IEEE} Trans. Syst. Man, Cybern."}
+@STRING{IEEE_J_SP         = "{IEEE} Trans. Signal Process."}
+@STRING{IECE_J            = "Trans. {IECE} Japan"}
+@STRING{IRE_J_IT          = "{IRE} Trans. Inform. Theory"}
+@STRING{J_BIO            = "Biometrika"}
+@STRING{J_BPAS            = "Bull. Pol. Acad. Sci."}
+@STRING{J_C               = "J. Classif."}
+@STRING{J_CSL           = "Comput. Speech, Lang."}
+@STRING{J_CSI           = "Comput. Stand. \& Interf."}
+@STRING{J_IC              = "Inform., Contr."}
+@STRING{J_IJSIA        = "Int. J. Security, Appl. ({IJSIA})"}
+@STRING{J_IR              = "Internet Res."}
+@STRING{J_EC              = "Int. J. Electron. Commer."}
+@STRING{J_ISJLP           = "{I/S}: J. Law, Policy Inform. Soc. ({ISJLP})"}
+@STRING{J_EP              = "J. Educ. Psychol."}
+@STRING{J_ENTROPY  = "Entropy"}
+@STRING{J_ESA             = "Expert Syst. Appl."}
+@STRING{J_EIT              = "Ethics Inform. Technol."}
+@STRING{J_ETT             = "European Trans. Telecomm."}
+@STRING{J_HAR_LAW         = "Harvard Law Rev."}
+@STRING{J_HAS_MI          = "Publ. Math. Math. Inst. Hungar. Acad. Sci."}
+@STRING{J_HSM             = "Studia Sci. Math. Hungar."}
+@STRING{J_HCS             = "Int. J. Human-Comput. Stud."}
+@STRING{J_IJIS             = "Int. J. Inform. Secur."}
+@STRING{J_KNOW_ACQ        = "Knowl. Acquisition"}
+@STRING{J_KAIS        = "Knowl., Inform. Syst."}
+@STRING{J_MLR             = "J. Mach. Learn. Res."}
+@STRING{J_MOR             = "Math. Oper. Res."}
+@STRING{J_MP             = "Math. Program."}
+@STRING{J_MS              = "J. Market. Sci."}
+@STRING{J_NC              = "Neural Comput."}
+@STRING{J_NPSC            = "Neural, Parallel, Sci. Comput."} %Dynamic Press
+@STRING{J_OIR             = "Online Inform. Rev."}
+@STRING{J_OP             = "({SIAM}) J. Optim."}
+@STRING{J_OTA             = "J. Optim. Theory, Appl."} %Springer
+@STRING{J_PR              = "Pattern Recognit."}
+@STRING{J_PRS2            = "Phys. Review Ser. II"}
+@STRING{J_QAM             = "Quart. Appl. Math."}
+@STRING{J_RA              = "Risk Anal."}
+@STRING{J_RSS_B           = "J. Royal Stat. Soc., Ser. B"}
+@STRING{J_IJSA             = "Int. J. Secur., Appl."}
+@STRING{J_SHPMP           = "Stud. Hist., Philos. Mod. Phys."}
+@STRING{J_SD_SI           = "Stat., Decisions, Suppl. Issue"}
+@STRING{J_SORT            = "Stat., Oper. Res. Trans. ({SORT})"}
+@STRING{J_SPI             = "J. Stat. Planning, Infer."}
+@STRING{J_UFKBS           = "Int. J. Uncertain., Fuzz., Knowl.-Based Syst."}
+@STRING{J_Upgrade         = "Upgrade J."}
+@STRING{J_UMUAI          = "User Model. User-Adap. Interact."}
+@STRING{MIT_J_CL          = "{MIT} Comput. Ling."} %MIT Press
+@STRING{J_USSR_CMMP       = "{USSR} Comput. Math., Math. Phys."}
+@STRING{SIAM_J_SIAP       = "{SIAM} J. Appl. Math. ({SIAP})"}
+@STRING{SIAM_J_SICON      = "{SIAM} J. Contr., Optim. ({SICON})"}
+@STRING{SIAM_J_R          = "{SIAM} Review"}
+@STRING{SN_J_NOS          = "Netherlands Official Stat."} %Statistics Netherlands
+@STRING{Springer_J_DMKD   = "Data Min., Knowl. Disc."}
+@STRING{SS_J_OS           = "J. Official Stat."} %Statistics Sweden
+@STRING{UNECE_J_S         = "{UNECE} Stat. J."}
+@STRING{VLDB_J_VLDB       = "{VLDB} J."} %VLDB Endowment
+@STRING{WSAG              = "Web Semantics: Sci., Ser. and Agents on the WWW"}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%MAGAZINES
+@STRING{IEEE_M_IC         = "{IEEE} Internet Comput. Mag."}
+@STRING{IEEE_M_SP         = "{IEEE} Signal Process. Mag."}
+@STRING{IEEE_M_COM        = "{IEEE} Commun. Mag."}
+@STRING{IEEE_M_WC         = "{IEEE} Wirel. Commun. Mag."}
+@STRING{ACM_M_C           = "Commun. {ACM}"}
+@STRING{M_FT              = "Financial Times"}
+@STRING{M_P               = "Philos. Mag."}
+@STRING{M_NYT             = "New York Times"}
+@STRING{M_SA              = "Scient. Amer."}
+@STRING{M_WSJ             = "Wall St. J."}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%CONFERENCES & PROCEEDINGS
+@STRING{IEEE_C_DCC        = "Proc. {IEEE} Data Compression Conf. ({DCC})"}
+@STRING{IEEE_C_GLOBECOM   = "Proc. {IEEE} Global Telecomm. Conf. ({GLOBECOM})"}
+@STRING{IEEE_C_FOCS       = "Proc. {IEEE} Annual Symp. Found. Comput. Sci. ({FOCS})"}
+@STRING{IEEE_C_ICASSP     = "Proc. {IEEE} Int. Conf. Acoust., Speech, Signal Process. ({ICASSP})"}
+@STRING{IEEE_C_ICCV         = "Proc. Int. Conf. Comput. Vision({ICCV})"}
+@STRING{IEEE_C_ICDE       = "Proc. {IEEE} Int. Conf. Data Eng. ({ICDE})"}
+@STRING{IEEE_C_ICDM       = "Proc. {IEEE} Int. Conf. Data Min. ({ICDM})"}
+@STRING{IEEE_C_ICDS       = "Proc. {IEEE} Int. Conf. Distrib. Comput. Syst. ({ICDS})"}
+@STRING{IEEE_C_ICIP       = "Proc. {IEEE} Int. Conf. Image Process. ({ICIP})"}
+@STRING{IEEE_C_ICME       = "Proc. {IEEE} Int. Conf. Multimedia, Expo ({ICME})"}
+@STRING{IEEE_C_INFOCOM    = "Proc. Joint Conf. {IEEE} Comput., Commun. Soc. ({INFOCOM})"}
+@STRING{IEEE_C_ISIAS      = "Proc. {IEEE} Int. Symp. Inform. Assurance, Secur. ({IAS})"}
+@STRING{IEEE_C_ISIP       = "Proc. {IEEE} Int. Symp. Inform. Process. ({ISIP})"}
+@STRING{IEEE_C_ISIT       = "Proc. {IEEE} Int. Symp. Inform. Theory ({ISIT})"}
+@STRING{IEEE_C_ITW        = "Proc. {IEEE} Inform. Theory Workshop ({ITW})"}
+@STRING{IEEE_C_MMSP       = "Proc. {IEEE} Int. Workshop Multimedia Signal Process. ({MMSP})"}
+@STRING{IEEE_C_PDM        = "Proc. {IEEE} Int. Conf. Data Eng. Workshops ({PDM})"}
+@STRING{IEEE_C_PerCom     = "Proc. {IEEE} Int. Conf. Pervas. Comput., Commun. ({PerCom})"}
+@STRING{IEEE_C_PVW        = "Proc. {IEEE} Packet Video Workshop"}
+@STRING{IEEE_C_SNDSS      = "Proc. {IEEE} Symp. Netw. Distrib. Syst. Secur. ({SNDSS})"}
+@STRING{IEEE_C_SP         = "Proc. {IEEE} Symp. Secur., Priv. ({SP})"}
+@STRING{IEEE_C_SSP        = "Proc. {IEEE} Workshop Stat. Signal Process. ({SSP})"}
+@STRING{IEEE_P            = "Proc. {IEEE}"}
+@STRING{ACL_C             = "Proc. Assoc. Comput. Ling. ({ACL})"}
+@STRING{ACM_C_SAC         = "Proc. {ACM} Int. Symp. Appl. Comput. ({SAC})"}
+@STRING{ACM_C_CCS         = "Proc. {ACM} Conf. Comput., Commun. Secur. ({CCS})"}
+@STRING{ACM_C_GIS         = "Proc. {ACM} Int. Symp. Adv. Geogr. Inform. Syst. ({GIS})"}
+@STRING{ACM_C_PODS        = "Proc. {ACM} Symp. Prin. Database Syst. ({PODS})"}
+@STRING{ACM_C_KDD         = "Proc. {ACM} {SIGKDD} Int. Conf. Knowl. Disc., Data Min. ({KDD})"}
+@STRING{ACM_C_MobiHoc     = "Proc. {ACM} Int. Symp. Mob. Ad Hoc Netw., Comput. ({MobiHoc})"}
+@STRING{ACM_C_MobiSys     = "Proc. {ACM} Int. Conf. Mob. Syst., Appl., Serv. ({MobiSys})"}
+@STRING{ACM_C_RS          = "Proc. {ACM} Conf. Recommender Syst. ({RecSys})"}
+@STRING{ACM_C_SIGIR       = "Proc. {ACM} {SIGIR} Conf. Res., Develop. Inform. Retrieval"}
+@STRING{ACM_SIGMOD_C_MD   = "Proc. {ACM} {SIGMOD} Int. Conf. Manage. Data"}
+@STRING{ACM_WEBKDD        = "Proc. {ACM} {WebKDD} Web Min. E-Commer. -- Challenges and Opportunities"}
+@STRING{ACM_WDIM          = "Proc. {ACM} Workshop on Digit. Identity Manage."}
+@STRING{Adaptive_C             = "Proc. Adap., Nat. Comput. Alg."}
+@STRING{AI_C                    = "Proc. {AAAI} Conf. Artif. Intell."}
+@STRING{Allerton_C        = "Proc. Allerton Conf. Commun., Contr., Comput."}
+@STRING{Asilomar_C        = "Proc. Asilomar Conf. Signals, Syst., Comput."}
+@STRING{ASWN_C            = "Proc. Workshop Appl., Serv. Wirel. Netw."}
+@STRING{Automata_C        = "Proc. Int. Colloq. Automata, Lang., Program."}
+@STRING{Berkeley_C_MSP    = "Proc. Berkeley Symp. Math. Stat., Prob."}
+@STRING{BSC_C             = "Proc. Biennial Symp. Commun."}
+@STRING{CCS_C             = "Proc. Conf. Compression, Complexity Sequences"}
+@STRING{CA_C             = "Proc. Int. Conf. Cryptology Africa ({AFRICACRYPT})"}
+@STRING{CIKM              = "Proc. Int. Conf. Inform., Knowl. Manage. ({CIKM})"}
+@STRING{CISS_C            = "Proc. Annual Conf. Inform. Sci. Syst. ({CISS})"}
+@STRING{CNIT_C_IWDC       = "Proc. {CNIT} Int. Workshop Digit. Commun."}
+@STRING{CNS_C            = "Proc. Cryptology, Netw. Secur. ({CNS})"}
+@STRING{COLTAG_C          = "Proc. Col. Web Tagging Workshop WWW"}
+@STRING{COMPSTAT_C        = "Proc. Comput. Stat. ({COMPSTAT})"}
+@STRING{CPD_C           = "Proc. Comput. Priv., Data Prot. ({CPD})"}
+@STRING{CSAC_C            = "Proc. Comput. Secur. Appl. Conf. ({CSAC})"}
+@STRING{DaWaK_C           = "Proc. Data Warehous., Knowl. Disc. ({DaWaK})"}
+@STRING{DMKD_C            = "Res. Issues Data Mining, Knowl. Disc."}
+@STRING{DPM_C             = "Proc. Int. Workshop Data Priv. Manage. ({DPM})"}
+@STRING{ESORICS_C         = "Proc. European Symp. Res. Comput. Secur.  ({ESORICS})"}
+@STRING{PKDD_C         = "Proc. European Mach. Learn., Prin., Pract. Knowl. Disc. Databases ({ECML PKDD})"}
+@STRING{EUROCRYPT_C       = "Proc. Annual Int. Conf. Theory, Appl. of Cryptogr. Techniques ({EUROCRYPT})"}
+@STRING{EUROSPEECH_C     = "Proc. European Conf. Speech Commun., Technol. ({EUROSPEECH})"}
+@STRING{ETK_NTTS_C        = "Proc. {ETK/NTTS} Conf."}
+@STRING{FC_C              = "Proc. Financ. Cryptogr., Data Secur. ({FI})"}
+@STRING{FINCRYP_C         = "Proc. Int. Financial Cryptogr. Conf."}
+@STRING{FM_C              = "Proc. World Congr. Formal Methods"}
+@STRING{IADIS_C_S         = "Proc. {IADIS} Int. Conf. e-Society"}
+@STRING{ICCSE_C            = "Proc. Int. Conf. Comput. Sci., Eng."}
+@STRING{ICCCN_C            = "Proc. Int. Conf. Comput. Commun., Netw."}
+@STRING{ICDCIT_C          = "Proc. Int. Conf. Distrib. Comput., Internet Technol. ({ICDCIT})"}
+@STRING{ICMDAI_C          = "Proc. Int. Conf. Model. Decisions Artif. Intell."}
+@STRING{ICML_C            = "Proc. Int. Conf. Mach. Learn. ({ICML})"}
+@STRING{ICST_C            = "Proc. Int. Conf. Secur. Technol.({SecTech})"}
+@STRING{ICSD_C            = "Proc. Infer. Contr. Stat. Databases ({ICSD}) Conf."}
+@STRING{ICWN_C            = "Proc. Int. Conf. Wirel. Netw. ({ICWN})"}
+@STRING{IFIP_C_CMSC       = "Proc. {IFIP} Commun., Multimedia Secur. Conf."}
+@STRING{IFIP_C_DAS        = "Proc. Annual {IFIP} Working Conf. Data Appl. Secur."}
+@STRING{IMA_C_MSP         = "Proc. {IMA} Conf. Math. Signal Process."}
+@STRING{INSS_C            = "Proc. Int. Conf. Netw. Syst. Secur. ({NSS})"}
+@STRING{IH_C              = "Proc. Inform. Hiding Workshop ({IH})"}
+@STRING{IKNOW              = "Proc. Int. Conf. Knowl. Manage. ({I-KNOW})"}
+@STRING{IPSN_C            = "Proc. Int. Symp. Inform. Process. Sensor Netw. ({IPSN})"}
+@STRING{IRE_C             = "Proc. {IRE}"}
+@STRING{IRE_C_NCR         = "{IRE} Nat. Conv. Rec."}
+@STRING{IS_C                        ="Proc. Interspeech"}
+@STRING{IS_CORE_C       = "Inform. Syst. Cogn. Res. Exchange ({IS-CORE})"}
+@STRING{ITS_C_VCIP        = "Proc. {IT\&S/SPIE} Conf. Visual Commun., Image Process. ({VCIP})"}
+@STRING{IUI_C                     = "Proc. Int. Conf. Intell. User Interf. ({IUI})"}
+@STRING{MAXENT_C          = "Proc. Int. Workshop Bayesian Infer., Max. Ent. Methods Sci., Eng. ({MaxEnt})"}
+@STRING{NAFIPS_C          = "Proc. N. Amer. Fuzzy Inform. Process. Soc. ({NAFIPS})"}
+@STRING{LSIT_C            = "Proc. London Symp. Inform. Theory, Ministry of Supply"} %London Ministry of Supply
+@STRING{NGITS_C           = "Proc. Int. Workshop Next-Gen. Inform. Technol., Syst. ({NGITS})"}
+@STRING{NIPS_C            = "Proc. Annual Conf. Neural Inform. Process. Syst. ({NIPS})"}
+@STRING{NWSITS_C          = "Proc. Nordic Workshop Secure IT Syst."}
+@STRING{PC_C              = "Proc. Int. Conf. Pervas. Comput."}
+@STRING{PCS_C             = "Proc. Picture Coding Symp. ({PCS})"}
+@STRING{PDM_C             = "Proc. Int. Workshop Priv. Data Manage. ({PDM})"}
+@STRING{PET_C             = "Proc. Int. Symp. Priv. Enhanc. Technol. ({PETS})"}
+@STRING{PiLBA_C           = "Proc. Int. Workshop Priv. Locat.-Based Appl. ({PiLBA})"}
+@STRING{PKC_C             = "Proc. Int. Conf. Practice, Theory Public-Key Cryptogr. ({PKC})"} %LNCS
+@STRING{PKI_C             = "Proc. European {PKI} Workshop"}
+@STRING{Prague_C          = "Proc. {P}rague Conf. Inform. Theory, Stat. Decision Functions, Random Process."}
+@STRING{PAINDS_C          = "Proc. Workshop Priv., Anon. Issues Netw., Distrib. Syst."}
+@STRING{PSAI_C            = "Proc. Workshop Priv., Secur., Artif. Intell. ({PSAI})"} %In conjunction with ARES
+@STRING{PSD_C             = "Priv. Stat. Databases ({PSD})"}
+@STRING{RECSI_C             = "Proc. {XI} Spanish Meeting Cryptology, Inform. Security ({RECSI})"}
+@STRING{RS_C              = "Proc. {AAAI} Workshop Recommender Syst."}
+@STRING{RSCTC_C           = "Proc. Int. Conf. Rough Sets, Curr. Trends Comput. ({RSCTC})"}
+@STRING{RWS_C             = "Proc. Reasoning Web Summer School 2005"}
+@STRING{SC_C_SDALS        = "Proc. Symp. Design, Anal. Longitudinal Surveys, Stat. Canada"} %Statistics Canada
+@STRING{SEC_C             = "Proc. Secur., Priv., Age Uncertainty, ({SEC})"}
+@STRING{SecureComm_C      = "Proc. Int. Conf. Secur., Priv. Commun. Netw. ({SecureComm})"}
+@STRING{SEM_C             = "Proc. Int. Semantic Web Conf."}
+@STRING{SIAM_C_SDM        = "Proc. {SIAM} Int. Conf. Data Min. ({SDM})"}
+@STRING{SIAM_C_SODA       = "Proc. {ACM-SIAM} Symp. Discr. Alg. ({SODA})"}
+@STRING{SIGCHI_C_HFCS     = "Procc {SIGCHI} Conf. Hum. Fact. Comput. Syst."}
+@STRING{Springer_LNAI     = "Lecture Notes in Artif. Intell. ({LNAI})"}
+@STRING{Springer_LNCS     = "Lecture Notes Comput. Sci. ({LNCS})"}
+@STRING{Springer_CCIS     = "Commun. Comput., Inform. Sci. ({CCIS})"}
+@STRING{Springer_LNM      = "Lecture Notes Math."}
+@STRING{TAGMET_C          = "Proc. Workshop Tagging and Metadata for Social Inform. Org. Workshop in Int. WWW Conf."}
+@STRING{TRUSTBUS_C        = "Proc. Int. Conf. Trust, Priv., Secur., Digit. Bus. ({TrustBus})"}
+@STRING{USENIX_C_SSYM     = "Proc. Conf. {USENIX} Secur. Symp."}
+@STRING{VLDB_C            = "Proc. Int. Conf. Very Large Databases"}
+@STRING{WDIAU_C           = "Proc. Design. Priv. Enhanc. Technol.: {W}orkshop Design Issues Anon., Unobser."}
+@STRING{WETICE_C          = "Proc. Int. Workshop Enabling Technol.: Infra. Col. Enterprises ({WETICE})."}
+@STRING{WOL_C              = "Proc. Workshop Ontology Learn."}
+@STRING{WPES_C            = "Proc. Workshop Priv. Electron. Soc."}
+@STRING{WSM_C             = "Proc. Int. Conf. Weblogs, Social Media"}
+@STRING{WWW_C             = "Proc. Int. WWW Conf."}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%SPECIAL ISSUES
+@STRING{EURASIP_SP_DSC    = "{EURASIP} J. Signal Process., Special Issue Distrib. Source Coding"}
+@STRING{EURASIP_SP_IC     = "{EURASIP} J. Signal Process.: Image Commun."}
+@STRING{IEEE_S_AVCD       = "Proc. {IEEE}, Special Issue Adv. Video Coding, Delivery"}
+@STRING{IEEE_J_IT_ITS     = "{IEEE} Trans. Inform. Theory, Special Issue Inform.-Theor. Secur."}
+@STRING{IEEE_M_PC_ITS     = "{IEEE} Pervas. Comput. Mag., Special Issue Intell. Transport. Syst."}
+@STRING{J_SORT_PSD        = "Stat., Oper. Res. Trans. ({SORT}), Special Issue Priv. Stat. Databases"}
+@STRING{J_FGCS_DKE       = "Future Gen. Comput. Syst. ({FGCS}), Special Issue Data, Knowl. Eng."}
+@STRING{J_SCN_SCIW       =  "Security, Commun. Netw. ({SCN}), Special Issue Security Completely Interconnect. World"}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%REPORTS
+@STRING{R_RR              = "Res. Rep."}
+@STRING{R_TJ              = "Tech. J."}
+@STRING{R_TM              = "Tech. Memo."}
+@STRING{R_TR              = "Tech. Rep."}
+@STRING{R_ID              = "Internet Draft"} %IETF Internet Draft
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%ORGANIZATIONS
+@STRING{ORG_BellSyst      = "Bell Syst."}
+@STRING{ORG_Beckman       = "Beckman Inst."}
+@STRING{ORG_BellLab       = "Bell Lab."}
+@STRING{ORG_CMU           = "Carnegie Mellon Univ."}
+@STRING{ORG_DAI-Labor  = "Distrib. Artif. Intell. Lab. ({DAI-Labor}"}
+@STRING{ORG_FIDIS           = "Future Identity Inform. Soc. (FIDIS)"}
+@STRING{ORG_IETF          = "Internet Eng. Task Force"}
+@STRING{ORG_INRIA         = "Nat. Inst. Res. Comput. Sci., Contr. (INRIA)"}
+@STRING{ORG_KUL           = "Katholieke Univ. Leuven"}
+@STRING{ORG_MGI           = "McKinsey Global Inst"}
+@STRING{ORG_MIT           = "MIT"}
+@STRING{ORG_MR            = "Microsoft Res."}
+@STRING{ORG_PIALP         = "Pew Internet, Amer. Life Project"}
+@STRING{ORG_PRC            = "Privacy Rights Clearinghouse"}
+@STRING{ORG_SBU           = "Stony Brook Univ."}
+@STRING{ORG_SN            = "Stat. Netherlands"}
+@STRING{ORG_SRI           = "SRI Int."}
+@STRING{ORG_SU            = "Stanford Univ."}
+@STRING{ORG_TT            = "TRUSTe"}
+@STRING{ORG_UCI_SICS      = "Univ. California, Irvine, Sch. Inform., Comput. Sci."}
+@STRING{ORG_UI            = "Univ. of Illinoi"}
+@STRING{ORG_UIN           = "Urban Inst."}
+@STRING{ORG_UM            = "Univ. Manchester"}
+@STRING{ORG_UPC           = "Tech. Univ. Catalonia (UPC)"}
+@STRING{ORG_YU            = "Yale Univ."}
+@STRING{ORG_W3C           = "WWW Consortium (W3C)"}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%PUBLISHERS
+@STRING{PUB_AAAI            = "Assoc. Adv. Artif. Intell."}
+@STRING{PUB_AcadPress     = "Academic-Press"}
+@STRING{PUB_ACM           = "ACM"}
+@STRING{PUB_ASP             = "Amer. Scient. Publishers"}
+@STRING{PUB_AW         = "Addison Wesley"}
+@STRING{PUB_Bloomberg    = "Bloomberg"}
+@STRING{PUB_Cambridge     = "Cambridge Univ. Press"}
+@STRING{PUB_CRC              = "CRC Press"}
+@STRING{PUB_DVW           = "Deutscher Verlag der Wissenschaften"}
+@STRING{PUB_Elsevier      = "Elsevier"}
+@STRING{PUB_Harvard       = "Harvard Univ. Press"}
+@STRING{PUB_Hindawi       = "Hindawi Publishing Corp."}
+@STRING{PUB_IEEE_CS       = "IEEE Comput. Soc."}
+@STRING{PUB_Kluwer        = "Kluwer"}
+@STRING{PUB_McGrawHill    = "McGraw-Hill"}
+@STRING{PUB_MDPI           = "MDPI AG"}
+@STRING{PUB_MIT           = "MIT Press"}
+@STRING{PUB_Oxford        = "Oxford Univ. Press"}
+@STRING{PUB_Prentice      = "Prentice-Hall"}
+@STRING{PUB_Random      = "Random House"}
+@STRING{PUB_Routledge      = "Routledge"}
+@STRING{PUB_SERSC           = "Sci., Eng. Res. Support Soc."}
+@STRING{PUB_Springer      = "Springer-Verlag"}
+@STRING{PUB_Wiley         = "Wiley"}
+@STRING{PUB_Wolf            = "Wolf Legal Publishers"}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%NOTES
+@STRING{NOTE_Corresp      = "Corresp."}
+@STRING{NOTE_Submitted    = "Submitted"} %IEEE: "Submitted for publication", used in year field
+@STRING{NOTE_Invited      = "Invited paper"}
+@STRING{NOTE_SI                 = "Spec. Issue"}
+@STRING{NOTE_ToAppear     = "To appear"} %IEEE: "To be published", used in note field, set known year
+@STRING{NOTE_UnPublished  = "Unpublished"}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%MISCELLANEOUS KEYWORDS
+@STRING{KW_PrivCommun     = "Priv. Commun."} %IEEE: "Private communication" or "personal correspondence"
+@STRING{KW_Proceedings    = "Proc."}
+@STRING{KW_Statistics     = "Stat."}
+@STRING{KW_Symposium      = "Symp."}
+
+
+@techreport{library-briefing,
+	Author = {Copeland, N.},
+	Date-Added = {2014-09-01 10:20:20 +0000},
+	Date-Modified = {2014-09-01 10:51:36 +0000},
+	Institution = {Library of the European Parliament},
+	Title = {Online privacy: the right to be forgotten},
+	Year = {2012}}
+	
+@article{warren1890right,
+  title={The right to privacy},
+  author={Warren, Samuel D and Brandeis, Louis D},
+  journal={Harvard law review},
+  pages={193--220},
+  year={1890},
+  publisher={JSTOR}}
+  
+@article{assembly1948universal,
+  title={Universal declaration of human rights},
+  author={Assembly, UN General},
+  journal={UN General Assembly},
+  year={1948}}
+  
+@article{solove2006taxonomy,
+  title={A taxonomy of privacy},
+  author={Solove, Daniel J},
+  journal={University of Pennsylvania law review},
+  pages={477--564},
+  year={2006},
+  publisher={JSTOR}}
+
+@article{irani-et-al,
+	Author = {Irani, Danesh and Webb, Steve and Pu, Calton},
+	Date-Added = {2014-09-01 10:55:30 +0000},
+	Date-Modified = {2014-09-01 11:20:54 +0000},
+	Journal = {IEEE Internet Computing},
+	Title = {Modeling Unintended Personal-Information Leakage from Multiple Online Social Networks},
+	Year = {2011}}
+	
+@article{sweeney,
+	Author = {Sweeney, Latanya},
+	Date-Added = {2014-09-01 11:57:59 +0000},
+	Date-Modified = {2014-09-01 11:59:02 +0000},
+	Journal = {IDAPWP4. Carnegie Mellon University, Laboratory for International Data Privacy},
+	Title = {Uniqueness of Simple Demographics in the U.S. Population},
+	Year = {2000}}
+	
+@conference{paridhi-et-al,
+	Author = {Jain, Paridhi and Ponnurangam, Kumaraguru and Anupam, Joshi},
+	Booktitle = {Proceedings of the 22nd international conference on World Wide Web},
+	Date-Added = {2014-09-01 11:11:48 +0000},
+	Date-Modified = {2014-09-01 11:21:49 +0000},
+	Pages = {1259-1268},
+	Title = {@I seek `fb.me': Identifying Users across Multiple Online Social Networks},
+	Year = {2013}}
+	
+@conference{chen-et-al,
+	Author = {Chen, Terence and Kaafar, Mohammed Ali and Friedman, Arik and Boreli, Roksana},
+	Booktitle = {Proceedings of the 2012 ACM workshop on Workshop on online social networks},
+	Date-Added = {2014-09-01 11:27:41 +0000},
+	Date-Modified = {2014-09-01 11:28:56 +0000},
+	Title = {Is More Always Merrier? A Deep Dive Into Online Social Footprints},
+	Year = {2012}}
+	
+@article{Kumaragur-et-all,
+	Author = {Kumaraguru, Ponnurangam and Sheng, Steve and Acquisti, Alessandro and Cranor, Lorrie Faith and Hong, Jason},
+	Date-Added = {2014-09-01 11:51:08 +0000},
+	Date-Modified = {2014-09-01 11:53:28 +0000},
+	Journal = {ACM Transactions on Internet Technology (TOIT)},
+	Title = {Teaching Johnny not to fall for phish},
+	Year = {2010}}
+	
+@conference{acquisti-et-al,
+	Author = {Acquisti, Alessandro and Gross, Ralph},
+	Booktitle = {Proceedings of the National academy of sciences},
+	Date-Added = {2014-09-01 11:30:12 +0000},
+	Date-Modified = {2014-09-01 11:30:57 +0000},
+	Title = {Predicting Social Security numbers from public data},
+	Year = {2009}}
+	
+@conference{brown-et-all,
+	Author = {Brown, Garrett and Howe, Travis and Ihbe, Micheal and Prakash, Atul and Borders, Kevin},
+	Booktitle = {Proceedings of the 2008 ACM conference on Computer supported cooperative work},
+	Date-Added = {2014-09-01 11:47:43 +0000},
+	Date-Modified = {2014-09-01 11:50:07 +0000},
+	Title = {Social Networks and Context-Aware Spam},
+	Year = {2008}}
+
+@techreport{cryto-gram,
+	Author = {Schneier, Bruce},
+	Date-Added = {2014-09-01 11:54:23 +0000},
+	Date-Modified = {2014-09-01 11:55:36 +0000},
+	Institution = {Crypto-Gram Newsletter},
+	Title = {Semantic attacks: The third wave of network attacks},
+	Year = {2000}}
+	
+@inproceedings{viswanath2012keeping,
+  title={Keeping information safe from social networking apps},
+  author={Viswanath, Bimal and Kiciman, Emre and Saroiu, Stefan},
+  booktitle={Proceedings of the 2012 ACM workshop on Workshop on online social networks},
+  pages={49--54},
+  year={2012},
+  organization={ACM}}
+  
+ @inproceedings{jagtap2011preserving,
+  title={Preserving privacy in context-aware systems},
+  author={Jagtap, Pramod and Joshi, Anupam and Finin, Tim and Zavala, Laura},
+  booktitle={Semantic computing (ICSC), 2011 fifth IEEE international conference on},
+  pages={149--153},
+  year={2011},
+  organization={IEEE}}
+  
+@article{zhu-et-al,
+	Author = {Zhu, Wang and Daqing, Zhang and Xingshe, Zhou and Dingqi, Yang and Zhiyong, Yu and Zhiwen, Yu},
+	Date-Added = {2014-09-01 11:45:10 +0000},
+	Date-Modified = {2014-09-01 11:47:08 +0000},
+	Journal = {IEEE Transactions On Systems, Man, and Cybernetics Systems},
+	Title = {Discovering and Profiling Overlapping Communities in Location-Based Social Networks},
+	Volume = {44},
+	Year = {2014}}
+	
+@conference{melia-segui-et-al,
+	Author = {Meli{\`a}-Segu{\'\i}, Joan and Zhang, Rui and Bart, Eugene and Price, Bob and Brdiczka, Oliver},
+	Booktitle = {Proceedings of the 2012 international workshop on Selfaware internet of things},
+	Date-Added = {2014-09-01 11:36:25 +0000},
+	Date-Modified = {2014-09-01 11:37:42 +0000},
+	Title = {Activity duration analysis for contextaware services using foursquare checkins},
+	Year = {2012}}
+
+@inproceedings{toch2013locality,
+  title={Locality and privacy in people-nearby applications},
+  author={Toch, Eran and Levi, Inbal},
+  booktitle={Proceedings of the 2013 ACM international joint conference on Pervasive and ubiquitous computing},
+  pages={539--548},
+  year={2013},
+  organization={ACM}
+}
+
+@inproceedings{li2014all,
+  title={All your location are belong to us: Breaking mobile social networks for automated user location tracking},
+  author={Li, Muyuan and Zhu, Haojin and Gao, Zhaoyu and Chen, Si and Yu, Le and Hu, Shangqian and Ren, Kui},
+  booktitle={Proceedings of the 15th ACM international symposium on Mobile ad hoc networking and computing},
+  pages={43--52},
+  year={2014},
+  organization={ACM}
+}
+
+@misc{internet-freedom,
+	Date-Added = {2014-09-01 10:30:54 +0000},
+	Date-Modified = {2014-09-01 10:48:50 +0000},
+	Url = {http://www.internetfreedom.org/Background},
+	Year = {2008},
+	Bdsk-Url-1 = {http://www.internetfreedom.org/Background}}
+	
+@article{a01,
+	Author = {Halpin, Harry and Robu, Valentin and Shepherd, Valentin},
+	Date-Added = {2013-09-30 09:43:56 +0000},
+	Date-Modified = {2013-09-30 10:45:48 +0000},
+	Journal = {Proceedings of the 16th international conference on World Wide Web},
+	Month = {May},
+	Pages = {211-220},
+	Title = {The complex dynamics of collaborative tagging},
+	Year = {2007}}
+	
+@misc{SocialNumber,
+	Date-Added = {2014-02-05 20:37:14 +0000},
+	Date-Modified = {2014-02-05 21:44:11 +0000},
+	Title = {SocialNumber - http://www.socialnumber.com},
+	Bdsk-Url-1 = {http://www.socialnumber.com}}
+	
+@article{Shen07SIGIR,
+ author         = "X. Shen and B. Tan and C. Zhai",
+ title              = "Privacy protection in personalized search",
+ journal        = ACM_J_SIGIR,
+ volume       = 41,
+ number      = 1,
+ month         = jun,
+ year              = 2007,
+ pages            = "4--17",
+ url                  = "http://doi.acm.org/10.1145/1273221.1273222",
+ publisher    = PUB_ACM}
+
+@article{Reiter98ISS,
+  author        = "M. K. Reiter and A. D. Rubin",
+  title         = "Crowds: {A}nonymity for {W}eb transactions",
+  journal       = ACM_J_ISS,
+  volume        = 1,
+  number        = 1,
+  year          = 1998,
+  pages         = "66--92"}
+  
+@article{Domingo09DKE,
+  author        = "J. Domingo-Ferrer and M. Bras-Amor\'os and Q. Wu and J. Manj\'on",
+  title         = "User-private information retrieval based on a peer-to-peer community",
+  journal       = Elsevier_J_DKE,
+  volume        = 68,
+  number        = 11,
+  year          = 2009,
+  pages         = "1237--1252"}
+  
+@article{Rebollo09COMCOM,
+  author        = "D. Rebollo-Monedero and J. Forn{\'e} and A. Solanas and T. Martínez-Ballest{\'e}",
+  title         = "Private Location-Based Information Retrieval through User Collaboration",
+  journal       = Elsevier_J_COMCOM,
+  volume        = 33,
+  number        = 6,
+  year          = 2010,
+  pages         = "762--774",
+  url           = "http://dx.doi.org/10.1016/j.comcom.2009.11.024"}
+  
+@article{Domingo12INS,
+  author        = "J. Domingo-Ferrer and {\'U}. Gonz{\'a}lez-Nicol{\'a}s",
+  title         = "Rational Behavior in Peer-to-Peer Profile Obfuscation for Anonymous Keyword Search",
+  journal       = Elsevier_J_INS,
+  volume        = 185,
+  number        = 1,
+  year          = 2012,
+  pages         = "191--204"}
+
+@inproceedings{Polat03SDM,
+  author        = "H. Polat and W. Du",
+  title         = "Privacy-Preserving Collaborative Filtering Using Randomized Perturbation Techniques",
+  booktitle     = SIAM_C_SDM,
+  year          = 2003,
+  month         = may,
+  pages         = "625--628",
+  publisher     = PUB_IEEE_CS,
+  location      = "San Francisco, California, USA"}
+
+@inproceedings{Agrawal01SIGMOD,
+  author        = "D. Agrawal and C. C. Aggarwal",
+  title         = "On the Design and Quantification of Privacy Preserving Data Mining Algorithms",
+  booktitle     = ACM_SIGMOD_C_MD,
+  address       = "Santa Barbara, California, USA",
+  year          = 2001,
+  month      = may,
+  pages         = "247--255"}
+  
+@misc{Jester,
+  key           = "Jester",
+  title         = "Jester: The Online Joke Recommender",
+  url           = "http://eigentaste.berkeley.edu/"
+};
+
+@article{Rebollo10IT,
+  author        = "D. Rebollo-Monedero and J. Forn{\'e}",
+  title         = "Optimal Query Forgery for Private Information Retrieval",
+  journal       = IEEE_J_IT,
+  volume        = 56,
+  number        = 9,
+  year          = 2010,
+  pages         = "4631--4642"}
+  
+@inproceedings{Parra10TB,
+author          = "J. Parra-Arnau and D. Rebollo-Monedero and J. Forn{\'e}",
+title           = "A Privacy-Preserving Architecture for the Semantic {W}eb based on Tag Suppression",
+booktitle       = TRUSTBUS_C,
+address         = "Bilbao, Spain",
+pages           = "58--68",
+series        = Springer_LNCS,
+volume        = 6264,
+month           = aug,
+year            = 2010}
+
+@article{Parra12DKE,
+  author        = "J. Parra-Arnau and D. Rebollo-Monedero and J. Forn{\'e} and J. L. Mu{\~n}oz and O. Esparza",
+  title             = "Optimal tag suppression for privacy protection in the semantic {W}eb",
+  journal       = Elsevier_J_DKE,
+  volume       = "81--82",
+   pages          = "46--66",
+   month        = nov,
+  year             = 2012,
+  url                = "http://dx.doi.org/10.1016/j.datak.2012.07.004"}
+
+@article{Parra12TKDE,
+  author       = "J. Parra-Arnau and A. Perego and E. Ferrari and J. Forn{\'e} and D. Rebollo-Monedero",
+  title            = "Privacy-Preserving Enhanced Collaborative Tagging",
+  journal      = IEEE_J_KDE,
+  volume      = 26,
+  number     = 1,
+   pages        = "180--193",
+   month      = jan,
+  year            = 2014,
+  url              = "http://dx.doi.org/10.1109/TKDE.2012.248"}
+  
+@inproceedings{Polat05SAC,
+  author        = "H. Polat and W. Du",
+  title         = "{SVD}-based collaborative filtering with privacy",
+  booktitle     = ACM_C_SAC,
+  year          = 2005,
+  month         = mar,
+  pages         = "791--795",
+  publisher     = PUB_ACM,
+  location         = "Santa Fe, New Mexico, USA"}
+  
+@inproceedings{Kargupta03ICDM,
+  author         = "H. Kargupta and S. Datta and Q. Wang and K. Sivakumar",
+  title          = "On the Privacy Preserving Properties of Random Data Perturbation Techniques",
+  booktitle      = IEEE_C_ICDM,
+  year           = 2003,
+  month         = nov,
+  pages          = "99--106",
+  publisher      = PUB_IEEE_CS,
+  location        = "Melbourne, Florida, USA"}
+  
+@inproceedings{Huang05SIGMOD,
+  author        = "Z. Huang and W. Du and B. Chen",
+  title         = "Deriving private information from randomized data",
+  booktitle     = ACM_SIGMOD_C_MD,
+  publisher     = PUB_ACM,
+  year          = 2005,
+  month         = jun,
+  pages         = "37--48",
+  location      = "Baltimore, Maryland, USA"}
+
+@misc{Movielens,
+  key           = "MovieLens",
+  title         = "MovieLens",
+  url           = "http://movielens.umn.edu"}
+  
+@inproceedings{consolvo2005location,
+  title={Location disclosure to social relations: why, when, \& what people want to share},
+  author={Consolvo, Sunny and Smith, Ian E and Matthews, Tara and LaMarca, Anthony and Tabert, Jason and Powledge, Pauline},
+  booktitle={Proceedings of the SIGCHI conference on Human factors in computing systems},
+  pages={81--90},
+  year={2005},
+  organization={ACM}}
+  
+@incollection{veeningen2014line,
+  title={Are On-Line Personae Really Unlinkable?},
+  author={Veeningen, Meilof and Piepoli, Antonio and Zannone, Nicola},
+  booktitle={Data Privacy Management and Autonomous Spontaneous Security},
+  pages={369--379},
+  year={2014},
+  publisher={Springer}}
+ 
+@article{getoor2012entity,
+  title={Entity resolution: theory, practice \& open challenges},
+  author={Getoor, Lise and Machanavajjhala, Ashwin},
+  journal={Proceedings of the VLDB Endowment},
+  volume={5},
+  number={12},
+  pages={2018--2019},
+  year={2012},
+  publisher={VLDB Endowment}}
+ 
+@inproceedings{eckersley2010unique,
+  title={How unique is your web browser?},
+  author={Eckersley, Peter},
+  booktitle={International Symposium on Privacy Enhancing Technologies Symposium},
+  pages={1--18},
+  year={2010},
+  organization={Springer}}
+  
+@incollection{boda2012user,
+  title={User tracking on the web via cross-browser fingerprinting},
+  author={Boda, K{\'a}roly and F{\"o}ldes, {\'A}d{\'a}m M{\'a}t{\'e} and Guly{\'a}s, G{\'a}bor Gy{\"o}rgy and Imre, S{\'a}ndor},
+  booktitle={Information Security Technology for Applications},
+  pages={31--46},
+  year={2012},
+  publisher={Springer}}
+  
+@article{mowery2011fingerprinting,
+  title={Fingerprinting information in JavaScript implementations},
+  author={Mowery, Keaton and Bogenreif, Dillon and Yilek, Scott and Shacham, Hovav},
+  journal={Proceedings of W2SP},
+  volume={2},
+  year={2011}}
+  
+@incollection{castelluccia2012behavioural,
+  title={Behavioural tracking on the internet: a technical perspective},
+  author={Castelluccia, Claude},
+  booktitle={European Data Protection: In Good Health?},
+  pages={21--33},
+  year={2012},
+  publisher={Springer}}
+  
+@article{rao2015they,
+  title={What do they know about me? Contents and Concerns of Online Behavioral Profiles},
+  author={Rao, Ashwini and Schaub, Florian and Sadeh, Norman},
+  year={2015},
+  publisher={Academy of Science and Engineering, USA}}
+  
+@inproceedings{gomer2013network,
+  title={Network Analysis of Third Party Tracking: User Exposure to Tracking Cookies through Search},
+  author={Gomer, Richard and Mendes Rodrigues, Eduarda and Milic-Frayling, Natasa and Schraefel, MC},
+  booktitle={Web Intelligence (WI) and Intelligent Agent Technologies (IAT), 2013 IEEE/WIC/ACM International Joint Conferences on},
+  volume={1},
+  pages={549--556},
+  year={2013},
+  organization={IEEE}}
+  
+ @article{hoofnagle2012behavioral,
+  title={Behavioral Advertising: The Offer You Cannot Refuse},
+  author={Hoofnagle, Chris Jay and Soltani, Ashkan and Good, Nathan and Wambach, Dietrich James and Ayenson, Mika},
+  year={2012}}
+  
+ @article{angwin2010web,
+  title={The webâs new gold mine: Your secrets},
+  author={Angwin, Julia},
+  journal={Wall Street Journal},
+  volume={30},
+  number={7},
+  pages={1--7},
+  year={2010}}
+  
+@article{barrat2004architecture,
+  title={The architecture of complex weighted networks},
+  author={Barrat, Alain and Barthelemy, Marc and Pastor-Satorras, Romualdo and Vespignani, Alessandro},
+  journal={Proceedings of the National Academy of Sciences of the United States of America},
+  volume={101},
+  number={11},
+  pages={3747--3752},
+  year={2004},
+  publisher={National Acad Sciences}}
+
+@article{pastor2001dynamical,
+  title={Dynamical and correlation properties of the Internet},
+  author={Pastor-Satorras, Romualdo and V{\'a}zquez, Alexei and Vespignani, Alessandro},
+  journal={Physical review letters},
+  volume={87},
+  number={25},
+  pages={258701},
+  year={2001},
+  publisher={APS}}
+
+@article{newman2002assortative,
+  title={Assortative mixing in networks},
+  author={Newman, Mark EJ},
+  journal={Physical review letters},
+  volume={89},
+  number={20},
+  pages={208701},
+  year={2002},
+  publisher={APS}}
+
+@article{maslov2002specificity,
+  title={Specificity and stability in topology of protein networks},
+  author={Maslov, Sergei and Sneppen, Kim},
+  journal={Science},
+  volume={296},
+  number={5569},
+  pages={910--913},
+  year={2002},
+  publisher={American Association for the Advancement of Science}}
+
+@inproceedings{kalavri2016like,
+  title={Like a pack of wolves: Community structure of web trackers},
+  author={Kalavri, Vasiliki and Blackburn, Jeremy and Varvello, Matteo and Papagiannaki, Konstantina},
+  booktitle={International Conference on Passive and Active Network Measurement},
+  pages={42--54},
+  year={2016},
+  organization={Springer}}
+
+@inproceedings{schelter2016tracking,
+  title={Tracking the Trackers: A Large-Scale Analysis of Embedded Web Trackers},
+  author={Schelter, Sebastian and Kunegis, J{\'e}r{\^o}me},
+  booktitle={Tenth International AAAI Conference on Web and Social Media},
+  year={2016}}
+
+@article{holland1983stochastic,
+  title={Stochastic blockmodels: First steps},
+  author={Holland, Paul W and Laskey, Kathryn Blackmond and Leinhardt, Samuel},
+  journal={Social networks},
+  volume={5},
+  number={2},
+  pages={109--137},
+  year={1983},
+  publisher={Elsevier}}
+
+@article{faust1992blockmodels,
+  title={Blockmodels: Interpretation and evaluation},
+  author={Faust, Katherine and Wasserman, Stanley},
+  journal={Social networks},
+  volume={14},
+  number={1},
+  pages={5--61},
+  year={1992},
+  publisher={Elsevier}}
+
+@article{karrer2011stochastic,
+  title={Stochastic blockmodels and community structure in networks},
+  author={Karrer, Brian and Newman, Mark EJ},
+  journal={Physical Review E},
+  volume={83},
+  number={1},
+  pages={016107},
+  year={2011},
+  publisher={APS}}
+
+@article{peixoto2012entropy,
+  title={Entropy of stochastic blockmodel ensembles},
+  author={Peixoto, Tiago P},
+  journal={Physical Review E},
+  volume={85},
+  number={5},
+  pages={056122},
+  year={2012},
+  publisher={APS}}
+
+@article{peixoto2013parsimonious,
+  title={Parsimonious module inference in large networks},
+  author={Peixoto, Tiago P},
+  journal={Physical review letters},
+  volume={110},
+  number={14},
+  pages={148701},
+  year={2013},
+  publisher={APS}}
+
+@article{peixoto2014efficient,
+  title={Efficient Monte Carlo and greedy heuristic for the inference of stochastic block models},
+  author={Peixoto, Tiago P},
+  journal={Physical Review E},
+  volume={89},
+  number={1},
+  pages={012804},
+  year={2014},
+  publisher={APS}}
+
+@article{peixoto2015model,
+  title={Model selection and hypothesis testing for large-scale network models with overlapping groups},
+  author={Peixoto, Tiago P},
+  journal={Physical Review X},
+  volume={5},
+  number={1},
+  pages={011033},
+  year={2015},
+  publisher={APS}}
+
+@article{peixoto2015inferring,
+  title={Inferring the mesoscale structure of layered, edge-valued, and time-varying networks},
+  author={Peixoto, Tiago P},
+  journal={Physical Review E},
+  volume={92},
+  number={4},
+  pages={042807},
+  year={2015},
+  publisher={APS}}
+
+@article{peixoto2014hierarchical,
+  title={Hierarchical block structures and high-resolution model selection in large networks},
+  author={Peixoto, Tiago P},
+  journal={Physical Review X},
+  volume={4},
+  number={1},
+  pages={011047},
+  year={2014},
+  publisher={APS}}
+
+@inproceedings{klimt2004introducing,
+  title={Introducing the Enron Corpus.},
+  author={Klimt, Bryan and Yang, Yiming},
+  booktitle={CEAS},
+  year={2004}}	
+
+@inproceedings{puglisi2016web,
+  title={On Web User Tracking: How Third-Party Http Requests Track Users' Browsing Patterns for Personalised Advertising},
+  author={Puglisi, Silvia and Rebollo-Monedero, David and Forn{\'e}, Jordi},
+  booktitle={2016 Mediterranean Ad Hoc Networking Workshop, Med-Hoc-Net 2016},
+  year={2016},
+  organization={IEEE}}
+
+@inproceedings{puglisi2015you,
+  title={You Never Surf Alone. Ubiquitous Tracking of Users? Browsing Habits},
+  author={Puglisi, Silvia and Rebollo-Monedero, David and Forn{\'e}, Jordi},
+  booktitle={International Workshop on Data Privacy Management},
+  pages={273--280},
+  year={2015},
+  organization={Springer}}
+
+@article{noldus2015assortativity,
+  title={Assortativity in complex networks},
+  author={Noldus, Rogier and Van Mieghem, Piet},
+  journal={Journal of Complex Networks},
+  pages={cnv005},
+  year={2015},
+  publisher={Oxford University Press}}
+  
+@misc{privacy-badger,
+	Date-Added = {2016-02-21 11:48:21 +0000},
+	Date-Modified = {2016-02-21 11:48:10 +0000},
+	Title = {Privacy Badger - https://www.eff.org/privacybadger},
+	Bdsk-Url-1 = {https://www.eff.org/privacybadger}}
+	
+@misc{lightbeam,
+	Date-Added = {2016-02-21 11:48:21 +0000},
+	Date-Modified = {2016-02-21 11:48:10 +0000},
+	Title = {Mozilla Lightbeam - https://www.mozilla.org/en-US/lightbeam/},
+	Bdsk-Url-1 = {https://www.mozilla.org/en-US/lightbeam/}}	
+	
+@misc{ghostery,
+	Date-Added = {2016-02-21 11:48:21 +0000},
+	Date-Modified = {2016-02-21 11:48:10 +0000},
+	Title = {Ghostery - https://www.ghostery.com/},
+	Bdsk-Url-1 = {https://www.ghostery.com/}}	
+	
+@misc{adblock,
+	Date-Added = {2016-02-21 11:48:21 +0000},
+	Date-Modified = {2016-02-21 11:48:10 +0000},
+	Title = {AdBLock - https://adblockplus.org/},
+	Bdsk-Url-1 = {https://adblockplus.org/}}	
+	
+@article{degeling2016your,
+  title={Your Interests According to Google-A Profile-Centered Analysis for Obfuscation of Online Tracking Profiles},
+  author={Degeling, Martin and Herrmann, Thomas},
+  journal={arXiv preprint arXiv:1601.06371},
+  year={2016}}
+
+@article{ard2013confidentiality,
+  title={Confidentiality and the Problem of Third Parties: Protecting Reader Privacy in the Age of Intermediaries},
+  author={Ard, BJ},
+  year={2013}}
+  
+@article{parra2016shall,
+  title={Shall I post this now? Optimized, delay-based privacy protection in social networks},
+  author={Parra-Arnau, Javier and M{\'a}rmol, F{\'e}lix G{\'o}mez and Rebollo-Monedero, David and Forn{\'e}, Jordi},
+  journal={Knowledge and Information Systems},
+  pages={1--33},
+  year={2016},
+  publisher={Springer}}
+  
+@article{rodriguez2015entropy,
+  title={Entropy-based privacy against profiling of user mobility},
+  author={Rodriguez-Carrion, Alicia and Rebollo-Monedero, David and Forn{\'e}, Jordi and Campo, Celeste and Garcia-Rubio, Carlos and Parra-Arnau, Javier and Das, Sajal K},
+  journal={Entropy},
+  volume={17},
+  number={6},
+  pages={3913--3946},
+  year={2015},
+  publisher={Multidisciplinary Digital Publishing Institute}}
+  
+@article{puglisi2015content,
+  title={On content-based recommendation and user privacy in social-tagging systems},
+  author={Puglisi, Silvia and Parra-Arnau, Javier and Forn{\'e}, Jordi and Rebollo-Monedero, David},
+  journal={Computer Standards \& Interfaces},
+  volume={41},
+  pages={17--27},
+  year={2015},
+  publisher={Elsevier}}
+  
+@article{parra2014measuring,
+  title={Measuring the privacy of user profiles in personalized information systems},
+  author={Parra-Arnau, Javier and Rebollo-Monedero, David and Forn{\'e}, Jordi},
+  journal={Future Generation Computer Systems},
+  volume={33},
+  pages={53--63},
+  year={2014},
+  publisher={Elsevier}}
+
+@article{parra2014optimal,
+  title={Optimal forgery and suppression of ratings for privacy enhancement in recommendation systems},
+  author={Parra-Arnau, Javier and Rebollo-Monedero, David and Forn{\'e}, Jordi},
+  journal={Entropy},
+  volume={16},
+  number={3},
+  pages={1586--1631},
+  year={2014},
+  publisher={Multidisciplinary Digital Publishing Institute}}
+  
+@article{parra2012optimal,
+  title={Optimal tag suppression for privacy protection in the semantic Web},
+  author={Parra-Arnau, Javier and Rebollo-Monedero, David and Forn{\'e}, Jordi and Mu{\~n}oz, Jose L and Esparza, Oscar},
+  journal={Data \& Knowledge Engineering},
+  volume={81},
+  pages={46--66},
+  year={2012},
+  publisher={Elsevier}}
+  
+@article{rebollo2012query,
+  title={Query profile obfuscation by means of optimal query exchange between users},
+  author={Rebollo-Monedero, David and Forne, Jordi and Domingo-Ferrer, Josep},
+  journal={IEEE Transactions on Dependable and Secure Computing},
+  volume={9},
+  number={5},
+  pages={641--654},
+  year={2012},
+  publisher={IEEE}}
+  
+@article{rebollo2010optimized,
+  title={Optimized query forgery for private information retrieval},
+  author={Rebollo-Monedero, David and Forn{\'e}, Jordi},
+  journal={IEEE Transactions on Information Theory},
+  volume={56},
+  number={9},
+  pages={4631--4642},
+  year={2010},
+  publisher={IEEE}}
+  
+@incollection{parra2012privacy,
+  title={A privacy-protecting architecture for collaborative filtering via forgery and suppression of ratings},
+  author={Parra-Arnau, Javier and Rebollo-Monedero, David and Forn{\'e}, Jordi},
+  booktitle={Data Privacy Management and Autonomous Spontaneus Security},
+  pages={42--57},
+  year={2012},
+  publisher={Springer}}
+
+@incollection{veeningen2014line,
+  title={Are On-Line Personae Really Unlinkable?},
+  author={Veeningen, Meilof and Piepoli, Antonio and Zannone, Nicola},
+  booktitle={Data Privacy Management and Autonomous Spontaneous Security},
+  pages={369--379},
+  year={2014},
+  publisher={Springer}}
+  
+@article{cranor2012can,
+  title={Can users control online behavioral advertising effectively?},
+  author={Cranor, Lorrie Faith},
+  journal={Security \& Privacy, IEEE},
+  volume={10},
+  number={2},
+  pages={93--96},
+  year={2012},
+  publisher={IEEE}}
+  
+@inproceedings{carrascal2013your,
+  title={Your browsing behavior for a big mac: Economics of personal information online},
+  author={Carrascal, Juan Pablo and Riederer, Christopher and Erramilli, Vijay and Cherubini, Mauro and de Oliveira, Rodrigo},
+  booktitle={Proceedings of the 22nd international conference on World Wide Web},
+  pages={189--200},
+  year={2013},
+  organization={International World Wide Web Conferences Steering Committee}}
+  
+@article{michael2013location,
+  title={Location and tracking of mobile devices: {\"U}berveillance stalks the streets},
+  author={Michael, Katina and Clarke, Roger},
+  journal={Computer Law \& Security Review},
+  volume={29},
+  number={3},
+  pages={216--228},
+  year={2013},
+  publisher={Elsevier}}
+  
+@article{jaynes1957information,
+  title={Information theory and statistical mechanics. II},
+  author={Jaynes, Edwin T},
+  journal={Physical review},
+  volume={108},
+  number={2},
+  pages={171},
+  year={1957},
+  publisher={APS}}
+
+@article{jaynes1982rationale,
+  title={On the rationale of maximum-entropy methods},
+  author={Jaynes, Edwin T},
+  journal={Proceedings of the IEEE},
+  volume={70},
+  number={9},
+  pages={939--952},
+  year={1982},
+  publisher={IEEE}}
+  
+@article{Parra13KDE,
+  Author        = "J. Parra-Arnau and A. Perego and E. Ferrari and J. Forn{\'e} and D. Rebollo-Monedero",
+  Title         = "Privacy-preserving enhanced collaborative tagging",
+  Journal       = J_IEEE_KDE,
+  Year          = 2013,
+  URL           = "http://dx.doi.org/10.1109/TKDE.2012.248"}
+
+@inproceedings{krishnamurthy2009privacy,
+  title={Privacy diffusion on the web: a longitudinal perspective},
+  author={Krishnamurthy, Balachander and Wills, Craig},
+  booktitle={Proceedings of the 18th international conference on World wide web},
+  pages={541--550},
+  year={2009},
+  organization={ACM}}
+  
+@inproceedings{bizer2013deployment,
+	Added-At = {2013-09-02T18:03:39.000+0200},
+	Author = {Bizer, Christian and Eckert, Kai and Meusel, Robert and M{\"u}hleisen, Hannes and Schuhmacher, Michael and V{\"o}lker, Johanna},
+	Biburl = {http://www.bibsonomy.org/bibtex/2876b8955f53e1287ee701dbfb1759831/volha.bryl},
+	Booktitle = {12th International Semantic Web Conference, 21-25 October 2013, Sydney, Australia, In-Use track},
+	Interhash = {49435e729388d552919ea2595c82f6f0},
+	Intrahash = {876b8955f53e1287ee701dbfb1759831},
+	Keywords = {lod2page},
+	Timestamp = {2013-09-02T18:03:39.000+0200},
+	Title = {Deployment of RDFa, Microdata, and Microformats on the Web -- A Quantitative Analysis},
+	Year = 2013}
+	
+@article{SciAMMag,
+	Author = {Berners-Lee, Tim and Hendler, James and Lassila, Ora.},
+	Journal = {Scientific American},
+	Pages = {28--37},
+	Title = {The semantic web.},
+	Year = 2001}
+
+@inproceedings{kapadia2007virtual,
+  title={Virtual walls: Protecting digital privacy in pervasive environments},
+  author={Kapadia, Apu and Henderson, Tristan and Fielding, Jeffrey J and Kotz, David},
+  booktitle={International Conference on Pervasive Computing},
+  pages={162--179},
+  year={2007},
+  organization={Springer}}
+
+@inproceedings{malandrino2013privacy,
+  title={Privacy awareness about information leakage: Who knows what about me?},
+  author={Malandrino, Delfina and Petta, Andrea and Scarano, Vittorio and Serra, Luigi and Spinelli, Raffaele and Krishnamurthy, Balachander},
+  booktitle={Proceedings of the 12th ACM workshop on Workshop on privacy in the electronic society},
+  pages={279--284},
+  year={2013},
+  organization={ACM}}
+
+@article{buterin2014next,
+  title={A next-generation smart contract and decentralized application platform},
+  author={Buterin, Vitalik},
+  journal={White Paper},
+  year={2014}}
+
+@article{slockit,
+  title={Decentralized autonomous organization to manage a trust},
+  author={Christop Jentzsch},
+  journal={White Paper},
+  year={2015}}
+
+@misc{back2002hashcash2,
+  title={Hashcash-a denial of service counter-measure},
+  author={Back, Adam and others},
+  year={2002}}
+
+@techreport{back2002hashcash,
+  title={Hashcash-amortizable publicly auditable cost functions},
+  author={Back, Adam},
+  year={2002},
+  institution={Tech Report, Aug}}
+
+@misc{nakamoto2008bitcoin,
+  title={Bitcoin: A peer-to-peer electronic cash system},
+  author={Nakamoto, Satoshi},
+  year={2008}}
+
+@techreport{sprankel2013technical,
+  title={Technical basis of digital currencies},
+  author={Sprankel, Simon},
+  year={2013},
+  institution={Working Paper}}
+
+@article{tschorsch2015bitcoin,
+  title={Bitcoin and Beyond: A Technical Survey on Decentralized Digital Currencies.},
+  author={Tschorsch, Florian and Scheuermann, Bj{\"o}rn},
+  journal={IACR Cryptology ePrint Archive},
+  volume={2015},
+  pages={464},
+  year={2015}}
+
+@misc{Jsonapi,
+	Date-Added = {2016-02-05 20:37:14 +0000},
+	Date-Modified = {2016-02-05 21:44:11 +0000},
+	Title = {JSONApi - http://jsonapi.org},
+	Bdsk-Url-1 = {http://jsonapi.org}}
+
+@inproceedings{kosba2016hawk,
+  title={Hawk: The blockchain model of cryptography and privacy-preserving smart contracts},
+  author={Kosba, Ahmed and Miller, Andrew and Shi, Elaine and Wen, Zikai and Papamanthou, Charalampos},
+  booktitle={Security and Privacy (SP), 2016 IEEE Symposium on},
+  pages={839--858},
+  year={2016},
+  organization={IEEE}}
+  
+@incollection{ruan2014privacy,
+  title={Privacy at the Next Level: Intel’s Enhanced Privacy Identification (EPID) Technology},
+  author={Ruan, Xiaoyu},
+  booktitle={Platform Embedded Security Technology Revealed},
+  pages={117--141},
+  year={2014},
+  publisher={Springer}}
+
+@inproceedings{hardjono2016cloud,
+  title={Cloud-Based Commissioning of Constrained Devices using Permissioned Blockchains},
+  author={Hardjono, Thomas and Smith, Ned},
+  booktitle={Proceedings of the 2nd ACM International Workshop on IoT Privacy, Trust, and Security},
+  pages={29--36},
+  year={2016},
+  organization={ACM}}
+  
+@inproceedings{zyskind2015decentralizing,
+  title={Decentralizing privacy: Using blockchain to protect personal data},
+  author={Zyskind, Guy and Nathan, Oz and others},
+  booktitle={Security and Privacy Workshops (SPW), 2015 IEEE},
+  pages={180--184},
+  year={2015},
+  organization={IEEE}}
+  
+@article{fromknecht2014decentralized,
+  title={A Decentralized Public Key Infrastructure with Identity Retention.},
+  author={Fromknecht, Conner and Velicanu, Dragos and Yakoubov, Sophia},
+  journal={IACR Cryptology ePrint Archive},
+  volume={2014},
+  pages={803},
+  year={2014}} 
+
+@inproceedings{wilson2015pretty,
+  title={From pretty good to great: enhancing PGP using Bitcoin and the blockchain},
+  author={Wilson, Duane and Ateniese, Giuseppe},
+  booktitle={International Conference on Network and System Security},
+  pages={368--375},
+  year={2015},
+  organization={Springer}}
+  
+@misc{cryptoeprint:2016:469,
+    author = {Andrew Egbert and Brad Chun and Thomas Otte},
+    title = {Identity Chains},
+    howpublished = {Cryptology ePrint Archive, Report 2016/469},
+    year = {2016},
+    note = {\url{http://eprint.iacr.org/2016/469}}}
+
+@Misc{FTE,
+  Key           = "FTE",
+  Title         = "Claudio Agosti - facebook.tracking.exposed",
+  URL           = "https://facebook.tracking.exposed/"}
+  
+@Misc{data-selfie,
+  Key = "data-selfie",
+  Title = "Data Selfie",
+  URL = "http://dataselfie.it"}}
+
+@inproceedings{zhai2016anonrep,
+  title={Anonrep: Towards tracking-resistant anonymous reputation},
+  author={Zhai, Ennan and Wolinsky, David Isaac and Chen, Ruichuan and Syta, Ewa and Teng, Chao and Ford, Bryan},
+  booktitle={13th USENIX Symposium on Networked Systems Design and Implementation (NSDI 16)},
+  pages={583--596},
+  year={2016},
+  organization={USENIX Association}}
+
+@article{noether2015ring,
+  title={Ring SIgnature Confidential Transactions for Monero.},
+  author={Noether, Shen},
+  journal={IACR Cryptology ePrint Archive},
+  volume={2015},
+  pages={1098},
+  year={2015}}
+  
+@inproceedings{pedersen1991non,
+  title={Non-interactive and information-theoretic secure verifiable secret sharing},
+  author={Pedersen, Torben Pryds},
+  booktitle={Annual International Cryptology Conference},
+  pages={129--140},
+  year={1991},
+  organization={Springer}}
+  
+@inproceedings{fujisaki2007traceable,
+  title={Traceable ring signature},
+  author={Fujisaki, Eiichiro and Suzuki, Koutarou},
+  booktitle={International Workshop on Public Key Cryptography},
+  pages={181--200},
+  year={2007},
+  organization={Springer}}
+  
+@article{van2013cryptonote,
+  title={Cryptonote v 2. 0},
+  author={van Saberhagen, Nicolas},
+  journal={HYPERLINK https://cryptonote. org/whitepaper. pdf},
+  year={2013}}
+  
+@article{hardt2012oauth,
+  title={The OAuth 2.0 authorization framework},
+  author={Hardt, Dick},
+  year={2012}}
+  
+@techreport{jones2015json,
+  title={Json web token (jwt)},
+  author={Jones, Michael and Bradley, John and Sakimura, Nat},
+  year={2015}}
+  
+@techreport{jones2014n,
+  title={N. Sakimura," JSON Web Signature (JWS)},
+  author={Jones, M and Bradley, J},
+  year={2014},
+  institution={RFC 7515, DOI 10.17487/RFC7515, May 2015,< http://www. rfc-editor. org/info/rfc7515}}
+
+@techreport{jones2015jwe,
+  title={Json web encryption (jwe)},
+  author={Jones, M and Hildebrand, J},
+  year={2015}}
+
+@inproceedings{maheswaran2013crypto,
+  title={Crypto-book: an architecture for privacy preserving online identities},
+  author={Maheswaran, John and Wolinsky, David Isaac and Ford, Bryan},
+  booktitle={Proceedings of the Twelfth ACM Workshop on Hot Topics in Networks},
+  pages={14},
+  year={2013},
+  organization={ACM}}
+  
+@inproceedings{isaakidis2016unlimitid,
+  title={UnlimitID: Privacy-preserving federated identity management using algebraic MACs},
+  author={Isaakidis, Marios and Halpin, Harry and Danezis, George},
+  booktitle={Proceedings of the 2016 ACM on Workshop on Privacy in the Electronic Society},
+  pages={139--142},
+  year={2016},
+  organization={ACM}}
+  
+@article{jones2015jwa,
+  title={JSON web algorithms (jwa)},
+  author={Jones, Michael},
+  year={2015}}
+
+@article{krawczyk1997rfc,
+  title={RFC 2104: HMAC: Keyed-hashing for message authentication},
+  author={Krawczyk, Hugo and Bellare, Mihir and Canetti, Ran},
+  year={1997},
+  publisher={IETF, February}}
+
+@misc{delicious,
+	Date-Added = {2013-09-30 11:17:44 +0000},
+	Date-Modified = {2013-10-07 15:30:49 +0000},
+	Title = {Delicious - http://www.delicious.com},
+	Bdsk-Url-1 = {http://www.delicious.com}}
+	
+@inbook{Howe06B,
+  author        = "D. C. Howe and H. Nissenbaum",
+  chapter       = "{TrackMeNot}: {R}esisting surveillance in {W}eb search",
+  title         = "Lessons from the Identity Trail: {P}rivacy, Anonymity and Identity in a Networked Society",
+  address       = "NY",
+  publisher     = PUB_Oxford,
+  pages             ="417--436",
+  year          = 2009,
+  url           = "http://mrl.nyu.edu/~dhowe/trackmenot"}
+  
+@book{recc-sys-handbook,
+	Date-Added = {2014-12-19 15:10:48 +0000},
+	Date-Modified = {2014-12-19 15:14:05 +0000},
+	Editor = {Ricci, Francesco and Rokach, Lior and Shapira, Bracha and Kantor, Paul B.},
+	Publisher = {Springer},
+	Title = {Recommender Systems Handbook},
+	Year = {2011}}
+
+@inproceedings{collfilt,
+	Author = {Ioannis Konstas and Vassilios Stathopoulos and Joemon M Jose},
+	Booktitle = {SIGIR '09 Proceedings of the 32nd international {ACM} SIGIR conference on Research and development in information retrieval.},
+	Date-Added = {2014-02-06 21:56:21 +0000},
+	Date-Modified = {2014-02-06 22:00:19 +0000},
+	Pages = {195-202},
+	Title = {On Social Networks and Collaborative Recommendation},
+	Year = {2009}}
+
+@misc{SocialNumber,
+	Date-Added = {2014-02-05 20:37:14 +0000},
+	Date-Modified = {2014-02-05 21:44:11 +0000},
+	Title = {SocialNumber - http://www.socialnumber.com},
+	Bdsk-Url-1 = {http://www.socialnumber.com}}
+
+@inproceedings{a25,
+	Address = {San Francisco, CA, USA},
+	Author = {Breese, John S. and Heckerman, David and Kadie, Carl},
+	Booktitle = {{Proceedings of the Fourteenth conference on Uncertainty in artificial intelligence}},
+	Date-Added = {2013-11-06 14:09:26 +0000},
+	Date-Modified = {2013-11-06 14:12:29 +0000},
+	Pages = {43--52},
+	Publisher = {Morgan Kaufmann Publishers Inc.},
+	Series = {UAI'98},
+	Title = {Empirical Analysis of Predictive Algorithms for Collaborative Filtering},
+	Year = {1998}}
+
+@article{a24,
+	Author = {Howe, Daniel C and Nissenbaum, Helen},
+	Date-Added = {2013-10-08 15:31:29 +0000},
+	Date-Modified = {2013-10-08 15:50:17 +0000},
+	Journal = {On the Identity Trail: Privacy, Anonym ity and Identity in a Networked Society, Eds.},
+	Title = {Trackmenot: resisting surveillance in web search},
+	Year = {2006}}
+
+@article{a23,
+	Author = {Herlocker, L. and Konstan, J.A. and Borchers, A. and Riedl, A.},
+	Date-Added = {2013-09-30 11:21:16 +0000},
+	Date-Modified = {2013-09-30 11:22:18 +0000},
+	Journal = {Proc. 22nd Annual International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR'99},
+	Pages = {230-237},
+	Title = {An algorithmic framework for performing collaborative filtering},
+	Year = {1999}}
+
+@misc{a22,
+	Date-Added = {2013-09-30 11:19:21 +0000},
+	Date-Modified = {2013-10-07 15:31:10 +0000},
+	Title = {Open Directory Project - http://www.dmoz.com},
+	Bdsk-Url-1 = {http://www.dmoz.com}}
+
+@misc{a21,
+	Date-Added = {2013-09-30 11:18:04 +0000},
+	Date-Modified = {2013-10-07 15:31:03 +0000},
+	Title = {The 2nd International Workshop on Information Heterogeneity and Fusion in Recommender Systems (HetRec 2001) - http://ir.ii.uam.es/hetrec2011},
+	Bdsk-Url-1 = {http://ir.ii.uam.es/hetrec2011}}
+
+@article{a19,
+	Author = {Jaynes, E.T.},
+	Date-Added = {2013-09-30 11:16:44 +0000},
+	Date-Modified = {2013-09-30 11:17:40 +0000},
+	Journal = {Proc. IEEE},
+	Number = {9},
+	Pages = {939-952},
+	Title = {On the rationale of maximum-entropy methods,},
+	Volume = {70},
+	Year = {1982}}
+
+@book{a17,
+	Author = {Baeza-Yates, R. and Ribeiro-Neto, B.},
+	Date-Added = {2013-09-30 11:14:28 +0000},
+	Date-Modified = {2013-09-30 11:15:25 +0000},
+	Publisher = {Addison Wesley},
+	Title = {Modern Information Retrieval},
+	Year = {1999}}
+
+@article{a16,
+	Author = {Bellog{\'\i}n, Alejandro and Castells, Pablo and Cantador, Iv{\'a}n},
+	Date-Added = {2013-09-30 11:11:18 +0000},
+	Date-Modified = {2013-09-30 11:12:19 +0000},
+	Journal = {Proc. 5th ACM Conference on Recommender Systems, RecSys'11},
+	Pages = {333-336},
+	Title = {Precision-oriented evaluation of recommender systems: an algorithmic comparison},
+	Year = {2011}}
+
+@article{a15,
+	Author = {Noll, Michael G. and Meinel, Christoph},
+	Date-Added = {2013-09-30 11:10:15 +0000},
+	Date-Modified = {2013-09-30 11:11:10 +0000},
+	Journal = {The Semantic Web},
+	Pages = {367-380},
+	Title = {Web search personalization via social bookmarking and tagging},
+	Year = {2007}}
+
+@article{a14,
+	Author = {Csisz{\'a}r, I. and K{\"o}rner, J.},
+	Date-Added = {2013-09-30 11:08:39 +0000},
+	Date-Modified = {2013-09-30 11:10:10 +0000},
+	Journal = {IEEE Trans. Inf. Theory},
+	Month = {May},
+	Pages = {339-348},
+	Title = {Broadcast channels with confidential messages},
+	Volume = {IT-24},
+	Year = {1978}}
+
+@manual{a13,
+	Author = {Bell System},
+	Date-Added = {2013-09-30 11:07:15 +0000},
+	Date-Modified = {2013-09-30 11:08:28 +0000},
+	Title = {The wiretap channel},
+	Year = {1975}}
+
+@article{a12,
+	Author = {Claude E., Shannon},
+	Date-Added = {2013-09-30 11:06:03 +0000},
+	Date-Modified = {2013-09-30 11:07:10 +0000},
+	Journal = {Bell system technical journal},
+	Number = {4},
+	Pages = {656-715},
+	Title = {Communication theory of secrecy systems},
+	Volume = {28},
+	Year = {1949}}
+
+@article{a05,
+	Author = {Peng, Jing and Zeng, Daniel and Zhao, Huimin and Wang, Fei-yue},
+	Date-Added = {2013-09-30 10:47:07 +0000},
+	Date-Modified = {2013-09-30 10:48:24 +0000},
+	Journal = {Proceedings of the 19th ACM international conference on Information and knowledge management},
+	Pages = {809-818},
+	Title = {Collaborative filtering in social tagging systems based on joint item-tag recommendations},
+	Year = {2010}}
+
+@article{a04,
+	Author = {Bogers,Toine and Van den Bosch, Antal},
+	Date-Added = {2013-09-30 10:41:00 +0000},
+	Date-Modified = {2013-09-30 10:45:12 +0000},
+	Journal = {ACM RecSys '09 Workshop on Recommender Systems and the Social Web},
+	Title = {Collaborative and content-based filtering for item recommendation on social bookmarking websites},
+	Year = {2009}}
+
+@article{a03,
+	Author = {Bellog{\'\i}n, Alejandro and Cantador, Iv{\'a}n and Castells, Pablo},
+	Date-Added = {2013-09-30 10:10:11 +0000},
+	Date-Modified = {2013-09-30 10:46:39 +0000},
+	Journal = {Information Sciences},
+	Title = {A comparative study of heterogeneous item recommendations in social systems},
+	Year = {2012}}
+
+@article{a02,
+	Author = {Cantador, Iv{\'a}n and Bellog{\'\i}n, Alejandro and Vallet, David},
+	Date-Added = {2013-09-30 09:49:53 +0000},
+	Date-Modified = {2014-03-09 19:07:07 +0000},
+	Journal = {Proceedings of the fourth ACM conference on Recommender systems.},
+	Month = {September},
+	Pages = {237-240},
+	Title = {Content-based recommendation in social tagging systems},
+	Year = {2010}}
+
+@article{a01,
+	Author = {Halpin, Harry and Robu, Valentin and Shepherd, Valentin},
+	Date-Added = {2013-09-30 09:43:56 +0000},
+	Date-Modified = {2013-09-30 10:45:48 +0000},
+	Journal = {Proceedings of the 16th international conference on World Wide Web},
+	Month = {May},
+	Pages = {211-220},
+	Title = {The complex dynamics of collaborative tagging},
+	Year = {2007}}
+	
+@phdthesis{Parra13PhD,
+  author        = "J. Parra-Arnau",
+  title         = "Privacy Protection of User Profiles in Personalized Information Systems",
+  school        = ORG_UPC,
+  month         = dec,
+  year          = 2013,
+  url              = "https://sites.google.com/site/javierparraarnau/publications/JParra-Arnau-PhDThesis.pdf"}
+
+@book{Cover06B,
+  author        = "T. M. Cover and J. A. Thomas",
+  title         = "Elements of Information Theory",
+  edition       = "Second",
+  publisher     = "Wiley",
+  address       = "New York",
+  year          = 2006}
+  
+@article{Jaynes57PRS1,
+  author        = "E. T. Jaynes",
+  title         = "Information Theory and Statistical Mechanics",
+  journal       = J_PRS2,
+  volume        = 106,
+  number        = 4,
+  year          = 1957,
+  pages         = "620--630"}
+
+@article{Jaynes57PRS2,
+  author        = "E. T. Jaynes",
+  title         = "Information Theory and Statistical Mechanics {II}",
+  journal       = J_PRS2,
+  volume        = 108,
+  number        = 2,
+  year          = 1957,
+  pages         = "171--190"}
+
+@article{Jaynes82P,
+  author        = "E. T. Jaynes",
+  title         = "On the Rationale of Maximum-Entropy Methods",
+  journal       = IEEE_P,
+  volume        = 70,
+  number        = 9,
+  month         = sep,
+  year          = 1982,
+  pages         = "939--952"}
+  
+@inproceedings{Chow09WPES,
+ author = "R. Chow and P. Golle",
+ title = "Faking contextual data for fun, profit, and privacy",
+ booktitle = WPES_C,
+ year = 2009,
+ pages = "105--108",
+ url = "http://doi.acm.org/10.1145/1655188.1655204",
+ publisher = PUB_ACM}
+ 
+@Misc{facebook,
+  Key = "facebook",
+  Title = "Facebook",
+  URL = "https://facebook.com"}}
+  
+@Misc{youtube,
+  Key = "youtube",
+  Title = "YouTube",
+  URL = "https://youtube.com"}}
+  
+@Misc{twitter,
+  Key = "twitter",
+  Title = "Twitter",
+  URL = "https://twitter.com"}}
+  
+@Misc{instagram,
+  Key = "instagram",
+  Title = "Instagram",
+  URL = "https://instagram.com"}}
+  
+@Misc{google,
+  Key = "google",
+  Title = "Google",
+  URL = "https://google.com"}}
+  
+@Misc{flickr,
+  Key = "flickr",
+  Title = "Flickr",
+  URL = "https://Flickr.com"}}
+  
+@InProceedings{Rebollo11SecTech,
+  Author        = "D. Rebollo-Monedero and J. Parra-Arnau and J. Forn{\'e}",
+  Title         = "An information-theoretic privacy criterion for query forgery in information retrieval",
+  BookTitle     = C_SecTech,
+  Publisher     = PUB_Springer,
+  Series        = SER_Springer_LNCS,
+  Address       = "Jeju Island, South Korea",
+  Month         = "dec",
+  Year          = 2011,
+  Pages         = "146--154",
+  Note          = NOTE_Invited}
+
+@Article{Parra14FGCS,
+  Author        = "J. Parra-Arnau and D. Rebollo-Monedero and J. Forn{\'e}",
+  Title         = "Measuring the privacy of user profiles in personalized information systems",
+  Journal       = J_FGCS,
+  Volume        = 33,
+  Month         = "apr",
+  Year          = 2014,
+  Pages         = "53--63",
+  URL           = "http://dx.doi.org/10.1016/j.future.2013.01.001"}
+  
+@webpage{pagedata,
+  Title = {Pagedata},
+	Date-Added = {2015-04-12 17:24:16 +0000},
+	Date-Modified = {2015-04-12 17:25:18 +0000},
+	Lastchecked = {12/04/2015},
+	Url = {http://www.pagedatapro.com}}
+
+@webpage{tinder,
+  Title = {Tinder},
+	Date-Added = {2015-04-12 17:24:16 +0000},
+	Date-Modified = {2015-04-12 17:25:18 +0000},
+	Lastchecked = {12/04/2015},
+	Url = {http://www.tinder.com}}
+
+@webpage{happn,
+  Title = {Happn},
+	Date-Added = {2015-04-12 17:24:16 +0000},
+	Date-Modified = {2015-04-12 17:25:18 +0000},
+	Lastchecked = {12/04/2015},
+	Url = {http://www.happn.com}}
+
+@webpage{grindr,
+  Title = {Grindr},
+	Date-Added = {2015-04-12 17:24:16 +0000},
+	Date-Modified = {2015-04-12 17:25:18 +0000},
+	Lastchecked = {12/04/2015},
+	Url = {http://www.grindr.com}}
+
+@webpage{lovoo,
+  Title = {Lovoo},
+	Date-Added = {2015-04-12 17:24:16 +0000},
+	Date-Modified = {2015-04-12 17:25:18 +0000},
+	Lastchecked = {12/04/2015},
+	Url = {http://www.lovoo.com}}
+
+@webpage{Badoo,
+  Title = {Badoo},
+	Date-Added = {2015-04-12 17:24:16 +0000},
+	Date-Modified = {2015-04-12 17:25:18 +0000},
+	Lastchecked = {12/04/2015},
+	Url = {http://www.badoo.com}}
+
+@webpage{ibm2015report,
+  Title = {IBM},
+  Date-Added = {2015-04-12 17:24:16 +0000},
+  Date-Modified = {2015-04-12 17:25:18 +0000},
+  Lastchecked = {12/04/2015},
+  Url = {http://securityintelligence.com/datingapps/#.VTOjVRdN47w}}
+
+@webpage{tinderusers,
+  Title = {Tinder: Number of Users},
+  Date-Added = {2015-04-12 17:24:16 +0000},
+  Date-Modified = {2015-04-12 17:25:18 +0000},
+  Lastchecked = {12/04/2015},
+  Url = {http://www.wired.com/2014/04/tinder-valuation/}}
+
+@webpage{happnusers,
+  Title = {Happn: Number of Users},
+  Date-Added = {2015-04-12 17:24:16 +0000},
+  Date-Modified = {2015-04-12 17:25:18 +0000},
+  Lastchecked = {12/04/2015},
+  Url = {www.stuff.co.nz/technology/social-networking/66044757/happn-dating-app-seems-like-a-stalkers-dream}}
+
+@webpage{grindrusers,
+  Title = {Grindr: Number of Users},
+  Date-Added = {2015-04-12 17:24:16 +0000},
+  Date-Modified = {2015-04-12 17:25:18 +0000},
+  Lastchecked = {12/04/2015},
+  Url = {http://grindr.com/download/Grindr-Ad-Kit.pdf}}
+
+@webpage{badoousers,
+  Title = {Badoo: Number of Users},
+  Date-Added = {2015-04-12 17:24:16 +0000},
+  Date-Modified = {2015-04-12 17:25:18 +0000},
+  Lastchecked = {12/04/2015},
+  Url = {http://tech.eu/news/badoo-200-million-users/}}
+
+@webpage{lovoousers,
+  Title = {Lovoo: Number of Users},
+  Date-Added = {2015-04-12 17:24:16 +0000},
+  Date-Modified = {2015-04-12 17:25:18 +0000},
+  Lastchecked = {12/04/2015},
+  Url = {http://inside.lovoo.com/business/affiliate/}}
