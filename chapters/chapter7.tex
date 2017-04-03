@@ -1,6 +1,6 @@
-\begin{savequote}[75mm] 
-A new life awaits you in the Off-world colonies! A chance to begin again in a golden land of opportunity and adventure! 
-\qauthor{Blade Runner} 
+\begin{savequote}[75mm]
+A new life awaits you in the Off-world colonies! A chance to begin again in a golden land of opportunity and adventure!
+\qauthor{Blade Runner}
 \end{savequote}
 
 \chapter{A hypermedia model of the user on-line footprint}
@@ -51,16 +51,16 @@ We find that this model is able to express the user's on-line footprint as a col
 
 We now propose a privacy management system that would be able to give users more control over their data and desired footprint, given the hypermedia model proposed above. Our system is based on the widely adopted oauth 2.0 protocol~\cite{hardt2012oauth} for authorisation and uses signed and JSON Web Token (JWT)~\cite{jones2015json} Bearer Token as a means for requesting an access token as well as for client authentication.
 
-The abstract OAuth 2.0 flow describes the interactions between different parties (Figure: ~\ref{fig:oauth2flow}). These are: 
+The abstract OAuth 2.0 flow describes the interactions between different parties (Figure: ~\ref{fig:oauth2flow}). These are:
 
 \begin{itemize}
     \item Client
     \item Resource Owner
-    \item Authorisation Server 
+    \item Authorisation Server
     \item Resource Server
 \end{itemize}
 
-\begin{figure}  
+\begin{figure}
 \includegraphics[width=\textwidth]{figures/OAuth2Flow.png}
 \caption[OAuth 2.0 Flow.]{The abstract OAuth 2.0 flow describes the interaction between the four roles within the defined steps.
 \label{fig:oauth2flow}}
@@ -69,7 +69,7 @@ The abstract OAuth 2.0 flow describes the interactions between different parties
 The six steps in the abstract OAuth 2.0 flow are defined as follows:
 \begin{enumerate}
     \item The client sends an authorisation request to the resource owner, either directly or via the authorisation server as intermediary.
-    \item The client receives an authorisation grant. 
+    \item The client receives an authorisation grant.
     \item The client requests an access token by presenting the authorisation grant.
     \item The client is authenticated by the authorisation server which issues and access token.
     \item The client now requests the protected resource presenting the access token.
@@ -80,7 +80,7 @@ JSON Web Token (JWT)~\cite{jones2015json} is a compact, URL-safe mechanism to re
 
 \subsection{Scenario}
 
-We consider a scenario in which a user wants to log-in to a service without having to directly expose their identity, by leveraging with an Identity Provider (IdP). In this scenario we have three parties: 
+We consider a scenario in which a user wants to log-in to a service without having to directly expose their identity, by leveraging with an Identity Provider (IdP). In this scenario we have three parties:
 \begin{itemize}
     \item client
     \item service
@@ -95,7 +95,7 @@ The four steps in this OAuth flow are defined as follow (Figure: ~\ref{fig:priva
     \item The service returns access to the protected resource through its representation.
 \end{enumerate}
 
-\begin{figure}  
+\begin{figure}
 \includegraphics[width=\textwidth]{figures/PrivateFlow.png}
 \caption[Privacy Preserving OAuth Flow with JWT.]{The privacy preserving OAuth 2 flow uses JWT to transmit user information.
 \label{fig:privateflow}}
@@ -105,7 +105,7 @@ The four steps in this OAuth flow are defined as follow (Figure: ~\ref{fig:priva
 
 To create an account on the IdP we assume that as the client is initialised it will generate a number of cryptographic keys to authenticate the various user identities. The keys can be saved in a wallet and used to register identities on the IdP. A use might decide to use different keys for each service or the same key for a group of services. Note that each key doesn't correspond to a service account Id. A key is actually an account identification for the IdP which is stored and used by the client.
 
-To create an account on a service the client prepares a request for the IdP performing a set of cryptographic operations that allows the client to register an anonymous identifier for the service. To implement such algorithm we ned a 
+To create an account on a service the client prepares a request for the IdP performing a set of cryptographic operations that allows the client to register an anonymous identifier for the service. To implement such algorithm we ned a
 cryptographically secure hash function and a secure elliptic curve group. JSON Web Algorithms (JWA)~\cite{jones2015jwa}, provides Hash-based Message Authentication Codes (HMACs). HMACs enable the client to compute a MAC from a secret (the user's key) plus a cryptographic hash function. The algorithm for implementing and validating HMACs is provided in RFC 2104~\cite{krawczyk1997rfc}.
 
 \subsection{Authorisation request}
@@ -114,21 +114,19 @@ Once the client is issued a \emph{token} from the IdP it can authenticate with t
 
 \subsection{Protocol Flow}
 
-\subsection{Privacy Management}
+The protocol flow was implemented as follows:
+\begin{enumerate}
+    \item The client sends an authorisation request to the IdP.
+    \item The client receives an authorisation grant via a \emph{JWT} encoding the 0-knowledge proof to present to the SP.
+    \item The client engages the SP in a zero-knowledge proof that it holds a valid credential from the IdP.
+    \item The client is authenticated (or not).
+    \item The client can now request protected resources, or the SP can request further information from the client.
+\end{enumerate}
+
+\section{Privacy Management}
+
+The protocol flow described up to this point allows the client to granularly disclose information to the SP. More importantly in the current federated login mechanism, implemented by IdPs like Facebook, third-party apps can always request to the IdP updated information regarding the user. With the proposed mechanism, third-party apps will have to request the information to the client, that can refuse to provide them.
 
 \section{Prototype Evaluation}
 
 \section{Discussion}
-
-
-
-
-
-
-
-
-
-
-
-
-
