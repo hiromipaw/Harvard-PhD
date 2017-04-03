@@ -167,3 +167,233 @@ Where $a_x=\sum_ye_{xy}$ and $b_y=\sum_xe_{xy}$, and $e_{xy}$ is the fraction of
 
 We also generated a partition of SBM and nested SBM of the resulting graph employing an agglomerative multilevel Markov chain Monte Carlo (MCMC) algorithm as described in~\cite{peixoto2014efficient}~\cite{peixoto2013parsimonious}\cite{peixoto2012entropy}. The idea behind using SBM to describe the network structure of identified trackers is to be able to identify similar trackers and to understand if trackers belonging to the same domain or that exhibit similar behaviour can be grouped based on network properties.
 
+\setcounter{figure}{3}
+\begin{figure}
+\centerline{\epsfxsize=350pt\epsfbox{absolute-population-profile.eps}}
+\caption{Here we show an example of user profile expressed in absolute terms by counting the number of keywords in each category for a browsing session. We model user and advertising profiles as histograms of tags keywords a set of predefined categories of interest.}
+\label{abs-profile}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{\label{tableDatasetStats} Statistics regarding collected users data}
+\def\arraystretch{2.5}
+\begin{tabular}{| l | r | l | r | }
+\hline
+\multicolumn{4}{|c|}{Statistics about collected data}            \\[2.5mm] \hline
+Categories               & 16    & Users                   & 50   \\[2.5mm] \hline
+Pages per users    & 100 & Total pages      & 5000 \\[2.5mm] \hline
+\end{tabular}
+\end{table}
+
+We profiled 50 users and each user visited a series of 100 pages. In total we analysed 5000 different pages (Table: ~\ref{tableDatasetStats}). For each user we calculated how each page contributed to the user profile and also how third-party services adapted to the user profile by returning certain information in form of ads. Information that advertising services request from the visited page may vary in length and type (Listings: ~\ref{amazon}, ~\ref{krxd}, ~\ref{facebook}). Some trackers might include only the referrer \emph{url} and some devices information and user triggered parameters (Listings: ~\ref{amazon}, ~\ref{facebook}) while other services might be more lengthily in what is sent from the page (Listing: ~\ref{krxd}). Some of the information sent through third-party request cannot be categorised, since they include hashed users? ids and internal keywords and code belonging to the tracking service. Other information, like the keywords retrieved from the page (Listing: ~\ref{krxd}) can be categorised into category of interest that we assume the tracking service uses to profile the user through their interests.
+
+It is interesting to not how among the parameters sent to the third-party tracking services are not included just in page keywords regarding the topic of the page, but also specific browser information. Some of the device's preferences are included in the http headers, like the user-agent identifying the browser and the Operative System. Other information regard how long the page took to load or how soon the content was ready (Listing: ~\ref{krxd}).
+
+\lstset{caption={A third-party request to Amazon Ads Service from the nytimes.com homepage. In this example keywords are sent directly as parameters in the http request.},label=amazon}
+\begin{lstlisting}[frame=single, breaklines=true, keepspaces=true, basicstyle=\tiny, escapechar=!]
+Host: !\textcolor{red}{aax.amazon-adsystem.com}! 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:48.0) 
+Gecko/20100101 Firefox/48.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Referer: !\textcolor{red}{http://www.nytimes.com/2016/08/29/us/politics/donald-trump-congress-gop-voters.html?hp}!
+Params: 
+	action: click
+	pgtype: Homepage
+	clickSource: story-heading
+	module: first-column-region
+	region: !\textcolor{red}{top-news}!
+	WT.nav: top-news
+	_r: 0
+Cookie: ad-id=A8rOwZ2wOUK4gka1zjqyWNo; ad-privacy=0
+Connection: keep-alive
+\end{lstlisting}
+
+\lstset{caption={A third-party request to krxd.net from a nytimes.com article. This request send different information regarding the article and the browser preferences through http parameters. In addition to the keywords associated with the page, we can see how the request includes information regarding how long it took for the content to be ready \(param: t_content_ready\) as well as how much it took for the browser window to load \(param: t_window_load\).},label=krxd}
+\begin{lstlisting}[frame=single, breaklines=true, keepspaces=true, basicstyle=\tiny, escapechar=!]
+GET /pixel.gif?
+Params:
+	source: smarttag
+	_kcp_s: nytimes
+	_kcp_sc: !\textcolor{red}{us}!
+	_kcp_ssc: !\textcolor{red}{politics}!
+	_kcp_d: www.nytimes.com
+	_kpref_: http://www.nytimes.com/
+	_kua_kx_lang: en-us
+	_kua_kx_tech_browser_language: en-us
+	_kpa_page_type=article
+	_kpa_cg: us
+	_kpa_scg: politics
+	_kpa_pst: !\textcolor{red}{News}!
+	_kpa_des: !\textcolor{red}{Presidential Election of 2016}!
+	_kpa_per: !\textcolor{red}{Lujan Ben Ray}!
+	_kpa_org: !\textcolor{red}{Republican Party}!
+	_kpa_author: !\textcolor{red}{Alexander Burns and Jonathan Martin}!
+	_kpa_keywords2: !\textcolor{red}{Presidential Election of 2016 Elections House of Representatives Politics Action Committees Elections Senate Republican Party Lujan Ben Ray Issa Darrell Trump Donald}!
+	t_content_ready: !\textcolor{red}{1792}!
+	t_window_load: !\textcolor{red}{12720}!
+	... 	
+Host: !\textcolor{red}{beacon.krxd.net}!
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:48.0) Gecko/20100101 Firefox/48.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Referer: http://www.nytimes.com/2016/08/29/us/politics/donald-trump-congress-gop-voters.html?hp&action=click&pgtype=Homepage&clickSource=story-heading&module=first-column-region&region=top-news&WT.nav=top-news&_r=0
+Cookie: ServedBy=beacon-a262-dub; _kuid_=DNT
+Connection: keep-alive
+\end{lstlisting}
+
+\lstset{caption={A third-party request to facebook.com from a indipendent.co.uk article.},label=facebook}
+\begin{lstlisting}[frame=single, breaklines=true, keepspaces=true, basicstyle=\tiny, escapechar=!]
+Host: !\textcolor{red}{graph.facebook.com}!
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:48.0) Gecko/20100101 Firefox/48.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Referer: http://www.independent.co.uk/news/uk/politics/europe-could-go-down-the-drain-after-brexit-a7213976.html
+Cookie: datr=TbHdVa-yyYq_3UHH_xYR6NGb; fr=0MuKlsg7QM3etJaWt.AWVJMdGky_V9X82TY03Y-wBtGqE.BV3bFx.XF.FfD.0.0.BXw9oU.AWVWPpAJ; lu=TggRyE6qvvdCystV9I2G-b0w; _ga=GA1.2.1182524233.1441193978; sb=i14HV4ufa1WguCxPntCQagP0; c_user=100007394807876; xs=192%3AnWrYMasjLyLusw%3A2%3A1365011662%3A5189; csm=2; s=Aa4hJAWUyE0HSY_M.BXj1Ln; pl=n; p=-2; act=1472453154239%2F0; presence=EDvF3EtimeF1472453144EuserFA21B07394807876A2EstateFDutF1472453144216Et2F_5b_5d
+    Elm2FnullEuct2F1472410836BEtrFA2
+    loadA2EtwF240195646EatF1472453143045CEchFDp_5f1B07394807876F2CC
+Connection: keep-alive
+\end{lstlisting}
+
+Once we were able to collect and profile readable keywords from http requests, we wanted to know how each page contribute to \emph{how much tracking services know} about our genuine user profile by observing a series of web pages visited.
+For each users we calculated the \emph{TV}, the \emph{$GV_2$}, the \emph{$\infty$-norm} and the \emph{KL-divergence} between the partial and the genuine user profile (Figure: ~\ref{average-pop-profiles}). 
+The metrics were calculated for 80 visited, while the genuine user profile was calculated over a series of 100 visits. Therefore, in our scenario, if a tracker is present in each visited page they would \emph{know}, in the worst case scenario 80\% of the visited pages.
+Note that the \emph{TV} gives a measure of the average discrepancy between the probability distributions, while the \emph{$\infty$-norm} gives the worst case scenario. From our results we see that the worst case scenario and the average one behave similarly.
+
+We have then analysed the case of a tracker that is not present in each of the visited pages. We considered the facebook third-party requests to their services for this experiment. For each user we calculated the \emph{TV}, the \emph{$GV_2$}, the \emph{$\infty$-norm} and the \emph{KL-divergence} between the partial and the genuine user profile (Figure: ~\ref{average-facebook-pages-tracker}) for pages where the tracker is present.
+
+Finally we profiled keywords in third-party http requests to Facebook. We wanted to know what information were sent to Facebook for each page visited where the tracker was present. This is important to understand what trackers are able to capture about users preferences if they are not able to \emph{follow} the user across all the pages visited. We assumed that if a tracker is not present on a page, they have no knowledge the user visited it, therefore the partial profile as it is known to the tracker is not modified.
+
+Note also that although none of the users considered in our experiment where logged into Facebook, web pages consistently send data to their third-party tracking services. This means that users are profiled by Facebook even if these are not logged in their platform, and individuals that have decided to opt out of Facebook continue to be targeted and known to their services. This is evident by the request shown on listings~\ref{facebook}. A number of browser and device specific information is collected by the http call although the user isn't connected to Facebook. For each users we calculated the \emph{TV}, the \emph{$GV_2$}, the \emph{$\infty$-norm} and the \emph{KL-divergence} between the advertising profile $q$ and the genuine user profile $p$ (Figure: ~\ref{average-facebook-tags-tracker}) for pages where the tracker is present. We considered a shorter series of pages (15 pages) following the intuition that advertising networks might try to form a profile of the user instantly given a small number of visits to similar pages. This was consistent with previous results obtained~\cite{puglisi2015you}. 
+
+We have also analysed network structure among the discovered trackers. By using our footprint model we also considered how tracker domains are linked to pages. In this case we calculated the average degree of the neighbourhood of each node, for nodes corresponding to advertising services. Our results show how it is possible to identify known tracker domains by measuring the average degree of the neighbourhood (Table: ~\ref{tabletrackers}). 
+
+Considering the average degree of the neighbourhood of each node, we can also find out about some interesting properties of the network. We started considering the \emph{in-degree distribution} of the network (Figure: ~\ref{deg-dist}). The degree distribution $P(k)$ of a network is defined as the fraction of nodes in the network with degree $k$. It is particularly interesting to note that the network \emph{in-degree distribution} approximately follow a power law.
+
+Another interesting property to consider is \emph{assortativity}. Assortativity considers the conditional probability that a node of degree k is connected to a node with degree k'. If the probability function is increasing, the network is said to be assortative, showing that nodes of high degree are more likely to connect to nodes of high degree. If the function is decreasing the network is dissortative, meaning nodes of high degree are more likely to connect to nodes of lower degree. We found that the scalar assortative coefficient for the resulting graph is of -0.19 a value that is often found for internet systems ~\cite{noldus2015assortativity}.
+
+\begin{table}[h!]				
+\centering																												
+\begin{tabular}{ || c | c || } 
+\hline
+Tracker domain & avg $k_{nn,i}$ \\
+\hline
+\hline
+tacoda.at.atwola.com & 180.0 \\
+bcp.crwdcntrl.net & 180.0 \\
+match.prod.bidr.io & 180.0 \\
+glitter.services.disqus.com & 180.0 \\
+ad.afy11.net & 180.0 \\
+idsync.rlcdn.com &180.0 \\
+mpp.vindicosuite.com & 180.0 \\
+aka-cdn-ns.adtechus.com & 180.0 \\
+clients6.google.com & 180.0 \\
+i.simpli.fi & 180.0 \\
+ads.p161.net' & 180.0 \\
+dis.criteo.com & 180.0 \\
+ads.stickyadstv.com & 180.0 \\
+cms.quantserve.com & 180.0 \\
+ads.yahoo.com & 129.0 \\
+graph.facebook.com & 118.0 \\
+ib.adnxs.com & 110.0 \\
+rs.gwallet.com & 108.0 \\
+bid.g.doubleclick.net & 98.333\\
+googleads4.g.doubleclick.net & 98.333\\
+\hline
+\end{tabular}
+\\[2.5pt]
+\caption{\label{tabletrackers} The table shows the top 20 identified tracker domains based on the average degree of the neighbourhood.}
+\end{table}
+
+We also generated a partition of SBM and nested SBM of the resulting graph (Figures: ~\ref{blockmodel} and ~\ref{blockstate}). Here we identified how the resulting network partitions and communities corresponds to know tracker domains. This means tracking service exhibit similar properties across the same domain and its structure can be identified through statistical inference over the graph.
+
+Furthermore we also computed page-rank algorithm among the network and identified most connected tracked domains (Figure: ~\ref{pagerank}). Again we were able to spot known tracker domains.
+
+\setcounter{figure}{4}
+\begin{figure}
+\centerline{\epsfxsize=350pt\epsfbox{deg-dist.pdf}}
+\caption{\label{deg-dist} Degree distribution for the network resulting from the footprint model of users activity. We can see how the degree distribution follows a power law.}
+\end{figure}
+
+\setcounter{figure}{5}
+\begin{figure}
+\centerline{\epsfxsize=350pt\epsfbox{blockmodel.pdf}}
+\caption{\label{blockmodel} Block-model decomposition of the network. We can see how we can identify known tracker networks, and how trackers can be grouped into communities that exhibits similar network structure. The blue squares represent the block partition of the network. While the legend is referred to the original nodes, here represented by the shapes on the border.
+}
+\end{figure}
+
+\setcounter{figure}{6}
+\begin{figure}
+\centerline{\epsfxsize=350pt\epsfbox{blockstate.pdf}}
+\caption{\label{blockstate} Blockstate representation of the network of tracking service resulting from our simulation. Here we highlight connections between known tracker networks and visited page.}
+\end{figure}
+
+\setcounter{figure}{7}
+\begin{figure}
+\centerline{\epsfxsize=350pt\epsfbox{pagerank.pdf}}
+\caption{\label{pagerank} Pagerank computed over the tracking network. Known tracker domains that are \emph{more connected} can be seen with a bigger node symbol compared to less connected ones.}
+\end{figure}
+
+\begin{figure}{8}
+\begin{center}
+\subfigure[]{
+\resizebox*{7.5cm}{!}{\includegraphics{average_1_norm.eps}}}%
+\subfigure[]{
+\resizebox*{7.5cm}{!}{\includegraphics{average_2_norm.eps}}}%
+
+
+\subfigure[]{
+\resizebox*{7.5cm}{!}{\includegraphics{average_inf_norm.eps}}}%
+\subfigure[]{
+\resizebox*{7.5cm}{!}{\includegraphics{average_kl.eps}}}%
+\caption{\label{average-pop-profiles} The figures show how each page visited contribute to the actual user profile. Please recall that we calculated the user profile at the end of the series of 100 web pages visited and we calculated the metrics for 80 visits, giving a 80\% estimation. %
+We therefore computed the \emph{TV}(a), the \emph{$GV_2$}(b), the \emph{$\infty$-norm}(c) and the \emph{KL-divergence}(d) for all pages and averaged among all users.}%
+\end{center}
+\end{figure}
+
+\begin{figure}{9}
+\begin{center}
+\subfigure[]{
+\resizebox*{7cm}{!}{\includegraphics{facebook-tracking-page-norm-1.eps}}}%
+\subfigure[]{
+\resizebox*{7cm}{!}{\includegraphics{facebook-tracking-page-norm-2.eps}}}%
+
+
+\subfigure[]{
+\resizebox*{7cm}{!}{\includegraphics{facebook-tracking-page-norm-inf.eps}}}%
+\subfigure[]{
+\resizebox*{7cm}{!}{\includegraphics{facebook-tracking-page-kl.eps}}}%
+\caption{\label{average-facebook-pages-tracker} The figure show the relation between the profile captured by third-party requests to Facebook services and the actual user profile. Please recall that we calculated the user profile at the end of the series of 100 web pages visited and we calculated the metrics for 80 visits, giving a 80\% estimation.%
+We therefore computed the \emph{TV}(a), the \emph{$GV_2$}(b), the \emph{$\infty$-norm}(c) and the \emph{KL-divergence}(d) for all pages and averaged among all users.}%
+\end{center}
+\end{figure}
+
+\begin{figure}{10}
+\begin{center}
+\subfigure[]{
+\resizebox*{7cm}{!}{\includegraphics{facebook-tracking-tags-norm-1.eps}}}%
+\subfigure[]{
+\resizebox*{7cm}{!}{\includegraphics{facebook-tracking-tags-norm-2.eps}}}%
+
+
+\subfigure[]{
+\resizebox*{7cm}{!}{\includegraphics{facebook-tracking-tags-norm-inf.eps}}}%
+\subfigure[]{
+\resizebox*{7cm}{!}{\includegraphics{facebook-tracking-tags-kl.eps}}}%
+\caption{\label{average-facebook-tags-tracker} The figure show the relation between the profile sent by third-party requests ($q_n$ with $n \in [1, N]$) to Facebook services and the actual user profile. Please recall that we calculated the user profile at the end of the series of 15 web pages visited. %
+We therefore computed the \emph{TV}(a), the \emph{$GV_2$}(b), the \emph{$\infty$-norm}(c) and the \emph{KL-divergence}(d) for all http calls and averaged among all users.}%
+\end{center}
+\end{figure}
+
+\section{Discussion}
+
+We introduced a set of metrics to show how information is sent to third-party tracking services when users surf the web. Because we considered users that were not logged into any identity account, such as Twitter, Google+ or Facebook, we show how third-party service were still able to collect valuable information. 
+We computed the set of metrics for the partial user profile at each page visited. This shows how each page contribute to the actual user profile at the end of a series of websites visited. This means that an advertising network that is present on most of the pages visited possess a large amount of information regarding users and population of users. This information finally allows networks to predict fairly quickly user's preferences and behaviour. 
+We also computed a set of network analysis on our graph model of the user online footprint. We were able to identify known trackers and isolate communities of similar trackers. This aspect is particularly interesting for the development of Privacy Enhancing Technologies for the web. Up to now, anti-tracking technologies have been built to simply stop third-party requests, alternative strategies might instead consider to send bogus information to certain over-connected tracker domains to masquerade the user real profile. At the same time a measurement of the average degree of the neighbourhood of a certain third-party domain can be used to evaluate how \emph{dangerous} this can be considered for the user's privacy.
