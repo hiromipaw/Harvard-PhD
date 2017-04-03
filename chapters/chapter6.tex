@@ -1,6 +1,6 @@
 \begin{savequote}[75mm]
-Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus vulputate egestas, eros pede varius leo.
-\qauthor{Quoteauthor Lastname}
+Cyberspace. A consensual hallucination experienced daily by billions of legitimate operators, in every nation, by children being taught mathematical concepts... A graphic representation of data abstracted from banks of every computer in the human system. Unthinkable complexity. Lines of light ranged in the nonspace of the mind, clusters and constellations of data. Like city lights, receding...
+\qauthor{ William Gibson, Neuromancer}
 \end{savequote}
 
 \chapter{An information-theoretic model for measuring the anonymity risk in time-variant user profiles}
@@ -85,9 +85,8 @@ $$\text{D}(p\|q)=\text{D}(p^*\|q)+\nabla_{p^*}\text{D}(p^*\|q)^\text{T}(p-p^*)+O
 with error precisely $\text{D}(p\|p^*)$.
 
 \begin{figure}[htb]
-\centering
-\includegraphics[scale=\FigScale]{figures/ConvProj.pdf}
-\caption{Information projection $p^*$ of a reference distribution $q$ onto a convex set~$\mathscr{P}$.}
+\includegraphics[scale=\textwidth]{figures/ConvProj.pdf}
+\caption[Information projection of a reference distribution onto a convex set]{Information projection $p^*$ of a reference distribution $q$ onto a convex set~$\mathscr{P}$.}
 \label{fig:1}
 \end{figure}
 
@@ -100,9 +99,8 @@ $$\text{D}(p\|q)\geqslant\text{D}(p\|p^*)+\text{D}(p^*\|q).$$
 This last inequality is, in fact, a known generalisation of the Pythagorean theorem for projections onto convex sets, generally involving obtuse triangles\footnote{The expression relating the gradient with a set of divergences shown here may be readily generalise to prove an analogue of the Pythagorean theorem for Bregman projections. Recall that Bregman divergences encompass both squared Euclidean distances and KL divergences as a special case. An alternative proof of the Pythagoream theorem for KL divergences, which inspired a small part of the analysis in this manuscript, can be found in \cite{cover91b}(Theor.~11.6.1).}.
 
 \begin{figure}[htb]
-\centering
-\includegraphics[scale=0.5]{figures/triplex_profiles.pdf}
-\caption{Probability simplices showing, the population distribution $q$, the user's profile $p_0$, the updated profile $p_1$.}
+\includegraphics[scale=\textwidth]{figures/triplex_profiles.pdf}
+\caption[Probability simplices]{Probability simplices showing, the population distribution $q$, the user's profile $p_0$, the updated profile $p_1$.}
 \label{fig:2-1}
 \end{figure}
 
@@ -117,9 +115,8 @@ $$\text{D}((1-\alpha)p_0+\alpha p_1\|q)$$
 in terms of the risks associated with the past and current activity, for a marginal activity increment~$\alpha$. To this end, we analyse the first argument of the KL divergence, in the form of a convex combination, through a series of quick preliminary lemmas\footnote{The mathematical proofs and results developed here may be generalised in their entirety from KL divergences to Bregman divergences, and they are loosely inspired by a fundamental Pythagorean inequality for Bregman projections on convex sets.}.
 
 \begin{figure}[htb]
-\centering
-\includegraphics[scale=0.5]{figures/triplex_alpha.pdf}
-\caption{Probability simplices showing, the population distribution $q$, the user's profile $p_0$, the updated profile $p_1$. The intermediate points show the value of $p_\alpha$ for different $\alpha$ }
+\includegraphics[scale=\textwidth]{figures/triplex_alpha.pdf}
+\caption[Probability simplices showing the updated user profile changing with $\alpha$]{Probability simplices showing, the population distribution $q$, the user's profile $p_0$, the updated profile $p_1$. The intermediate points show the value of $p_\alpha$ for different $\alpha$ }
 \label{fig:2-2}
 \end{figure}
 
@@ -193,9 +190,8 @@ In the previous section, we formulated the theoretical problem of the differenti
 We have stated in \S \ref{sec:1.4} that the KL divergence is a convex function. We now consider a scenario where a user is sharing some new information and wants to find what is their updated privacy risk.
 
 \begin{figure}[htb]
-\centering
-\includegraphics[scale=0.5]{figures/example_1_D.pdf}
-\caption{Privacy risk $D$ between a user's profile $p$ and reference distribution $q$.}
+\includegraphics[scale=\textwidth]{figures/example_1_D.pdf}
+\caption[Privacy risk between a user profile and a reference distribution]{Privacy risk $D$ between a user's profile $p$ and reference distribution $q$.}
 \label{fig:3}
 \end{figure}
 
@@ -204,23 +200,21 @@ We show how the updated privacy risk $\text{D}\left((1-\alpha)p_0+\alpha p_1\mid
 \begin{figure}[htb]
 \centering
 \includegraphics[scale=0.5]{figures/example_1_H.pdf}
-\caption{Entropy $H$ for a user's profile $p$.}
+\caption[Entropy for a given user profile]{Entropy $H$ for a user's profile $p$.}
 \label{fig:4}
 \end{figure}
 
 We now present, for a given activity $\alpha$ fixed, and given history $p_0$ the profile updates $p_1$ leading to the best and worst overall anonymity risk (\S  \ref{sec:1.6}). We illustrate this both for privacy risk based on the KL-Divergence (Figure: ~\ref{fig:5}) and for the Shannon entropy (Figure: ~\ref{fig:6}). The user and population profiles are, in this case, synthetic.
 
 \begin{figure}[htb]
-\centering
-\includegraphics[scale=0.5]{figures/example_2_D.pdf}
-\caption{Privacy risk $D$ between a user's profile $p$ and reference distribution $q$.}
+\includegraphics[scale=\textwidth]{figures/example_2_D.pdf}
+\caption[Privacy risk between a user profile and a given reference distribution]{Privacy risk $D$ between a user's profile $p$ and reference distribution $q$.}
 \label{fig:5}
 \end{figure}
 
 \begin{figure}[htb]
-\centering
-\includegraphics[scale=0.5]{figures/example_1_H.pdf}
-\caption{Entropy $H$ for a user's profile $p$.}
+\includegraphics[scale=\textwidth]{figures/example_1_H.pdf}
+\caption[Entropy for a given user profile]{Entropy $H$ for a user's profile $p$.}
 \label{fig:6}
 \end{figure}
 
@@ -233,16 +227,14 @@ The extracted dataset contained 59188 posts of 4975 timelines. We consider a ser
 We considered the privacy risk between a user's profile $p$ in the Facebook dataset and reference population distribution $q$ (Figure: ~\ref{fig:7}). Furthermore we considered the $\delta \mathcal{R} = \text{D}(p_\alpha\|q) - \text{D}(p_0\|q)$. Recall that $p_0$ is a user's profile in the Facebook dataset, built taking into consideration a long series of samples. Instead, $q$ is the reference population distribution calculated for all the posts in the dataset (Figure: ~\ref{fig:8}).
 
 \begin{figure}[htb]
-\centering
-\includegraphics[scale=0.5]{figures/experiment1.pdf}
-\caption{Privacy risk $D$ between a user's profile $p$ in the Facebook dataset and reference population distribution $q$.}
+\includegraphics[scale=\textwidth]{figures/experiment1.pdf}
+\caption[Privacy risk for a given user's profile in the Facebook dataset and a reference distribution]{Privacy risk $D$ between a user's profile $p$ in the Facebook dataset and reference population distribution $q$.}
 \label{fig:7}
 \end{figure}
 
 \begin{figure}[htb]
-\centering
-\includegraphics[scale=0.5]{figures/experiment2.pdf}
-\caption{$\delta \mathcal{R} = \text{D}(p_\alpha\|q) - \text{D}(p_0\|q)$ where $p_0$ is a user's profile in the Facebook dataset and $q$ is the reference population distribution calculated for all the posts in the dataset.}
+\includegraphics[scale=\textwidth]{figures/experiment2.pdf}
+\caption[$\delta$ risk for a user's profile in the Facebook dataset]{$\delta \mathcal{R} = \text{D}(p_\alpha\|q) - \text{D}(p_0\|q)$ where $p_0$ is a user's profile in the Facebook dataset and $q$ is the reference population distribution calculated for all the posts in the dataset.}
 \label{fig:8}
 \end{figure}
 

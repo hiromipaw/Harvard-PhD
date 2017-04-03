@@ -105,7 +105,7 @@ The four steps in this OAuth flow are defined as follow (Figure: ~\ref{fig:priva
 
 To create an account on the IdP we assume that as the client is initialised it will generate a number of cryptographic keys to authenticate the various user identities. The keys can be saved in a wallet and used to register identities on the IdP. A use might decide to use different keys for each service or the same key for a group of services. Note that each key doesn't correspond to a service account Id. A key is actually an account identification for the IdP which is stored and used by the client.
 
-To create an account on a service the client prepares a request for the IdP performing a set of cryptographic operations that allows the client to register an anonymous identifier for the service. To implement such algorithm we ned a
+To create an account on a service the client prepares a request for the IdP performing a set of cryptographic operations that allows the client to register an anonymous identifier for the service. To implement such algorithm we need a
 cryptographically secure hash function and a secure elliptic curve group. JSON Web Algorithms (JWA)~\cite{jones2015jwa}, provides Hash-based Message Authentication Codes (HMACs). HMACs enable the client to compute a MAC from a secret (the user's key) plus a cryptographic hash function. The algorithm for implementing and validating HMACs is provided in RFC 2104~\cite{krawczyk1997rfc}.
 
 \subsection{Authorisation request}
@@ -123,10 +123,29 @@ The protocol flow was implemented as follows:
     \item The client can now request protected resources, or the SP can request further information from the client.
 \end{enumerate}
 
+-- begin comments --
+
+JWT implementation.
+Which fields are used, how.
+Which fields are transmitted in third-party authentication mechanism w/ facebook? How would this change?
+How would this affect the information shared from the client?
+Also with the current model third-party apps might request access to all entities the user has created or has interacted with (Posts, pages liked) now the user might instead share only a profile that has been sanitised before hand ---> Tag forgery/Tag suppression/ Share a uniform profile/ no preferences expressed.
+
+-- end comments --
+
 \section{Privacy Management}
 
-The protocol flow described up to this point allows the client to granularly disclose information to the SP. More importantly in the current federated login mechanism, implemented by IdPs like Facebook, third-party apps can always request to the IdP updated information regarding the user. With the proposed mechanism, third-party apps will have to request the information to the client, that can refuse to provide them.
+The protocol flow described up to this point allows the client to granularly disclose information to the SP. More importantly in the current federated login mechanism, implemented by IdPs like Facebook, third-party apps can always request to the IdP updated information regarding the user. With the proposed mechanism, third-party apps will have to request the information to the client, that can refuse to provide them or can provide different values depending on the context.
+
+-- begin comments --
+
+Properties of the protocol. Unlinkability ... what else?
+Can be used in anonymous communication systems preserving user anonymity while at the same time preventing 
+
+-- end comments --
 
 \section{Prototype Evaluation}
+
+Ruby implementation of oauth2 with JWT.
 
 \section{Discussion}

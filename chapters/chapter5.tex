@@ -133,7 +133,7 @@ When a user visits a web page, the browser sends an http request to the server t
 \setcounter{figure}{1}
 \begin{figure}
 \centerline{\epsfxsize=350pt\epsfbox{figures/tracker-request.png}}
-\caption{Trackers on web pages make third-party http requests to advertising services. These return ads content tailored to the user web history or expressed preferences.}
+\caption[Structure of a tracker request]{Trackers on web pages make third-party http requests to advertising services. These return ads content tailored to the user web history or expressed preferences.}
 \label{third-party}
 \end{figure}
 
@@ -142,7 +142,7 @@ When a third-party request is performed by the visited page, we store the parame
 \setcounter{figure}{2}
 \begin{figure}
 \centerline{\epsfxsize=350pt\epsfbox{figures/graph-map.png}}
-\caption{The graph shows how known trackers are connected to visited pages and therefore how these are able to follow users across different websites.}
+\caption[Connections between trackers and visited pages]{The graph shows how known trackers are connected to visited pages and therefore how these are able to follow users across different websites.}
 \label{graph-map}
 \end{figure}
 
@@ -170,7 +170,7 @@ We also generated a partition of SBM and nested SBM of the resulting graph emplo
 \setcounter{figure}{3}
 \begin{figure}
 \centerline{\epsfxsize=350pt\epsfbox{figures/absolute-population-profile.eps}}
-\caption{Here we show an example of user profile expressed in absolute terms by counting the number of keywords in each category for a browsing session. We model user and advertising profiles as histograms of tags keywords a set of predefined categories of interest.}
+\caption[A user's profile]{Here we show an example of user profile expressed in absolute terms by counting the number of keywords in each category for a browsing session. We model user and advertising profiles as histograms of tags keywords a set of predefined categories of interest.}
 \label{abs-profile}
 \end{figure}
 
@@ -319,13 +319,13 @@ Furthermore we also computed page-rank algorithm among the network and identifie
 \setcounter{figure}{4}
 \begin{figure}
 \centerline{\epsfxsize=350pt\epsfbox{figures/deg-dist.pdf}}
-\caption{\label{deg-dist} Degree distribution for the network resulting from the footprint model of users activity. We can see how the degree distribution follows a power law.}
+\caption[User activity network degree distribution]{\label{deg-dist} Degree distribution for the network resulting from the footprint model of users activity. We can see how the degree distribution follows a power law.}
 \end{figure}
 
 \setcounter{figure}{5}
 \begin{figure}
 \centerline{\epsfxsize=350pt\epsfbox{blockmodel.pdf}}
-\caption{\label{blockmodel} Block-model decomposition of the network. We can see how we can identify known tracker networks, and how trackers can be grouped into communities that exhibits similar network structure. The blue squares represent the block partition of the network. While the legend is referred to the original nodes, here represented by the shapes on the border.
+\caption[Blockmodel decomposition of the tracker network]{\label{blockmodel} Block-model decomposition of the network. We can see how we can identify known tracker networks, and how trackers can be grouped into communities that exhibits similar network structure. The blue squares represent the block partition of the network. While the legend is referred to the original nodes, here represented by the shapes on the border.
 }
 \end{figure}
 
@@ -338,7 +338,7 @@ Furthermore we also computed page-rank algorithm among the network and identifie
 \setcounter{figure}{7}
 \begin{figure}
 \centerline{\epsfxsize=350pt\epsfbox{figures/pagerank.pdf}}
-\caption{\label{pagerank} Pagerank computed over the tracking network. Known tracker domains that are \emph{more connected} can be seen with a bigger node symbol compared to less connected ones.}
+\caption[Pagerank of the trackers network]{\label{pagerank} Pagerank computed over the tracking network. Known tracker domains that are \emph{more connected} can be seen with a bigger node symbol compared to less connected ones.}
 \end{figure}
 
 \begin{figure}{8}
@@ -353,7 +353,7 @@ Furthermore we also computed page-rank algorithm among the network and identifie
 \resizebox*{7.5cm}{!}{\includegraphics{figures/average_inf_norm.eps}}}%
 \subfigure[]{
 \resizebox*{7.5cm}{!}{\includegraphics{figures/average_kl.eps}}}%
-\caption{\label{average-pop-profiles} The figures show how each page visited contribute to the actual user profile. Please recall that we calculated the user profile at the end of the series of 100 web pages visited and we calculated the metrics for 80 visits, giving a 80\% estimation. %
+\caption[Page impact on the actual user's profile]{\label{average-pop-profiles} The figures show how each page visited contribute to the actual user profile. Please recall that we calculated the user profile at the end of the series of 100 web pages visited and we calculated the metrics for 80 visits, giving a 80\% estimation. %
 We therefore computed the \emph{TV}(a), the \emph{$GV_2$}(b), the \emph{$\infty$-norm}(c) and the \emph{KL-divergence}(d) for all pages and averaged among all users.}%
 \end{center}
 \end{figure}
@@ -370,7 +370,7 @@ We therefore computed the \emph{TV}(a), the \emph{$GV_2$}(b), the \emph{$\infty$
 \resizebox*{7cm}{!}{\includegraphics{figures/facebook-tracking-page-norm-inf.eps}}}%
 \subfigure[]{
 \resizebox*{7cm}{!}{\includegraphics{figures/facebook-tracking-page-kl.eps}}}%
-\caption{\label{average-facebook-pages-tracker} The figure show the relation between the profile captured by third-party requests to Facebook services and the actual user profile. Please recall that we calculated the user profile at the end of the series of 100 web pages visited and we calculated the metrics for 80 visits, giving a 80\% estimation.%
+\caption[How Facebook track the user's profile]{\label{average-facebook-pages-tracker} The figure show the relation between the profile captured by third-party requests to Facebook services and the actual user profile. Please recall that we calculated the user profile at the end of the series of 100 web pages visited and we calculated the metrics for 80 visits, giving a 80\% estimation.%
 We therefore computed the \emph{TV}(a), the \emph{$GV_2$}(b), the \emph{$\infty$-norm}(c) and the \emph{KL-divergence}(d) for all pages and averaged among all users.}%
 \end{center}
 \end{figure}
@@ -387,7 +387,7 @@ We therefore computed the \emph{TV}(a), the \emph{$GV_2$}(b), the \emph{$\infty$
 \resizebox*{7cm}{!}{\includegraphics{figures/facebook-tracking-tags-norm-inf.eps}}}%
 \subfigure[]{
 \resizebox*{7cm}{!}{\includegraphics{figures/facebook-tracking-tags-kl.eps}}}%
-\caption{\label{average-facebook-tags-tracker} The figure show the relation between the profile sent by third-party requests ($q_n$ with $n \in [1, N]$) to Facebook services and the actual user profile. Please recall that we calculated the user profile at the end of the series of 15 web pages visited. %
+\caption[Profile third-party requests to Facebook]{\label{average-facebook-tags-tracker} The figure show the relation between the profile sent by third-party requests ($q_n$ with $n \in [1, N]$) to Facebook services and the actual user profile. Please recall that we calculated the user profile at the end of the series of 15 web pages visited. %
 We therefore computed the \emph{TV}(a), the \emph{$GV_2$}(b), the \emph{$\infty$-norm}(c) and the \emph{KL-divergence}(d) for all http calls and averaged among all users.}%
 \end{center}
 \end{figure}
