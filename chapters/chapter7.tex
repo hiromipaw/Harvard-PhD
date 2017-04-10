@@ -23,6 +23,7 @@ Users interact with web services and applications with hypermedia protocols. Eac
 
 We define a model of the user identity to describe how a privacy policy can interact with data and which data or resource a service can access. Our model is based on the assumption that user data can be represented with a hypermedia object. This specifically mean that accessing a resource at a given time or accessing identification information opens up access to data connected to that resource or that identification. We begin by defining the identity model using JSONApi~\cite{Jsonapi} a specification for exchanging data between REST interfaces defining how a client should request that resources or their representations be fetched or modified, and how a server should respond to those requests. We envision that the same format can be used on the client side to represent identities and data associated with it and on the server side to request and exchange data.
 
+\lstset{caption={Some user identity data encoded with JSONApi.},label=lst:JSONIdentity}
 \begin{lstlisting}
 {
     "data": {
@@ -62,6 +63,7 @@ WebSocket provides a mechanism for browser-based applications to establish a two
 
 The handshake initiated by a WebSocket client uses a first a connection upgrade request to a web server, like in the following example:
 
+\lstset{caption={Client handshake example in WebSocket.},label=lst:clientHandShake}
 \begin{lstlisting}
         GET /chat HTTP/1.1
         Host: server.example.com
@@ -74,7 +76,7 @@ The handshake initiated by a WebSocket client uses a first a connection upgrade 
 \end{lstlisting}
 
 The server can use a similar handshake, following the upgrade request over http:
-
+\lstset{caption={Server handshake example in WebSocket.},label=lst:serverHandShake}
 \begin{lstlisting}
         HTTP/1.1 101 Switching Protocols
         Upgrade: websocket
@@ -235,7 +237,7 @@ Furthermore the JOSE Header is a field composed of the following fields:
 To perform operation regarding Message Authentication Codes (MACs) or secure content with digital signatures, we can use JSON Web Signature (JWS) provided by JWA. The JWS cryptographic mechanisms provide integrity protection for an arbitrary sequence of octets.  
 
 A JWS object can be created following the syntax below:
-
+\lstset{caption={An example of a JWS object.},label=lst:payload}
 \begin{lstlisting}
      {
       "payload":"<payload contents>",

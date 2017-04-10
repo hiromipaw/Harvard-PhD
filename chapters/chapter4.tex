@@ -51,7 +51,7 @@ In our scenario, the signal is replaced by the user distance from the attacker a
 
 If the attacker is able to retrieve an arbitrary number of samples of the user distance, either by changing their relative location or by sampling their distance with the victim with a number of malicious mobile client infiltrating the platform, the multilateration attack can be made arbitrary precise.
 
-Our location probe method uses a simple multilateration algorithm. At the first step, locations expressed as longitude and latitude coordinates are translated to cartesian coordinates. We then calculate the estimated distance and minimise the linear norm between calculated distance and estimated distance by sensing the total error. We could have considered the total squared error between the estimated and actual distance, however in this paper we have concentrated on demonstrating that the attack is actually feasible, rather then on accuracy or performance of the algorithm (Figure: ~\ref{fig:comp_time}).
+Our location probe method uses a simple multilateration algorithm. At the first step, locations expressed as longitude and latitude coordinates are translated to cartesian coordinates. We then calculate the estimated distance and minimise the linear norm between calculated distance and estimated distance by sensing the total error. We could have considered the total squared error between the estimated and actual distance, however in this paper we have concentrated on demonstrating that the attack is actually feasible, rather then on accuracy or performance of the algorithm (Fig.~\ref{fig:comp_time}).
 
 \begin{figure}[t]
 \centering
@@ -91,7 +91,7 @@ We have analysed 250 users from a set of social proximity applications (Table: ~
   \hline
   \hline
     Tinder~\cite{tinder}		& 10 Million active~\cite{tinderusers} 	\\
-    Happn~\cite{happn} 		& ~ 700.000 ~\cite{happnusers} 				\\
+    Happn~\cite{happn} 		& ~ 700.000~\cite{happnusers} 				\\
     Lovoo~\cite{lovoo} 		& ~ 24 Million registered~\cite{lovoousers}		\\
     Grindr~\cite{grindr} 		& ~ 2,35 Million active~\cite{grindrusers}\\
     Badoo~\cite{badoo}	 	& 200 million registered~\cite{badoousers}	\\
@@ -161,11 +161,10 @@ When the victim's Facebook id is shared through the application, the attacker ca
 
 When the victim's Facebook id is not directly shared, the application still disclose some information about the victim. This information include: the user first name and a set of photos, birthdate, randomised in a range of 15 days, and the Facebook pages that both the victim and the attacker have liked.
 
-The victim preferences could then be used to identifies their Facebook profile. It is in fact estimated that Facebook posses 1.35 billion active users, of these, between 10\% and 7\% like one of the top 10 Facebook pages with most likes~\cite{pagedata}. We have collected a set of 250 Tinder users only in the city of Barcelona, of these 20\% where sharing at least one interest with the attacker profile (Figure: ~\ref{fig:connections}).
+The victim preferences could then be used to identifies their Facebook profile. It is in fact estimated that Facebook posses 1.35 billion active users, of these, between 10\% and 7\% like one of the top 10 Facebook pages with most likes~\cite{pagedata}. We have collected a set of 250 Tinder users only in the city of Barcelona, of these 20\% where sharing at least one interest with the attacker profile (Fig.~\ref{fig:connections}).
 
-Furthermore Facebook graph search allows any users to answer certain information about Facebook profiles. An example of a graph search on Facebook could be: \emph{People who like Shakira and are named "John" and like Manchester United and been born in 1979}. This will create a pool of potential candidates. The list can be reduced by using Facebook reverse graph search, i.e. search for \emph{Interests liked by people who like Shakira and are named "John" and like Manchester United and been born in 1979}.  This will instead return a list of interests that the attacker can like on Facebook. Therefore the attacker will return to query Tinder and find out if the number of interests in common with the victim has grown and which pages they now have in common. The attacker can therefore use the new information to further identify the victim profile on Facebook and potentially their friends (Figure: ~\ref{fig:fgs}).\\
-\\
-\noindent
+Furthermore Facebook graph search allows any users to answer certain information about Facebook profiles. An example of a graph search on Facebook could be: \emph{People who like Shakira and are named "John" and like Manchester United and been born in 1979}. This will create a pool of potential candidates. The list can be reduced by using Facebook reverse graph search, i.e. search for \emph{Interests liked by people who like Shakira and are named "John" and like Manchester United and been born in 1979}.  This will instead return a list of interests that the attacker can like on Facebook. Therefore the attacker will return to query Tinder and find out if the number of interests in common with the victim has grown and which pages they now have in common. The attacker can therefore use the new information to further identify the victim profile on Facebook and potentially their friends (Fig.~\ref{fig:fgs}).
+
 It is important to note that some applications might request information outside of Facebook public profile. Therefore even if the victim has tailored their privacy settings to prevent some information to be leaked, the application can be used to access data that would be otherwise be kept private.
 
 \begin{figure}[t]
