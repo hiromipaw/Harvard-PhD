@@ -8,10 +8,10 @@ I live on Earth at present, and I don’t know what I am. I know that I am not a
 \newthought{Recommendation systems} and content filtering approaches based on annotations and ratings, essentially rely on users expressing their preferences and interests through their actions, in order to provide personalised content. This activity, in which users engage collectively has been named social tagging, and it is one of the most popular in which users engage on-line, and although it has opened new possibilities for application interoperability on the semantic web, it is also posing new privacy threats. It, in fact, consists of describing on-line or offline resources by using free-text labels (i.e. tags), therefore exposing the user profile and activity to privacy attacks. Users, as a result, may wish to adopt a privacy-enhancing strategy in order not to reveal their interests completely. Tag forgery is a privacy enhancing technology consisting of generating tags for categories or resources that do not reflect the user's actual preferences. By modifying their profile, tag forgery may have a negative impact on the quality of the recommendation system, thus protecting user privacy to a certain extent but at the expenses of utility loss. The impact of tag forgery on content-based recommendation is, therefore, investigated in a real-world application scenario where different forgery strategies are evaluated, and the consequent loss in utility is measured and compared.
 
 \section{Background}
-
+\noindent
 Recommendation and information filtering systems have been developed to predict users' preferences, and eventually use the resulting predictions for a variety of services, from search engines to resources suggestions and advertisement. The system functionality relies on users implicitly or explicitly revealing their activity and personal preferences, which are ultimately used to generate personalised recommendations.
 
-Such annotation activity has been called \emph{social tagging} and it consists of users collectively assigning keywords (i.e. \emph{tags}) to real life objects and web-based resources that they find interesting. Social tagging is currently one of the most popular on-line activities. Therefore, different functionality have been implemented in various on-line services, such as Twitter~\cite{twitter}, Facebook~\cite{facebook}, YouTube~\cite{youtube}, and Instagram~\cite{instagram}, to encourage their users to tag resources collectively.
+Such annotation activity has been called \emph{social tagging} and it consists of users collectively assigning keywords (i.e. \emph{tags}) to real life objects and web-based resources that they find interesting. Social tagging is currently one of the most popular on-line activities. Therefore, different functionalities have been implemented in various on-line services, such as Twitter~\cite{twitter}, Facebook~\cite{facebook}, YouTube~\cite{youtube}, and Instagram~\cite{instagram}, to encourage their users to tag resources collectively.
 
 Tagging involves classifying resources according to one own experience. Unlike traditional methods where classification happens by choosing labels from a controlled vocabulary, in social tagging systems users freely choose and combine terms. This is usually referred to as free-form tag annotation, and the resulting emergent information organisation has been called \emph{folksonomy}.
 
@@ -24,10 +24,11 @@ Using the dataset and a measure of utility for the recommendation system, a thre
 
 To the best of our knowledge, this is the first systematic evaluation of the impact of applying perturbation-based privacy technologies on the usability of content-based recommendation systems. For this evaluation, both suitable privacy and usability metrics are required. In particular, as suggested by Parra et al.~\cite{parra2014measuring}, the KL divergence is used as privacy metric of the user profile; while the quality of the recommendation is computed following the methodology proposed by Cantador el al.~\cite{a02}.
 
-This paper is organised as follows: Section~\ref{SOA} introduces the state of the art. Section~\ref{sec:adv-model} describes the adversary model considered. Section~\ref{sec:architecture} explains a possible practical application of the proposed PET through the implementation of a communication module. Section~\ref{eval} discusses the evaluation methodology and obtained results. Section~\ref{conclusions} presents the conclusions that can be derived from the presented results, while also introducing future research lines.
+In this chapter we first describe the adversary model considered \S \ref{sec:adv-model}. Following, we explain a possible practical application for the proposed PET through the implementation of a communication module \S \ref{sec:architecture}. Therefore, we discuss the evaluation methodology and obtained results \S \ref{sec:evaluation}.
 
 section{Adversary Model}
 \label{sec:adv-model}
+\noindent
 Users tagging on-line and offline resources generate what is has been called a folksonomy, that is, a set composed by all the users that have expressed at least a tag, the tags that have been used and the items that have been described through them.
 Formally, a folksonomy $\mathcal{F}$ can be defined as a tuple $\mathcal{F}=\{\mathcal{T},\mathcal{U},\mathcal{I},\mathcal{A}\}$, where $\mathcal{T}=\{t_1,\ldots,t_L\}$ is the set of tags, or more generally tag categories, which comprise the vocabulary expressed by the folksonomy; $\mathcal{U}=\{u_1,\ldots,u_M\}$ is the set of users that have expressed at least a tag; $\mathcal{I}=\{i_1,\ldots,i_N\}$ is the set of items that have been tagged; and $\mathcal{A}=\{(u_m, t_l, i_n) \in \mathcal{U} \times \mathcal{T} \times \mathcal{I} \}$ is the set of annotations of each tag category $t_l$ to an item $i_n$ by a user $u_m$~\cite{a02}.
 
@@ -113,7 +114,7 @@ Please note that this formulation of optimised tag forgery relies on the appropr
 
 The TMN mechanism is described next. Said mechanism is a software implementation of query forgery developed as a Web browser add-on. It exploits the idea of generating false queries to a search engine in order to avoid user profiling from the latter. TMN is designed as a client-side software, specifically a browser add-on, independent from centralised infrastructure or third-party services for its operation. In the client software, a mechanism defined dynamic query lists has been implemented. Each instance of TMN is programmed to create an initial seed list of query terms that will be used to compute the first flow of decoys searches. The initial list of keywords is built from a set of RSS feeds from popular websites, mainly news sites, and it is combined with a second list of popular query words gathered from recently searched terms. When TMN is first enabled, and the user sends an actual search query, TMN intercepts the HTTP response returned from the search engine, and extracts suitable query-like terms that will be used to create the forged searches. Furthermore, the provided list of RSS feeds is queried randomly to substitute keywords in the list of seeds~\cite{a24}.
 
-Because TMN sends arbitrary keywords as search queries, the user profile resulting from this forgery strategy is completely random~\cite{Chow09WPES}. Although the user possess the ability to add or remove RSS feeds that the extension will use to construct their bogus queries, there is no possible way to control which actual keywords are chosen. Moreover, the user has no control on the random keywords that are included in the bursts of bogus queries, since these are extracted from the HTTP response received from the actual searches that the user has performed. While TMN is a technique designed to forge \emph{search queries}, we have have implemented a TMN-like agent generating bogus \emph{tags}. To initialise our TMN-like agent we have considered an initial list of seed using RSS feeds from popular news sites, the sites included were the same ones that TMN uses in its built-in list of feeds. By querying the RSS feeds, a list of keywords was extracted. Hence, using the extracted keywords a distribution of tags into eleven categories was constructed, these eleven categories corresponds to the first taxonomy levels of the Open Directory Project (ODP) classification scheme~\cite{a22}. The profile obtained with this technique has then been assumed as a reference to implement a TMN agent and is denoted by the distribution~$w$.
+Because TMN sends arbitrary keywords as search queries, the user profile resulting from this forgery strategy is completely random~\cite{Chow09WPES}. Although the user possess the ability to add or remove RSS feeds that the extension will use to construct their bogus queries, there is no possible way to control which actual keywords are chosen. Moreover, the user has no control on the random keywords that are included in the bursts of bogus queries, since these are extracted from the HTTP response received from the actual searches that the user has performed. While TMN is a technique designed to forge \emph{search queries}, we have implemented a TMN-like agent generating bogus \emph{tags}. To initialise our TMN-like agent we have considered an initial list of seed using RSS feeds from popular news sites, the sites included were the same ones that TMN uses in its built-in list of feeds. By querying the RSS feeds, a list of keywords was extracted. Hence, using the extracted keywords a distribution of tags into eleven categories was constructed, these eleven categories corresponds to the first taxonomy levels of the Open Directory Project (ODP) classification scheme~\cite{a22}. The profile obtained with this technique has then been assumed as a reference to implement a TMN agent and is denoted by the distribution~$w$.
 
 Last but not least, the proposed uniform tag forgery strategy is constructed similarly to TMN. We have in fact supposed a TMN agent that would send disguise tags created according to a uniform distribution across all categories. More specifically, in the uniform forgery strategy we have that $r = u$. Table~\ref{table:ForgeryStrategies} summarises the tag-forgery strategies considered here.
 
@@ -133,6 +134,7 @@ Uniform & $u$ (uniform distribution)\\\hline
 \end{table}
 
 \subsection{Similarity Metric}
+\noindent
 A recommender, or a recommendation system, can be described as an information filtering system that seeks to predict the rating or preference that a user would give to an item. For the purpose of our study, the idea of rating a resource or expressing a preference has been considered as the action of tagging an item. This assumption follows the idea that a user will most likely tag a resource if they happen to be interested in this resource.
 
 In the field of recommendations systems, we may distinguish three main approaches to item recommendation: content-based, user-based and collaborative filtering~\cite{a25}.
@@ -140,11 +142,11 @@ In content-based filtering items are compared based on a measure of \emph{simila
 
 In user-based filtering, users are compared with other users based again on a defined measure of similarity. It is supposed, in this case, that if two or more users have similar interests, i.e. they have been expressing preference in resources in similar categories, items that are useful for one of them can also be significant for the others.
 
-Collaborative filtering employs both a combination of the techniques described before as well as the collective actions of a group or network of users and their social relationships~\cite{collfilt}. In collaborative filtering then, not only the tags and categories that have been attached to a certain items are considered, but also what are called item-specific metadata are taken into account, these could be the item title or summary, or other content-related information~\cite{a04}.
+Collaborative filtering employs both a combination of the techniques described before as well as the collective actions of a group or network of users and their social relationships~\cite{collfilt}. In collaborative filtering then, not only the tags and categories that have been attached to certain items are considered, but also what are called item-specific metadata are taken into account, these could be the item title or summary, or other content-related information~\cite{a04}.
 
 In the coming sections, we shall use a generic content-based filtering algorithm~\cite{Lops11B} to evaluate the three variations of tag forgery described in \S \ref{sec:pets}. 
 
-We have chosen a content-based recommender because this class of algorithms models users and items as histograms of tags, which is essentially the model assumed for our adversary (\S  \ref{sec:mod-profiles}). Loosely speaking a content-based recommendation system is composed of: a proper techniques for representing the items and users' profiles, a strategy to compare items and users and produce a recommendation. The field of content recommendation is particularly vast and developed in the literature and its applications are numerous. Recommendation systems in fact span different topics in computer science, information retrieval and artificial intelligence. 
+We have chosen a content-based recommender because this class of algorithms models users and items as histograms of tags, which is essentially the model assumed for our adversary (\S  \ref{sec:mod-profiles}). Loosely speaking a content-based recommendation system is composed of: a proper technique for representing the items and users' profiles, a strategy to compare items and users and produce a recommendation. The field of content recommendation is particularly vast and developed in the literature and its applications are numerous. Recommendation systems in fact span different topics in computer science, information retrieval and artificial intelligence. 
 
 For the scope of this job we are only concentrating on applying a suitable measure of similarity within items and users' profiles. The recommendation algorithm we have implemented therefore aims to find items that are closer to a particular user profile (i.e. more similar). Three commons measurement of similarity between objects are usually considered in the literature. These are namely: Euclidean distance, Pearson correlation and Cosine similarity~\cite{recc-sys-handbook}. 
 
@@ -158,6 +160,7 @@ Hence if $p_m = (p_{m,1},\ldots,p_{m,L})$ is the profile of user $u_m$ and $ q_n
 $$ s(p_m,q_n)= \frac { \sum_{l} {p_{m,l}}\, q_{n,l} } { \sqrt{\sum_l {p_{m,l}^2} } \sqrt{ \sum_l {q_{n,l}^2 } } }.$$
 
 \subsection{Utility Metric}
+\noindent
 A utility metric is being introduced in order to evaluate the performances of the recommender and understand how these degrade with the application of a specific PET.
 Prediction accuracy is among the most debated property in the literature regarding recommendation systems. For the purpose of this work it is assumed that a system providing on average more accurate recommendation of items would be preferred by the user. Furthermore the system is evaluated considering a content retrieval scenario where a user is provided with a ranked list of N recommended items, hence performances are evaluated in terms of ranking based metrics used in the Information Retrieval field of study~\cite{a16} .
 The performance metric adopted is therefore among the most commonly used for ranked list prediction, i.e. precision at top V results. In the field of information retrieval, precision can be defined as the fraction of recommended items that are relevant for a target user~\cite{a17} . If the recommendation system evaluated retrieves V items, the previously defined ratio is precision at top V or P@V. Precision at top V is then a metric that measures how many relevant documents the user will find in the ranked list of results.
@@ -182,12 +185,13 @@ This means that according to the strategy and a forgery rate that the user has c
 
 \begin{figure}[htb]  
 \includegraphics[width=\textwidth]{figures/architecture.eps}
-\caption[Architecture.]{The proposed architecture of a communication module managing the user data flows with a social tagging platform and implementing different possible forgery algorithms.
-\label{fig:architecture}}
+\caption[Architecture.]{The proposed architecture of a communication module managing the user data flows with a social tagging platform and implementing different possible forgery algorithms.}
+\label{fig:architecture}
 \end{figure}
 
 \subsection{Further considerations}
 \label{sec:further-considerations}
+\noindent
 We would like to stress the fact that at the centre of our approach is the user. The communication module can in fact be used either to calculate a forgery strategy, or to simply warn the user when their privacy risk reaches a certain threshold. At this point the user would be presented with a possible forgery strategy and eventually are set of keywords and resources that could be used to produce bogus tags. We are aware that a mechanism generating tags could eventually produce a strategy introducing sensible topics in the user profile. We have, therefore, addressed this situation by using exclusively a curated list of websites and news portals whose content can be considered safe. In addition keywords in categories considered sensible could be excluded, either automatically or by the users. In our architecture is the user who ultimately decides whether to follow the recommendations proposed by our communication module or not. 
 
 Additionally, it is worth mentioning that, if the user decided to reduce excessively the number of categories used to produce a possible forgery strategy, their user profile would inevitably exhibits a spike in activity in the chosen categories. As a consequence, the apparent user profile would probably become more identifiable to an external attacker. We therefore believe that although the user should be allowed to tweak their forgery strategy, they should also be informed of the consequences of applying some settings instead of others to the communication module.
@@ -199,24 +203,25 @@ If aggregated, these data could reveal more over time that the same users initia
 
 \section{Evaluation}
 \label{sec:evaluation}
+\noindent
 Evaluating how a recommender system would be affected when tag forgery is applied in a real world scenario is interesting for a different range of applications. We have particularly considered both the point of view of the privacy researcher interested in understanding how user privacy can be preserved, and also the perspective of an application developer willing to provide users with accurate recommendation regarding content and resources available on their platform.
 
 \begin{figure}[htb]  
 \includegraphics[width=\textwidth]{figures/strategy.pdf}
-\caption[Experimental methodology.]{Experimental methodology.
-\label{fig:methodology}}
+\caption[Experimental methodology.]{Experimental methodology.}
+\label{fig:methodology}
 \end{figure}
 
 \begin{figure}[htb]  
 \includegraphics[width=\textwidth]{figures/Fig4b.pdf}
-\caption[Privacy Risk against forgery rate for a single user.]{Privacy risk $\mathcal{R}$ against forgery rate $\rho$ for a single user.
-\label{fig:Risk-Rho-Single}}
+\caption[Privacy Risk against forgery rate for a single user.]{Privacy risk $\mathcal{R}$ against forgery rate $\rho$ for a single user.}
+\label{fig:Risk-Rho-Single}
 \end{figure}
 
 \begin{figure}[htb]  
 \includegraphics[width=\textwidth]{figures/Fig4a.pdf}
-\caption[Privacy Risk for all users.]{Privacy risk $\mathcal{R}$ against forgery rate $\rho$ for all users. For the optimised forgery strategy the privacy risk $\mathcal{R}$ decreases with $\rho$. Naturally for $\rho = 0$ the privacy risk for all the users applying a technique is actually maximum, while it will approach 0\% when $\rho = 1 $. The graph shows how the optimised tag forgery strategy allows users to reduce more rapidly their privacy risk even for small values or $ \rho $. This confirms the intuitive assumption that applying a forgery strategy that actually modifies the user's apparent profile to increase its divergence from the average population profile, would produce the unfavourable result to make the user activity more easily recognised from a possible passive observer.
-\label{fig:Risk-Rho}}
+\caption[Privacy Risk for all users.]{Privacy risk $\mathcal{R}$ against forgery rate $\rho$ for all users. For the optimised forgery strategy the privacy risk $\mathcal{R}$ decreases with $\rho$. Naturally for $\rho = 0$ the privacy risk for all the users applying a technique is actually maximum, while it will approach 0\% when $\rho = 1 $. The graph shows how the optimised tag forgery strategy allows users to reduce more rapidly their privacy risk even for small values or $ \rho $. This confirms the intuitive assumption that applying a forgery strategy that actually modifies the user's apparent profile to increase its divergence from the average population profile, would produce the unfavourable result to make the user activity more easily recognised from a possible passive observer.}
+\label{fig:Risk-Rho}
 \end{figure}
 
 \begin{table}[htbp]
@@ -246,48 +251,42 @@ The user in this setup is presented over time with a list of top results, they w
 
 \begin{figure}[htb]  
 \includegraphics[width=\textwidth]{figures/Fig5a.pdf}
-\caption[Utility measurement P@30.]{Average value of utility P@30 calculated for different values of $\rho$.
-\label{fig:P30-Rho}}
+\caption[Utility measurement P@30.]{Average value of utility P@30 calculated for different values of $\rho$.}
+\label{fig:P30-Rho}
 \end{figure}
 
 Note that since in our experimental setting, we have split the data into a testing and a training set~\cite{a02,a03}, considering relevant only the items in the user's profile, it is not possible to evaluate items that are as yet unknown to the user but that could also be considered relevant (Fig.~\ref{fig:methodology}).  In a real world application in fact, a user could be presented with results that are unknown to them, but that do reflect their expressed interests. Therefore our estimation of precision is in fact an underestimation~\cite{a23}.
 
 \begin{figure}[htb]  
 \includegraphics[width=\textwidth]{figures/Fig5b.pdf}
-\caption[Utility measurement P@50.]{Average value of utility P@50 calculated for different values of $\rho$. It is important to note that the measure of utility averaged across the user population is affected by statistical noise creating some glitches in the function that we can see attenuated if presenting each user with a larger list of results to choose from.
-\label{fig:P50-Rho}}
+\caption[Utility measurement P@50.]{Average value of utility P@50 calculated for different values of $\rho$. It is important to note that the measure of utility averaged across the user population is affected by statistical noise creating some glitches in the function that we can see attenuated if presenting each user with a larger list of results to choose from.}
+\label{fig:P50-Rho}
 \end{figure}
 
 In order to evaluate the impact of a determined PET on the quality of the recommendation, and elaborate a study of the relationship between privacy and utility, a dataset rich in collaborative tagging information was needed.  Considering different social bookmarking platforms, Delicious was identified as a representative system. Delicious is a social bookmarking platform for web resources~\cite{delicious}. The dataset containing Delicious data was obtained from the ones publicly available at the 2nd International Workshop on Information Heterogeneity and Fusion in Recommender Systems~\cite{a21}, accessible on \emph{http://ir.ii.uam.es/hetrec2011/datasets.html}, and kindly hosted by  GroupLens research group at University of Minnesota. Furthermore, the dataset also contained category information about their items, this corresponds to the first and second taxonomy levels of the ODP classification scheme (Table ~\ref{table:DatasetStats})~\cite{a22}. The ODP project, now DMOZ, is the largest, most comprehensive human-edited directory of the Web, constructed and maintained by a passionate, global community of volunteers editors.
 
 \begin{figure}[htb]  
 \includegraphics[width=\textwidth]{figures/Fig6a.pdf}
-\caption[Privacy Risk against forgery rate.]{Privacy risk $\mathcal{R}$ against forgery rate $\rho$ for all users applying a PET considering only values of $\rho\leqslant 0.25$.
-\label{fig:Risk-Rho-Small}}
+\caption[Privacy Risk against forgery rate.]{Privacy risk $\mathcal{R}$ against forgery rate $\rho$ for all users applying a PET considering only values of $\rho\leqslant 0.25$.}
+\label{fig:Risk-Rho-Small}
 \end{figure}
 
-The chosen dataset specifically contains activity on the most popular tags in Delicious, the bookmarks tagged with those tags, and the users that tagged each bookmark. Starting from this specific set of users, the dataset also exhibits their contacts and contacts' contacts activity. Therefore it both covers a broad range of document?s topics while also presenting a dense social network ~\cite{a22}.
-
-\begin{figure}[htb]  
-\includegraphics[width=\textwidth]{figures/Fig6a.pdf}
-\caption[Privacy Risk against forgery rate for all users.]{Privacy risk $\mathcal{R}$ against forgery rate $\rho$ for all users applying a PET considering only values of $\rho\leqslant 0.25$.
-\label{fig:Risk-Rho-Small}}
-\end{figure}
+The chosen dataset specifically contains activity on the most popular tags in Delicious, the bookmarks tagged with those tags, and the users that tagged each bookmark. Starting from this specific set of users, the dataset also exhibits their contacts and contacts' contacts activity. Therefore it both covers a broad range of document's topics while also presenting a dense social network ~\cite{a22}.
 
 The experimental methodology is described also by Fig.~\ref{fig:methodology}. The dataset is randomly divided between two subsets, namely a testing and a training set. The training set contains 80\% of the items for each user, and was used to build the users' profiles. The testing set contained the remaining 20\% of the items tagged by each user, and was considered to evaluate (test) the recommender itself.
 
 \begin{figure}[htb]  
 \includegraphics[width=\textwidth]{figures/Fig6b.pdf}
-\caption[Privacy Risk against forgery rate compared to the average utility value P@50]{Privacy risk $\mathcal{R}$ against forgery rate $\rho$, compared with the average value of utility P@50, for small values of $\rho$, for all users applying a PET. It is interesting to note the ratio between the privacy risk $\mathcal{R}$ and the utility loss only for small values of $\rho$.
-\label{fig:Utility-Risk-Rho-Small}}
+\caption[Privacy Risk against forgery rate compared to the average utility value P@50]{Privacy risk $\mathcal{R}$ against forgery rate $\rho$, compared with the average value of utility P@50, for small values of $\rho$, for all users applying a PET. It is interesting to note the ratio between the privacy risk $\mathcal{R}$ and the utility loss only for small values of $\rho$.}
+\label{fig:Utility-Risk-Rho-Small}
 \end{figure}
 
 The first step of the experiment involved obtaining a metric of the recommender performance without applying any PET. The recommender would then produce estimation of how relevant an item potentially is for a user, by comparing the calculated user profile with each profile of the items in the testing set. This step would return a list of top items for each user. At this point our precision metric is calculated by verifying which of the top $V$ items have actually being tagged by each user. This process is repeated at each value of $\rho$ to understand how applying a different PET affects the prediction performances of a simple recommendation system. Please note that the three different PET have been considered independently for one another, i.e. the users would apply one of the techniques at a time and not a strategy involving a combination of the three.
 
 \begin{figure}[htb]  
 \includegraphics[width=\textwidth]{figures/Fig7.pdf}
-\caption[Increased privacy risk.]{Actual number of users increasing their privacy risk as a side effect of applying a certain strategy for a given value of $\rho$.
-\label{fig:RhoIncr}}
+\caption[Increased privacy risk.]{Actual number of users increasing their privacy risk as a side effect of applying a certain strategy for a given value of $\rho$.}
+\label{fig:RhoIncr}
 \end{figure}
 
 \subsection{Experimental results}
@@ -311,12 +310,13 @@ Fig.~\ref{fig:P50-Rho} and Fig.~\ref{fig:P30-Rho}, show the obtained utility ver
 
 In this case we noticed how a uniform forgery strategy, which generates bogus tags according to a uniform distribution across all categories, is able to better preserve utility than either optimised tag forgery or TMN, especially for bigger forgery ratios.
 
-What we found particularly relevant in our study is that for smaller values of $\rho$, hence for a forgery rate up to 0.1, corresponding to a user forging 10\% of their tags, our optimised forgery strategy shows a privacy risk reduction $\mathcal{R}$  of almost 34\% opposed to a degradation in utility of 8\%. This result is particularly representative of the intuition that it is possible to obtain a considerable increase in privacy, with a modest degradation of performance of the recommender system, or in other words a limited utility loss (Fig.~\ref{Utility-Risk-Rho-Small}).
+What we found particularly relevant in our study is that for smaller values of $\rho$, hence for a forgery rate up to 0.1, corresponding to a user forging 10\% of their tags, our optimised forgery strategy shows a privacy risk reduction $\mathcal{R}$  of almost 34\% opposed to a degradation in utility of 8\%. This result is particularly representative of the intuition that it is possible to obtain a considerable increase in privacy, with a modest degradation of performance of the recommender system, or in other words a limited utility loss (Fig.~\ref{fig:Utility-Risk-Rho-Small}).
 
 The results obtained therefore present a scenario where applying a tag forgery technique perturbs the profile observed from the outside, thus enabling users to protect their privacy, in exchange of a small semantic loss if compared to the privacy risk reduction. The performance degradation measured for the recommendation systems, is small if compared to the privacy risk reduction obtained by the user when applying the forgery strategy considered.
 
 \section{Discussion}
 \label{sec:discussion}
+\noindent
 Information filtering systems that have been developed to predict users' preferences, and eventually use the resulting predictions for different services, depend on users revealing their personal preferences by annotating items that are relevant to them.  At the same time, by revealing their preferences on-line users are exposed to possible privacy attacks and all sorts of profiling activities by legitimate and less legitimate entities.
 
 Query forgery arises, among different possible PETs, as a simple strategy in terms of infrastructure requirements, as no third parties or external entities need to be trusted by the user in order to be implemented.
@@ -331,5 +331,3 @@ Considering this unfavourable effect, we have computed the number of users that 
 Observing how the application of a PET affects utility, we have found out that especially for a small forgery rate (up to 20\%) it is possible to obtain a consistent increase in privacy, or privacy risk reduction, against a small degradation of utility. This reflects the intuition that users would be able to receive personalised services while also being able to reasonably protect their privacy and their profiles from possible attackers.
 
 This study furthermore shows in a simple experimental evaluation, of a real world application scenario, how the performances degradation of a recommendation system, is small if compared to the privacy risk reduction offered by the application of these techniques. This opens many possibilities and paths that need to be explored to better understand the relationship between privacy and utility in recommendation systems. In particular it would be interesting to explore other definitions of the metrics proposed and apply these on different class of recommendation systems.
-
-As future research lines, we shall investigate how other information filtering models are affected by the application of certain PET. Specifically we shall consider researching how different aspects of users' activities are categorised and profiled by information filtering systems, and what counter-measures can be taken to protect user privacy.

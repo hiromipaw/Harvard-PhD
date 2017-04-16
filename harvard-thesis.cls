@@ -13,6 +13,14 @@
 \ProvidesClass{harvard-thesis}[2012/04/05 v0.4 Harvard University Thesis Class]
 \LoadClass[12pt, oneside, letterpaper]{book}
 
+%HYPHENATION
+\hyphenation{Stan-ford Cat-a-lo-nia Price-wa-ter-house-Coo-pers Post-Script}
+\newcommand{\hyph}{-}
+
+\newcommand{\FigScale}{0.95}
+\newcommand{\SmallFigScale}{0.75}
+%SYMBOLS
+\newcommand{\defeq}{\stackrel{\text{def}}{=}}
 
 % Required packages
 \RequirePackage{graphicx}
@@ -25,9 +33,12 @@
     linkcolor=black,
     urlcolor=Crimson,
 }
-\usepackage{listings}
+\RequirePackage{listings}
+\RequirePackage{subfig}
 \RequirePackage[centertags]{amsmath}
 \RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathrsfs}
 \RequirePackage[numbers, comma, sort&compress]{natbib}
 \RequirePackage[small, md, sc]{titlesec}
 \RequirePackage[tight,nice]{units}

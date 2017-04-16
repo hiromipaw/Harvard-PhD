@@ -5,11 +5,11 @@ There will come a time when it isn't 'They're spying on me through my phone' any
 
 \chapter{Web tracking: how advertising networks collect users' browsing patterns}
 
-\newthought{In the early age of the Internet users enjoyed a large level of anonymity.} At the time web pages were just hypertext documents; almost no personalisation of the user experience was offered. The Web today has evolved as a world wide distributed system following specific architectural paradigms. On the web now, an enormous quantity of user generated data is shared and consumed by a network of applications and services, reasoning upon users expressed preferences and their social and physical connections. Advertising networks follow users' browsing habits while they surf the web, continuously collecting their traces and surfing patterns, since advertising sustains the business model of many websites and applications. Efficient and successful advertising relies on predicting users' actions and tastes to suggest a range of products to buy. Both service providers and advertisers try to track users' behaviour across their product network. For application providers this means tracking users' actions within their platform. For third-party services \emph{following} users, means being able to track them across different websites and applications. It is well known how, while surfing the Web, users leave traces regarding their identity in the form of activity patterns and unstructured data. These data constitute what is called the user's on-line footprint. We analyse how advertising networks build and collect users footprints and how the suggested advertising reacts to changes in the user behaviour.
+\newthought{In the early age of the Internet users enjoyed a large level of anonymity.} At the time web pages were just hypertext documents; almost no personalisation of the user experience was offered. The Web today has evolved as a world-wide distributed system following specific architectural paradigms. On the web now, an enormous quantity of user generated data is shared and consumed by a network of applications and services, reasoning upon users expressed preferences and their social and physical connections. Advertising networks follow users' browsing habits while they surf the web, continuously collecting their traces and surfing patterns, since advertising sustains the business model of many websites and applications. Efficient and successful advertising relies on predicting users' actions and tastes to suggest a range of products to buy. Both service providers and advertisers try to track users' behaviour across their product network. For application providers this means tracking users' actions within their platform. For third-party services \emph{following} users, means being able to track them across different websites and applications. It is well known how, while surfing the Web, users leave traces regarding their identity in the form of activity patterns and unstructured data. These data constitute what is called the user's on-line footprint. We analyse how advertising networks build and collect users footprints and how the suggested advertising reacts to changes in the user behaviour.
 
 \section{Background}
-
-Websites use \emph{personalisation services} to provide a tailored experience to their visitors. In order to make their product more personal to the single users they need to keep profiles of their users, collect their in page reading activities and eventually their preferences. This data is then shared to third-party services, accessed and analysed without users? direct consent. Furthermore, records of users? activities are used for different purposes, most unknown to the end user, such as marketing or to provide analytics services back to the original website or application.
+\noindent
+Websites use \emph{personalisation services} to provide a tailored experience to their visitors. In order to make their product more personal to the single users they need to keep profiles of their users, collect their in page reading activities and eventually their preferences. This data is then shared to third-party services, accessed and analysed without users' direct consent. Furthermore, records of users' activities are used for different purposes, most unknown to the end user, such as marketing or to provide analytics services back to the original website or application.
 Among the data analysed by websites are also included user preferences and social connections. These can be obtained by tracking users across different applications and sites through cookies or open web sessions. Even if the user does not accept cookies or is not logged into a service account, such as their Google, Twitter or Facebook accounts, the web page and third-party services can still try to profile them by using third-party HTTP requests, among other techniques. Within the HTTP request various selectors can be included to communicate user preferences or particular features, in the form of URL variables. Features that might be used by advertising networks and malicious trackers include personalised language or fonts settings, browser extensions, in page keywords, battery charge and status, and so on. These features are then used to identify individual users by restricting the pool of possible candidates among all the visitors in a certain time frame, location, profile of interests. Unique users can then be distinguished across multiple devices or sessions.
 
 In this chapter, have observed how users are tracked across the Web and how the displayed advertising is tailored even after they have visited a few websites with a certain interest bias. In previous work~\cite{puglisi2016web}~\cite{puglisi2015you} we analysed how third-party advertising services are able to profile users on a short series of websites visited and how these are able to \emph{follow} users while they surf the web.
@@ -29,6 +29,7 @@ Finally, we model user on-line footprints as a graph of the actions generated by
 
 \section{Modelling the user profile}
 \label{sec:mod-profile}
+\noindent
 Each time the user visits a new page, we aggregate the page keywords and build what we consider the user's profile of interests (Figure ~\ref{fig:abs-profile}). We consider a tractable model of the user profile as a probability mass function (PMF), as proposed in~\cite{Parra12DKE,Parra12TKDE}, to express how each keyword contributes to expose how many times the user has indirectly expressed a preference toward a specific category. We consider that the user expresses a preference when they visit a webpage categorised with certain keywords. This model follows the intuitive assumption that a particular category is weighted according to the number of times this has been counted in the user profile.
 
 We define the profile of a user as the PMF $p = (p_1,\ldots, p_L)$, conceptually a histogram of relative frequencies of tags across the set of tag categories $\mathcal{T}$. This means that we group tags around interests using top level categories as defined by the Open Directory Project (DMOZ)~\cite{a22}.
@@ -48,8 +49,8 @@ It is important to note that while it is safe to consider an advertising network
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/advertising-loop.png}
-\caption[Advertising services feedback loop]{Advertising services work in a feedback loop. The image illustrate how while a user surf a number of web pages, the service record their profile and adapts the returned advertising.
-\label{fig:advertising-loop}}
+\caption[Advertising services feedback loop]{Advertising services work in a feedback loop. The image illustrate how while a user surf a number of web pages, the service record their profile and adapts the returned advertising.}
+\label{fig:advertising-loop}
 \end{figure}
 
 We measure the user profile, as previously described, as a histogram of their recorded preferences, and the advertising profile as a histogram of the ads that the user has received. We have considered a set of metric to measure how the advertising network is tracking the user profile, and how a page sends information to a tracking service by transmitting a partial user profile.
@@ -113,7 +114,7 @@ One might interpret these norms as $\alpha = 1$ been an average-case metric, $\a
 
 \subsubsection{KL-Divergence}
 
-Now we propose and justify an information-theoretic quantity as a measure of how the partial profile approaches the genuine user profile: the \emph{KL-divergence}. Suppose that we might interpret the profile $\hat{p}$ observed by a third-party tracking service, as a sequence of $L$ independent, identically distributed, drawings of a user's genuine profile of interest $p$. Then in accordance with the rationale proposed in ~\cite{parra2014measuring}~\cite{rebollo2011information}, we may argue that the probability $p(\hat{p})$, of a given observed profile is related to the KL-divergence between the empirical observation $\hat{p}$ and the ideal one $p$, as follows:
+Now we propose and justify an information-theoretic quantity as a measure of how the partial profile approaches the genuine user profile: the \emph{KL-divergence}. Suppose that we might interpret the profile $\hat{p}$ observed by a third-party tracking service, as a sequence of $L$ independent, identically distributed, drawings of a user's genuine profile of interest $p$. Then in accordance with the rationale proposed in ~\cite{Parra14FGCS}~\cite{Rebollo11SecTech}, we may argue that the probability $p(\hat{p})$, of a given observed profile is related to the KL-divergence between the empirical observation $\hat{p}$ and the ideal one $p$, as follows:
 
 $$ - \frac {1}{L} \log{p(\hat{p})} \xrightarrow[L \to \infty]{} \textnormal{D}(\hat{p} \| p) $$
 
@@ -122,18 +123,19 @@ Informally this means $p(\hat{p}) \approx 2^{-\textnormal{L D}(\hat{p} \| p) } $
 Note also that $\hat{p}$ is absolutely continuous with respect to $p$: $p_l = 0 \Rightarrow \hat{p}_l = 0$. Also $\hat{p} \ll p \iff  \textnormal{D}(\hat{p} \| p) < \infty$.
 
 \section{Modelling the user's on-line footprint}
-We model the user's activity as series of events belonging to a certain identity. Each event is a document containing different information. An event correspond to an action generated by the user or one of their devices. When a user visits a website or creates a post on a blog, an event is created. We can think of an event as a hypermedia document i.e. an object possibly containing graphics, audio, video, plain text and hyperlinks. We call the hyperlinks selectors and we use these to build the connections between the user's different identities or events. Each identity can be a profile or account that the user has created onto a service or platform, or just a collection of events, revealing something about the user. With account we mean an application account or a social network account, such as their LinkedIn or Facebook unique IDs. When the user visit a web page, or uses a web or mobile application, a series of events is generated and associated with the account. Some of these events are created by direct user's actions, others are created by code triggered indirectly by the user.
+\noindent
+We model the user's activity as series of events belonging to a certain identity. Each event is a document containing different information. An event corresponds to an action generated by the user or one of their devices. When a user visits a website or creates a post on a blog, an event is created. We can think of an event as a hypermedia document i.e. an object possibly containing graphics, audio, video, plain text and hyperlinks. We call the hyperlinks selectors and we use these to build the connections between the user's different identities or events. Each identity can be a profile or account that the user has created onto a service or platform, or just a collection of events, revealing something about the user. With account we mean an application account or a social network account, such as their LinkedIn or Facebook unique IDs. When the user visit a web page, or uses a web or mobile application, a series of events is generated and associated with the account. Some of these events are created by direct user's actions, others are created by code triggered indirectly by the user.
 
 While the user visits a webpage and reads its content a series of snippets of code and client side scripts are executed and information is transmitted to the page backend or some third-party server. Among the information transferred are a number of user preferences. These can be their geographical location, battery level of their current used device, browser preferences, or just their browsing history captured up to that point. Some or all of the meta and in page keywords used to describe the page are also transferred. We build the user profile by collecting the meta keywords expressed in web pages. We consider this a subset of the possible set of preferences that third-party advertising networks might be interested in collecting.
 
 \subsection{Proposing a model of third-party requests on web pages}
-
+\noindent
 When a user visits a web page, the browser sends an HTTP request to the server to request a representation of the resource described through the URL. The server provides the resource representation in the form of a HTML document and the browser parses it. The HTML document contains a number of links to other resources, such as JavaScript code, videos, audios or images (Fig.~\ref{fig:third-party}). Some of these can be stored on the same domain as the requested page, some may be requested to third-party services. Such is the case of services like Google Analytics, share buttons from different social networks, or advertising banners. Together with the HTTP request, a number of parameters are included. These contains keywords, users? preferences, information regarding the user device and session, in page information sent to the third-party service from the website or application.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/tracker-request.png}
-\caption[Structure of a tracker request]{Trackers on web pages make third-party HTTP requests to advertising services. These return ads content tailored to the user web history or expressed preferences.
-\label{fig:third-party}}
+\caption[Structure of a tracker request]{Trackers on web pages make third-party HTTP requests to advertising services. These return ads content tailored to the user web history or expressed preferences.}
+\label{fig:third-party}
 \end{figure}
 
 
@@ -142,12 +144,12 @@ When a third-party request is performed by the visited page, we store the parame
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/graph-map.png}
-\caption[Connections between trackers and visited pages]{The graph shows how known trackers are connected to visited pages and therefore how these are able to follow users across different websites.
-\label{fig:graph-map}}
+\caption[Connections between trackers and visited pages]{The graph shows how known trackers are connected to visited pages and therefore how these are able to follow users across different websites.}
+\label{fig:graph-map}
 \end{figure}
 
 \subsection{Network structure metrics}
-
+\noindent
 We said that advertising networks or privacy attackers need to be able to \emph{follow} the user across as many websites as possible in order to profile their interests. This naturally translates onto a graph model where each page is directly connected to its active trackers (Fig.~\ref{fig:graph-map}).
 We therefore considered a set of metrics that can uncover the underlying network structure of tracking service. The first of the metrics considered is the average degree of the neighbourhood. The average degree of the neighbourhood of each node is a good indication of how many pages are connected to a certain advertising service or tracking domain.
 
@@ -159,7 +161,7 @@ Where $N(i)$ are the neighbours of node $i$ and $k_j$ is the degree of node $j$ 
 
 If a certain tracker domain is connected to the majority of the page visited by a certain user, this means that they have been able to collect the user's preferences and reading activities across a number of websites. The more a tracker domain is connected, the more the user might consider this a \emph{risk} for their privacy. We used the average degree of the neighbourhood of a tracker to rank tracker domains.
 
-To describe the resulting network structure we also calculated the average scalar assortativity coefficient~\cite{newman2002assortative} defined as:
+To describe the resulting network structure, we also calculated the average scalar assortativity coefficient~\cite{newman2002assortative} defined as:
 
 $$ r = \frac{\sum_{xy} xy(e_{xy} - a_x b_y)}{\sigma_a\sigma_b} $$
 
@@ -175,7 +177,7 @@ We also generated a partition of SBM and nested SBM of the resulting graph emplo
 
 \begin{table}[htbp]
 \centering
-\caption{Statistics regarding collected users data \label{table:DatasetStats}}
+\caption{Statistics regarding collected users data \label{table:DatasetStat}}
 \def\arraystretch{2.5}
 \begin{tabular}{| l | r | l | r | }
 \hline
@@ -185,9 +187,9 @@ Pages per users    & 100 & Total pages      & 5000 \\[2.5mm] \hline
 \end{tabular}
 \end{table}
 
-We profiled 50 users and each user visited a series of 100 pages. In total we analysed 5000 different pages (Table: ~\ref{table:DatasetStats}). For each user we calculated how each page contributed to the user profile and also how third-party services adapted to the user profile by returning certain information in form of ads. Information that advertising services request from the visited page may vary in length and type (Listings~\ref{lst:amazon},~\ref{lst:krxd},~\ref{lst:facebook}). Some trackers might include only the referrer \emph{url} and some devices information and user triggered parameters (Listings~\ref{lst:amazon},~\ref{lst:facebook}) while other services might be more lengthily in what is sent from the page (Listing~\ref{krxd}). Some of the information sent through third-party request cannot be categorised, since they include hashed users? ids and internal keywords and code belonging to the tracking service. Other information, like the keywords retrieved from the page (Listing ~\ref{lst:krxd}) can be categorised into category of interest that we assume the tracking service uses to profile the user through their interests.
+We profiled 50 users and each user visited a series of 100 pages. In total we analysed 5000 different pages (Table:~\ref{table:DatasetStat}). For each user we calculated how each page contributed to the user profile and also how third-party services adapted to the user profile by returning certain information in form of ads. Information that advertising services request from the visited page may vary in length and type (Listings~\ref{lst:amazon},~\ref{lst:krxd},~\ref{lst:facebook}). Some trackers might include only the referrer \emph{url} and some devices information and user triggered parameters (Listings~\ref{lst:amazon},~\ref{lst:facebook}) while other services might be more lengthily in what is sent from the page (Listing~\ref{lst:krxd}). Some of the information sent through third-party request cannot be categorised, since they include hashed users? ids and internal keywords and code belonging to the tracking service. Other information, like the keywords retrieved from the page (Listing~\ref{lst:krxd}) can be categorised into category of interest that we assume the tracking service uses to profile the user through their interests.
 
-It is interesting to not how among the parameters sent to the third-party tracking services are not included just in page keywords regarding the topic of the page, but also specific browser information. Some of the device's preferences are included in the HTTP headers, like the user-agent identifying the browser and the Operative System. Other information regard how long the page took to load or how soon the content was ready (Listing~\ref{krxd}).
+It is interesting to not how among the parameters sent to the third-party tracking services are not included just in page keywords regarding the topic of the page, but also specific browser information. Some of the device's preferences are included in the HTTP headers, like the user-agent identifying the browser and the Operative System. Other information regard how long the page took to load or how soon the content was ready (Listing~\ref{lst:krxd}).
 
 \lstset{caption={A third-party request to Amazon Ads Service from the nytimes.com homepage. In this example keywords are sent directly as parameters in the HTTP request.},label=lst:amazon}
 \begin{lstlisting}[frame=single, breaklines=true, keepspaces=true, basicstyle=\tiny, escapechar=!]
@@ -268,7 +270,7 @@ Note that the \emph{TV} gives a measure of the average discrepancy between the p
 
 We have then analysed the case of a tracker that is not present in each of the visited pages. We considered the facebook third-party requests to their services for this experiment. For each user we calculated the \emph{TV}, the \emph{$GV_2$}, the \emph{$\infty$-norm} and the \emph{KL-divergence} between the partial and the genuine user profile (Fig.~\ref{fig:average-facebook-pages-tracker}) for pages where the tracker is present.
 
-Finally we profiled keywords in third-party HTTP requests to Facebook. We wanted to know what information were sent to Facebook for each page visited where the tracker was present. This is important to understand what trackers are able to capture about users preferences if they are not able to \emph{follow} the user across all the pages visited. We assumed that if a tracker is not present on a page, they have no knowledge the user visited it, therefore the partial profile as it is known to the tracker is not modified.
+Finally, we profiled keywords in third-party HTTP requests to Facebook. We wanted to know what information were sent to Facebook for each page visited where the tracker was present. This is important to understand what trackers are able to capture about users’ preferences if they are not able to \emph{follow} the user across all the pages visited. We assumed that if a tracker is not present on a page, they have no knowledge the user visited it, therefore the partial profile as it is known to the tracker is not modified.
 
 Note also that although none of the users considered in our experiment where logged into Facebook, web pages consistently send data to their third-party tracking services. This means that users are profiled by Facebook even if these are not logged in their platform, and individuals that have decided to opt out of Facebook continue to be targeted and known to their services. This is evident by the request shown on listings~\ref{lst:facebook}. A number of browser and device specific information is collected by the HTTP call although the user isn't connected to Facebook. For each users we calculated the \emph{TV}, the \emph{$GV_2$}, the \emph{$\infty$-norm} and the \emph{KL-divergence} between the advertising profile $q$ and the genuine user profile $p$ (Fig.~\ref{fig:average-facebook-tags-tracker}) for pages where the tracker is present. We considered a shorter series of pages (15 pages) following the intuition that advertising networks might try to form a profile of the user instantly given a small number of visits to similar pages. This was consistent with previous results obtained~\cite{puglisi2015you}.
 
@@ -311,73 +313,94 @@ googleads4.g.doubleclick.net & 98.333\\
 \caption{\label{table:trackers} The table shows the top 20 identified tracker domains based on the average degree of the neighbourhood.}
 \end{table}
 
-We also generated a partition of SBM and nested SBM of the resulting graph (Fig.~\ref{fig:blockmodel} and ~\ref{fig:blockstate}). Here we identified how the resulting network partitions and communities corresponds to know tracker domains. This means tracking service exhibit similar properties across the same domain and its structure can be identified through statistical inference over the graph.
+We also generated a partition of SBM and nested SBM of the resulting graph (Figs.~\ref{fig:blockmodel}~\ref{fig:blockstate}). Here we identified how the resulting network partitions and communities corresponds to know tracker domains. This means tracking service exhibit similar properties across the same domain and its structure can be identified through statistical inference over the graph.
 
 Furthermore we also computed page-rank algorithm among the network and identified most connected tracked domains (Fig.~\ref{fig:pagerank}). Again we were able to spot known tracker domains.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/deg-dist.pdf}
-\caption[User activity network degree distribution]{Degree distribution for the network resulting from the footprint model of users activity. We can see how the degree distribution follows a power law.
-\label{fig:deg-dist}}
+\caption[User activity network degree distribution]{Degree distribution for the network resulting from the footprint model of users activity. We can see how the degree distribution follows a power law.}
+\label{fig:deg-dist}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/blockmodel.pdf}
-\caption[Blockmodel decomposition of the tracker network]{Block-model decomposition of the network. We can see how we can identify known tracker networks, and how trackers can be grouped into communities that exhibits similar network structure. The blue squares represent the block partition of the network. While the legend is referred to the original nodes, here represented by the shapes on the border.
-\label{fig:blockmodel}}
+\caption[Blockmodel decomposition of the tracker network]{Block-model decomposition of the network. We can see how we can identify known tracker networks, and how trackers can be grouped into communities that exhibits similar network structure. The blue squares represent the block partition of the network. While the legend is referred to the original nodes, here represented by the shapes on the border.}
+\label{fig:blockmodel}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/blockstate.pdf}
-\caption{Blockstate representation of the network of tracking service resulting from our simulation. Here we highlight connections between known tracker networks and visited page.
-\label{fig:blockstate}}
+\caption{Blockstate representation of the network of tracking service resulting from our simulation. Here we highlight connections between known tracker networks and visited page.}
+\label{fig:blockstate}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/pagerank.pdf}
-\caption[Pagerank of the trackers network]{Pagerank computed over the tracking network. Known tracker domains that are \emph{more connected} can be seen with a bigger node symbol compared to less connected ones.
-\label{fig:pagerank}}
+\caption[Pagerank of the trackers network]{Pagerank computed over the tracking network. Known tracker domains that are \emph{more connected} can be seen with a bigger node symbol compared to less connected ones.}
+\label{fig:pagerank}
 \end{figure}
 
 
-\begin{figure}
+\begin{figure*}
+\centering
+	\subfloat[]{\includegraphics[width=0.4\textwidth]{figures/average_1_norm.eps}
+	    \label{fig:average-pop-profiles:a}}
+	\hfil
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{figures/average_2_norm.eps}
+    	\label{fig:average-pop-profiles:b}}
 
-{\includegraphics[width=0.4\textwidth]{figures/average_1_norm.eps}(a)
-\includegraphics[width=0.4\textwidth]{figures/average_2_norm.eps}(b)}
-
-{\includegraphics[width=0.4\textwidth]{figures/average_inf_norm.eps}(c)
-\includegraphics[width=0.4\textwidth]{figures/average_kl.eps}(d)}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{figures/average_inf_norm.eps}
+    	\label{fig:average-pop-profiles:c}}
+    \hfil
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{figures/average_kl.eps}
+        \label{fig:average-pop-profiles:d}}
 
 \caption[Page impact on the actual user's profile]{The figures show how each page visited contribute to the actual user profile. Please recall that we calculated the user profile at the end of the series of 100 web pages visited and we calculated the metrics for 80 visits, giving a 80\% estimation. %
 We therefore computed the $\mathcal{TV}$(a), the $\mathcal{GV_2}$(b), the $\infty\mathcal{-norm}$(c) and the \emph{KL-divergence}(d) for all pages and averaged among all users.\label{fig:average-pop-profiles} }%
-\end{figure}
+\end{figure*}
 
-\begin{figure}
-{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-page-norm-1.eps}(a)
-\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-page-norm-2.eps}(b)}
-{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-page-norm-inf.eps}(c)
-\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-page-kl.eps}(d)}
+\begin{figure*}
+\centering
+	\subfloat[]{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-page-norm-1.eps}
+		\label{fig:average-facebook-pages-tracker:a}}
+	\hfil
+	\subfloat[]{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-page-norm-2.eps}
+		\label{fig:average-facebook-pages-tracker:b}}
+	
+	\subfloat[]{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-page-norm-inf.eps}
+		\label{fig:average-facebook-pages-tracker:c}}
+	\hfil
+	\subfloat[]{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-page-kl.eps}
+		\label{fig:average-facebook-pages-tracker:d}}
 
 \caption[How Facebook track the user's profile]{The figure show the relation between the profile captured by third-party requests to Facebook services and the actual user profile. Please recall that we calculated the user profile at the end of the series of 100 web pages visited and we calculated the metrics for 80 visits, giving a 80\% estimation.%
-We therefore computed the $\mathcal{TV}$(a), the $\mathcal{GV_2}$(b), the $\infty\mathcal{-norm}$(c) and the \emph{KL-divergence}(d) for all pages and averaged among all users.
-\label{fig:average-facebook-pages-tracker}}%
-\end{figure}
+We therefore computed the $\mathcal{TV}$(a), the $\mathcal{GV_2}$(b), the $\infty\mathcal{-norm}$(c) and the \emph{KL-divergence}(d) for all pages and averaged among all users.}
+\label{fig:average-facebook-pages-tracker}%
+\end{figure*}
 
-\begin{figure}
+\begin{figure*}
+\centering
+	\subfloat[]{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-tags-norm-1.eps}
+	    \label{fig:average-facebook-tags-tracker:a}}
+	\hfil
+	\subfloat[]{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-tags-norm-2.eps}
+	    \label{fig:average-facebook-tags-tracker:b}}
 
-{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-tags-norm-1.eps}(a)
-\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-tags-norm-2.eps}(b)}
-
-{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-tags-norm-inf.eps}(c)
-\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-tags-kl.eps}(d)}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-tags-norm-inf.eps}
+	    \label{fig:average-facebook-tags-tracker:c}}    
+	    
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{figures/facebook-tracking-tags-kl.eps}
+	    \label{fig:average-facebook-tags-tracker:d}}
 
 \caption[Profile third-party requests to Facebook]{The figure show the relation between the profile sent by third-party requests ($q_n$ with $n \in [1, N]$) to Facebook services and the actual user profile. Please recall that we calculated the user profile at the end of the series of 15 web pages visited. %
-We therefore computed the $\mathcal{TV}$(a), the $\mathcal{GV_2}$(b), the $\infty\mathcal-{norm}$(c) and the \emph{KL-divergence}(d) for all HTTP calls and averaged among all users.
-\label{fig:average-facebook-tags-tracker}}%
-\end{figure}
+We therefore computed the $\mathcal{TV}$(a), the $\mathcal{GV_2}$(b), the $\infty\mathcal-{norm}$(c) and the \emph{KL-divergence}(d) for all HTTP calls and averaged among all users.}
+\label{fig:average-facebook-tags-tracker}%
+\end{figure*}
 
 \section{Discussion}
-
+\noindent
 We introduced a set of metrics to show how information is sent to third-party tracking services when users surf the web. Because we considered users that were not logged into any identity account, such as Twitter, Google+ or Facebook, we show how third-party service were still able to collect valuable information.
 We computed the set of metrics for the partial user profile at each page visited. This shows how each page contribute to the actual user profile at the end of a series of websites visited. This means that an advertising network that is present on most of the pages visited possess a large amount of information regarding users and population of users. This information finally allows networks to predict fairly quickly user's preferences and behaviour.
 We also computed a set of network analysis on our graph model of the user on-line footprint. We were able to identify known trackers and isolate communities of similar trackers. This aspect is particularly interesting for the development of Privacy Enhancing Technologies for the web. Up to now, anti-tracking technologies have been built to simply stop third-party requests, alternative strategies might instead consider to send bogus information to certain over-connected tracker domains to masquerade the user real profile. At the same time a measurement of the average degree of the neighbourhood of a certain third-party domain can be used to evaluate how \emph{dangerous} this can be considered for the user's privacy.
+
