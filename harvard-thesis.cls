@@ -87,19 +87,13 @@
 
 \renewcommand\bibname{References}
 \renewcommand\listfigurename{Listing of figures}
-\raggedright
+%\raggedright
+\justify
 
 \RequirePackage{pdfsync} %do pdf synchronization [andy]
 
 \usepackage[closeFloats, noSeparatorLine]{fltpage} %use the custom modified fltpage package
 \RequirePackage{afterpage} 
-
-
-
-
-
- 
-
 
 \synctex=1 % turn synctex on automatically to sync between pdf viewer [andy]
 
@@ -122,7 +116,7 @@
 
 \usepackage{pifont}
 
-%\raggedright
+%\justify
 
 \parindent 12pt
 \RequirePackage{mathspec}
@@ -171,7 +165,7 @@ BoldItalicFont=ArnoPro-BoldItalic
 \def\degreeyear#1{\gdef\@degreeyear{#1}}
 \def\degreemonth#1{\gdef\@degreemonth{#1}}
 \def\degree#1{\gdef\@degree{#1}}
-\def\advisor#1{\gdef\@advisor{#1}}
+\def\advisors#1{\gdef\@advisors{#1}}
 \def\department#1{\gdef\@department{#1}}
 \def\field#1{\gdef\@field{#1}}
 \def\university#1{\gdef\@university{#1}}
@@ -211,7 +205,6 @@ BoldItalicFont=ArnoPro-BoldItalic
 	\pagenumbering{roman}
 	\setcounter{page}{3}
 	\pagestyle{fancy}
-	\lhead{Thesis advisor: \@advisor} \rhead{\@author}
 	\renewcommand{\headrulewidth}{0.0pt} 
 	\begin{center}
 	\vspace*{1pt}
