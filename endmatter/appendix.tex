@@ -1,6 +1,50 @@
 \chapter*{Appendix}
 
-\section*{Socialist millionaires with EdDSA}
+\section{How the Socialist millionaires protocol works}
+
+Imagine that a \emph{Prover} (the client) wants to prove the \emph{Verifier} (the server) that they know a certain pseudonym. Given a known elliptic curve $C$, a generator for such curve $G$ and the curve order the protocol can be outlined as follows:
+
+The Prover initiate the process and sends an authorisation request by transmitting the result of a certain computation:
+\begin{enumerate}
+    \item Prover picks two random numbers: $a2$ and $a3$.
+    \item Prover computes $G2a = a2 * G$ and $G3a = a3 * G$.
+    \item Prover transmits $G2a$ and $G3a$ to the Verifier.
+\end{enumerate}
+
+The Verifier received the two values initiate the authorisation process on their side:
+\begin{enumerate}
+    \item Verifier picks two random numbers: $b2$ and $b3$. 
+    \item Verifier computes $G2b = b2 * G$ and $G3b = b3 * G$.
+    \item Verifier computes $G2B = b2 * G2a$ and $G3B = b3 * G3a$.
+    \item Verifier picks random number $r$.
+    \item Verifier computes $Pb = r * G3B$ and $Qb = r * G + y * G2B$.
+    \item Verifier transmits $G2b$, $G3b$, $Pb$ and $Qb$ to Prover.
+\end{enumerate}
+
+The Prover receives the first answer from the Verifier and continues the protocol:
+\begin{enumerate}
+    \item Prover computes $G2A = a2 * G2b$ and $G3A = a3 * G3b$.
+    \item Prover picks random number $s$.
+    \item Prover computes $Pa = s * G3A$ and $Qa = s * G + x * G2A$.
+    \item Prover computes $Ra = a3 * (Qa - Qb)$.
+    \item Prover transmits $Pa$, $Qa$, $Ra$ to Verifier.
+\end{enumerate}
+
+Now the Verifier will compute the proof with the values received and ultimately transmit the results of their computation to the Prover authorising the data transfer:
+\begin{enumerate}
+    \item Verifier computes $Rb = b3 * (Qa - Qb)$.
+    \item Verifier computes $Rba = b3 * Ra$.
+    \item Verifier checks that $Rab == Pa - Pb$.
+\end{enumerate}
+
+Now the Prover will verify the result on their side by performing the following computations:
+
+\begin{enumerate}
+    \item Prover computes $Rab = a3 * Rb$.
+    \item Prover checks whether $Rab == Pa - Pb$.
+\end{enumerate}
+
+\section*{Socialist millionaires implemented with EdDSA}
 
 \lstset{caption={Socialist Millionairs Proof implemented with EdDSA.},label=lst:SMEdDSA}
 \begin{lstlisting}
@@ -172,7 +216,7 @@ else:
 print("--- %s seconds ---" % (time.time() - start_time))
 \end{lstlisting}
 
-\section*{Improved OAuth 2.0 proof with EdDSA}
+\section*{OAuth 2.0 challenge with EdDSA}
 
 \lstset{caption={Alice wants to prove their identity to Bob without revealing their pseudonym. The proof has been implemented with EdDSA.},label=lst:IdEdDSA}
 \begin{lstlisting}

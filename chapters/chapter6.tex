@@ -6,7 +6,8 @@ Cyberspace. A consensual hallucination experienced daily by billions of legitima
 \chapter{An information\hyph theoretic model for measuring the anonymity risk in time\hyph variant user profiles}
 
 \newthought{Websites and applications use personalisation services} to profile their users, collect their patterns and activities and eventually use this data to provide tailored suggestions. User preferences and social interactions are therefore aggregated and analysed. Every time a user publishes a new post or creates a link with another entity, either another user, or some online resource, new information is added to the user profile. Exposing private data does not only reveal information about single users' preferences, increasing their privacy risk, but can expose more about their network that single actors intended. This mechanism is self-evident in \emph{social networks} where users receive suggestions based on their friends' activities.
-We propose an information-theoretic approach to measure the differential update of the anonymity risk of time-varying user profiles. This expresses how privacy is affected when new content is posted and how much third-party services \emph{get to know} about the users when a new activity is shared. We use actual Facebook data to show how our model can be applied to a real-world scenario.
+
+This chapter is centred on an information-theoretic approach to measure the differential update of the anonymity risk of time-varying user profiles, continuing on previous work published in ~\cite{puglisi2017anonymity}. We are interested to measure how privacy is affected when new content is posted and how much third-party services \emph{get to know} about the users when a new activity is shared. We use actual Facebook data to show how our model can be applied to a real-world scenario.
 
 \section{Background}
 \noindent
@@ -57,7 +58,7 @@ More precisely, we propose a series of refinements of a recent information-theor
 \noindent
 In this section, we build upon a recent information-theoretic model for measuring the privacy risk incurred in the disclosure of a user's interests though online activity. Among other refinements, we incorporate an aspect of substantial practical importance in the aforementioned model, namely, the aspect of time-varying user profiles.
  
-Consider a user profile $p$, together with an average population profile $q$, both represented as histograms of relative frequencies of online activity along predefined categories of interest $i=1,\dots,m$. In the absence of a specific statistical model on the frequency distribution of user profiles, as argued extensively in~\cite{rebollo2010optimized,Rebollo11SecTech,Parra14FGCS} on the basis of Jaynes' rationale for maximum entropy methods, we assume that \emph{anonymity risk} may be adequately measured as the \emph{Kullback\hyph Leibler} (KL) \emph{divergence} $\mathrm{D}(p\|q)$ between the user profile $p$ and the population's~$q$. The idea is that user profiles become less common as they diverge from the average of the population. Precisely, we define anonymity risk as
+Consider a user profile $p$, together with an average population profile $q$, both represented as histograms of relative frequencies of online activity along predefined categories of interest $i=1,\dots,m$. In the absence of a specific statistical model on the frequency distribution of user profiles, as argued extensively in~\cite{Rebollo10IT,Rebollo11SecTech,Parra14FGCS} on the basis of Jaynes' rationale for maximum entropy methods, we assume that \emph{anonymity risk} may be adequately measured as the \emph{Kullback\hyph Leibler} (KL) \emph{divergence} $\mathrm{D}(p\|q)$ between the user profile $p$ and the population's~$q$. The idea is that user profiles become less common as they diverge from the average of the population. Precisely, we define anonymity risk as
 
 \begin{equation*}
 \mathcal{R}\defeq\mathrm{D}(p\|q)\defeq\sum_{i=1}^m p_i\log \frac{p_i}{q_i}.
@@ -208,7 +209,7 @@ Even more specifically, in the case of a delta update $p_1=\delta^i$ and uniform
 \label{sec:1-6}
 
 \noindent
-For a given activity $\alpha$ and history $p_0$, we investigate the profile updates $p_1$ leading to the best and worst overall anonymity risk $\mathrm{D}\left((1-\alpha)p_0+\alpha p_1\middle\|q\right)$. The problem of finding the best profile, yielding the smallest risk, is formally identical to that of optimal query forgery extensively analysed in~\cite{rebollo2010optimized}. Note that this problem may also be interpreted as the information projection of the population profile $q$ onto the convex set of possible forged profiles
+For a given activity $\alpha$ and history $p_0$, we investigate the profile updates $p_1$ leading to the best and worst overall anonymity risk $\mathrm{D}\left((1-\alpha)p_0+\alpha p_1\middle\|q\right)$. The problem of finding the best profile, yielding the smallest risk, is formally identical to that of optimal query forgery extensively analysed in~\cite{Rebollo10IT}. Note that this problem may also be interpreted as the information projection of the population profile $q$ onto the convex set of possible forged profiles
 \begin{equation*}
 \mathscr{P}=\left\{(1-\alpha)p_0+\alpha p_1\right\},
 \end{equation*}
@@ -305,7 +306,7 @@ $$\mathrm{D}(p_\alpha\|q) \leqslant (1-\alpha) \mathrm{D}(p_0\|q) - \alpha \log_
 fairly loose for the particular values of this example. The reference line in the plot indicates
 $\mathrm{D}(p_0\|q)\approx 0.0137$.
 
-These two examples confirm that new activity certainly has an impact on the overall anonymity risk, in accordance with the quantitative analysis in \S\ref{sec:1-6}. This can of course be regarded from the perspective of introducing dummy queries in order to alter the apparent profile of interests, for example, in line with the problem of optimized query forgering investigated in~\cite{rebollo2010optimized}.
+These two examples confirm that new activity certainly has an impact on the overall anonymity risk, in accordance with the quantitative analysis in \S\ref{sec:1-6}. This can of course be regarded from the perspective of introducing dummy queries in order to alter the apparent profile of interests, for example, in line with the problem of optimized query forgering investigated in~\cite{Rebollo10IT}.
 
 \subsection{Experiment based on Facebook data}
 
