@@ -97,7 +97,7 @@ $$ \| p - \hat{p} \|_\infty \leqslant \| p - \hat{p} \|_2 \leqslant \| p - \hat{
 
 We hence define the generalised variation $\text{GV}_\alpha(p, \hat{p})$, based on $\alpha$-norm as:
 
-$$ \text{GV}_\alpha(p, \hat{p}) = \frac {1} {\sqrt[\alpha]{2}}  {\| p - \hat{p} \|}_\alpha =  \sqrt[\alpha]{{ \sum_l{ \frac {1}{2} ( p_{l} - \hat{p}_{l})^\alpha } }} ,\quad  \alpha \in [1,\infty]$$
+$$ \text{GV}_\alpha(p, \hat{p}) = \frac {1} {\sqrt[\alpha]{2}}  {\| p - \hat{p} \|}_\alpha =  \sqrt[\alpha]{{ {\frac {1} {2}} {\sum_l{ ( p_{l} - \hat{p}_{l})^\alpha }} }} ,\quad  \alpha \in [1,\infty]$$
 
 The coefficient $\frac {1} {\sqrt[\alpha]{2}}$ normalises the range of values of the \emph{$\alpha$-norm} in $[0, 1]$. Therefore, $\text{GV}_\alpha(p, \hat{p})$ is a norm, is positive definite, absolutely homogeneous and satisfies the triangle inequality:
 
@@ -112,9 +112,9 @@ $$ \text{TV}(p, \hat{p})= \frac {1} {2}  \| p - \hat{p} \|_1 =  \frac {1} {2} \s
 
 For $\alpha = 2$ we have the normalised \emph{2-norm}:
 
-$$ \text{GV}_2 = \frac {1} {\sqrt{2}}  {\| p - \hat{p} \|}_2 =  \frac {1} {\sqrt{2}} \sqrt{{ \sum_l{ | p_{l} - \hat{p}_{l}|^2 } }} $$
+$$ \text{GV}_2 = \frac {1} {\sqrt{2}}  {\| p - \hat{p} \|}_2 =  \sqrt{{\frac {1} {2}} { \sum_l{ | p_{l} - \hat{p}_{l}|^2 } }} $$
 
-Finally, the case for $\alpha = \infty$, $\lim_{\alpha\to\infty} \text{GV}_\alpha(p, \hat{p}) = \| p - \hat{p} \|_\infty $ between $p$ and $\hat{p}$. The reason is that for $\alpha \gg 1$ the greatest difference dominates in the sum $\sum_l{ {| p_l - \hat{p}_l |}^\alpha }$. Therefore $\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha \approx \max_l { | p_l - \hat{p}_l | } $.
+Finally, the case for $\alpha = \infty$, $\lim_{\alpha\to\infty} \text{GV}_\alpha(p, \hat{p}) = \| p - \hat{p} \|_\infty $ between $p$ and $\hat{p}$. The reason is that for $\alpha \gg 1$ the greatest difference dominates in the sum $\sum_l{ {| p_l - \hat{p}_l |}^\alpha }$. Therefore $\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha = \max_l { | p_l - \hat{p}_l | } $.
 
 One might interpret these norms as $\alpha = 1$ been an average-case metric, $\alpha=\infty$ being a worst-case scenario, and $\alpha=2$ a robust middle ground.
 
