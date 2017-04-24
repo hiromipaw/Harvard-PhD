@@ -1,0 +1,64 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.2.1}{\ignorespaces Advertising services feedback loop}}{4}{figure.caption.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1.1}{\ignorespaces User PMF.}}{36}{figure.caption.8}
+\contentsline {figure}{\numberline {3.1.2}{\ignorespaces Population PMF.}}{38}{figure.caption.9}
+\contentsline {figure}{\numberline {3.2.1}{\ignorespaces Architecture.}}{48}{figure.caption.11}
+\contentsline {figure}{\numberline {3.3.1}{\ignorespaces Experimental methodology.}}{57}{figure.caption.12}
+\contentsline {figure}{\numberline {3.3.2}{\ignorespaces Privacy risk against forgery rate for a single user.}}{58}{figure.caption.13}
+\contentsline {figure}{\numberline {3.3.3}{\ignorespaces Privacy risk for all users.}}{59}{figure.caption.14}
+\contentsline {figure}{\numberline {3.3.4}{\ignorespaces Utility measurement P@30.}}{60}{figure.caption.16}
+\contentsline {figure}{\numberline {3.3.5}{\ignorespaces Utility measurement P@50.}}{61}{figure.caption.17}
+\contentsline {figure}{\numberline {3.3.6}{\ignorespaces Privacy risk against forgery rate.}}{62}{figure.caption.18}
+\contentsline {figure}{\numberline {3.3.7}{\ignorespaces Privacy risk against forgery rate compared to the average utility value P@50}}{63}{figure.caption.19}
+\contentsline {figure}{\numberline {3.3.8}{\ignorespaces Increased privacy risk.}}{64}{figure.caption.20}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.2.1}{\ignorespaces Computational time needed to estimate a user position.}}{71}{figure.caption.21}
+\contentsline {figure}{\numberline {4.4.1}{\ignorespaces Location samples for a single user.}}{75}{figure.caption.24}
+\contentsline {figure}{\numberline {4.4.2}{\ignorespaces Facebook pages likes by Tinder users.}}{77}{figure.caption.25}
+\contentsline {figure}{\numberline {4.4.3}{\ignorespaces Social Graph attack}}{78}{figure.caption.26}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.2.1}{\ignorespaces Advertising services feedback loop}}{86}{figure.caption.27}
+\contentsline {figure}{\numberline {5.3.1}{\ignorespaces Structure of a tracker request}}{91}{figure.caption.28}
+\contentsline {figure}{\numberline {5.3.2}{\ignorespaces Connections between trackers and visited pages}}{92}{figure.caption.29}
+\contentsline {figure}{\numberline {5.3.3}{\ignorespaces A user's profile}}{94}{figure.caption.30}
+\contentsline {figure}{\numberline {5.3.4}{\ignorespaces User activity network degree distribution}}{100}{figure.caption.33}
+\contentsline {figure}{\numberline {5.3.5}{\ignorespaces Blockmodel decomposition of the tracker network}}{101}{figure.caption.34}
+\contentsline {figure}{\numberline {5.3.6}{\ignorespaces Blockstate representation of the network of tracking service resulting from our simulation. Here we highlight connections between known tracker networks and visited page.\relax }}{102}{figure.caption.35}
+\contentsline {figure}{\numberline {5.3.7}{\ignorespaces Pagerank of the trackers network}}{103}{figure.caption.36}
+\contentsline {figure}{\numberline {5.3.8}{\ignorespaces Page impact on the actual user's profile}}{104}{figure.caption.37}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{104}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{104}{subfigure.8.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{104}{subfigure.8.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{104}{subfigure.8.4}
+\contentsline {figure}{\numberline {5.3.9}{\ignorespaces How Facebook track the user's profile}}{105}{figure.caption.38}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{105}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{105}{subfigure.9.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{105}{subfigure.9.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{105}{subfigure.9.4}
+\contentsline {figure}{\numberline {5.3.10}{\ignorespaces Profile third-party requests to Facebook}}{106}{figure.caption.39}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{106}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{106}{subfigure.10.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{106}{subfigure.10.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{106}{subfigure.10.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.2.1}{\ignorespaces Information projection $p^*$ of a reference distribution $q$ onto a convex set\nobreakspace {}$\mathscr {P}$.\relax }}{117}{figure.caption.40}
+\contentsline {figure}{\numberline {6.2.2}{\ignorespaces Probability simplices showing, the population distribution $q$, the user's profile $p_0$, the updated profile $p_1$.\relax }}{117}{figure.caption.41}
+\contentsline {figure}{\numberline {6.2.3}{\ignorespaces Probability simplices showing, the population distribution $q=(0.417, 0.333, 0.250)$, the user's profile $p_0=(0.167, 0.333, 0.500)$, the updated profile $p_1=(0.167, 0.167, 0.666)$. The intermediate points show the value of $p_{"α}$ for different ${"α}$.\relax }}{118}{figure.caption.42}
+\contentsline {figure}{\numberline {6.3.1}{\ignorespaces For different values of the recent activity parameter ${"α}$, we plot (a) the anonymity risk $\mathrm {D}(p_{"α}\delimiter "026B30D q)$ of a synthetic example of updated user profile $p_{"α}=(1-{"α})p_0+{"α}p_1$, with respect to the population's profile $q=(5/12, 1/3, 1/4)$, across three hypothetical categories of interest, where $p_0=(1/6, 1/3, 1/2)$ represents the user's online history, and $p_1=(1/6, 1/6, 2/3)$ contains the recent activity in the form of a histogram. We verify the convexity bound\nobreakspace {}\textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces \ref {eq:D:convexity}\unskip \@@italiccorr )}} and the first-order Taylor approximation\nobreakspace {}\textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces \ref {eq:D:Taylor}\unskip \@@italiccorr )}} in our theoretical analysis. In addition, we plot (b) the special case of uniform population profile, in which the anonymity risk becomes $\mathrm {H}(p_{"α})$.\relax }}{124}{figure.caption.43}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{124}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{124}{subfigure.1.2}
+\contentsline {figure}{\numberline {6.3.2}{\ignorespaces In this example we consider two categories of interest, therefore profiles are completely determined by a single scalar $p$, being $1-p$ the other frequency. We fix the activity parameter ${"α}= 1/20$, set the historical profile to $p_0=2/3$, the reference profile to $q=3/5$, and verify the analysis on the worst anonymity risk update of \S \ref {sec:1-6} plotting $D(p_{"α}\delimiter "026B30D q)$ against profile updates $p_1$ ranging from 0 to\nobreakspace {}1. In the entropy case we plot $H(p_{"α})$.\relax }}{125}{figure.caption.44}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{125}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{125}{subfigure.2.2}
+\contentsline {figure}{\numberline {6.3.3}{\ignorespaces The image represents how the user initial profile was computed starting from the timeline data included in the dataset. Furthermore we show how the window $W$ of 15 posts is chosen from the last post of the series and how we considered a sliding window $w$ of 5 posts each time.\relax }}{127}{figure.caption.45}
+\contentsline {figure}{\numberline {6.3.4}{\ignorespaces The figure considers the privacy risk between a user profile and a reference population distribution for two facebook users (Figs.\nobreakspace {}\ref {fig:7b},\nobreakspace {}\ref {fig:7d}), and the risk increment ${"Δ}\mathcal {R} = \mathrm {D}(p_{"α}\delimiter "026B30D q) - \mathrm {D}(p_0\delimiter "026B30D q)$ where $p_0$ is a user's profile in the Facebook dataset and $q$ is the reference population distribution calculated for all the posts in the dataset (Figs.\nobreakspace {}\ref {fig:7b},\nobreakspace {}\ref {fig:7d}).\relax }}{128}{figure.caption.46}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{128}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{128}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{128}{subfigure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{128}{subfigure.4.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.4.1}{\ignorespaces OAuth 2.0 Flow.}}{140}{figure.caption.47}
+\contentsline {figure}{\numberline {7.4.2}{\ignorespaces Privacy Preserving OAuth Flow with JWT.}}{143}{figure.caption.48}
+\addvspace {10\p@ }

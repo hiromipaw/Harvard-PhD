@@ -1,0 +1,82 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Contribution}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Related Publications}{3}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Journal publications}{3}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Conference publications}{4}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Outline}{5}{section.1.4}
+\contentsline {chapter}{\numberline {2}Background and Related Work}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Privacy}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}A taxonomy of privacy}{9}{subsection.2.1.1}
+\contentsline {subsubsection}{Information collection:}{10}{Item.17}
+\contentsline {subsubsection}{Information processing:}{10}{Item.17}
+\contentsline {subsubsection}{Information dissemination:}{10}{Item.17}
+\contentsline {subsubsection}{Invasion:}{11}{Item.17}
+\contentsline {subsection}{\numberline {2.1.2}Identifying privacy violation on social networks and applications}{11}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}User profiling}{14}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Web tracking}{19}{section.2.2}
+\contentsline {section}{\numberline {2.3}online footprints}{23}{section.2.3}
+\contentsline {chapter}{\numberline {3}Users profiling in social tagging systems}{32}{chapter.3}
+\contentsline {section}{\numberline {3.1}Background}{33}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Modelling the User/Item Profiles}{36}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Privacy Metric}{38}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Privacy-Enhancing Techniques}{40}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Similarity Metric}{43}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Utility Metric}{45}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Architecture}{46}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Further considerations}{47}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Evaluation}{49}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Experimental results}{52}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Discussion}{54}{section.3.4}
+\contentsline {chapter}{\numberline {4}Privacy in proximity based apps: the nightmare of serendipitous discovery}{65}{chapter.4}
+\contentsline {section}{\numberline {4.1}Background}{67}{section.4.1}
+\contentsline {section}{\numberline {4.2}Modelling the location probe method}{70}{section.4.2}
+\contentsline {section}{\numberline {4.3}Modelling the user activity profile}{71}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Adversary model}{72}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Experimental results}{72}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Information collection}{73}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Information processing}{74}{subsection.4.4.2}
+\contentsline {subsubsection}{Multilateration attack}{74}{subsection.4.4.2}
+\contentsline {subsubsection}{Hyper graph attack}{75}{figure.caption.24}
+\contentsline {subsection}{\numberline {4.4.3}Information dissemination}{76}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Invasion}{77}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}Mitigation possibilities}{77}{section.4.5}
+\contentsline {section}{\numberline {4.6}Discussion}{79}{section.4.6}
+\contentsline {chapter}{\numberline {5}Web tracking: how advertising networks collect users' browsing patterns}{81}{chapter.5}
+\contentsline {section}{\numberline {5.1}Background}{82}{section.5.1}
+\contentsline {section}{\numberline {5.2}Modelling the user profile}{84}{section.5.2}
+\contentsline {subsubsection}{Norm and generalised variation}{87}{figure.caption.27}
+\contentsline {subsubsection}{KL-Divergence}{89}{figure.caption.27}
+\contentsline {section}{\numberline {5.3}Modelling the user's online footprint}{89}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Proposing a model of third-party requests on web pages}{90}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Network structure metrics}{91}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Discussion}{107}{section.5.4}
+\contentsline {chapter}{\numberline {6}An information-theoretic model for measuring the anonymity risk in time-variant user profiles}{108}{chapter.6}
+\contentsline {section}{\numberline {6.1}Background}{109}{section.6.1}
+\contentsline {section}{\numberline {6.2}An information-theoretic model for measuring anonymity risk}{113}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Multimodality of the KL divergence model and conditioning on demography}{115}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Gradient of the KL divergence and information projection}{115}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Differential update of the anonymity risk due to revealing new information}{118}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Special cases of delta update and uniform reference}{120}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Best and worst update}{120}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Experimental results}{123}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Synthetic examples}{123}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Experiment based on Facebook data}{126}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Discussion}{129}{section.6.4}
+\contentsline {chapter}{\numberline {7}Online identities as hypermedia documents}{131}{chapter.7}
+\contentsline {section}{\numberline {7.1}Background}{132}{section.7.1}
+\contentsline {section}{\numberline {7.2}A hypermedia model of the user identity}{134}{section.7.2}
+\contentsline {section}{\numberline {7.3}Data flow between identity providers and third-party services}{136}{section.7.3}
+\contentsline {section}{\numberline {7.4}Mitigation possibilities}{139}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Describing the OAuth 2.0 example}{139}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Describing the WebSocket example}{141}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Scenarios}{142}{subsection.7.4.3}
+\contentsline {subsection}{\numberline {7.4.4}Account creation on the PB}{142}{subsection.7.4.4}
+\contentsline {subsection}{\numberline {7.4.5}Authorisation request on OAuth}{143}{subsection.7.4.5}
+\contentsline {subsection}{\numberline {7.4.6}Authorisation request on WebSocket}{144}{subsection.7.4.6}
+\contentsline {section}{\numberline {7.5}Evaluation}{145}{section.7.5}
+\contentsline {section}{\numberline {7.6}Discussion}{147}{section.7.6}
+\contentsline {chapter}{\numberline {8}Conclusions and discussion}{148}{chapter.8}
+\contentsline {section}{\numberline {8.1}How the Socialist millionaires protocol works}{153}{section.8.1}
+\contentsline {chapter}{Appendix}{160}{lstnumber.8.2.30}
+\contentsline {chapter}{References}{160}{lstnumber.8.2.30}

@@ -1,0 +1,2970 @@
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.8.27)  24 APR 2017 13:33
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(./harvard-thesis.cls
+Document Class: harvard-thesis 2012/04/05 v0.4 Harvard University Thesis Class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: xetex.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2015/03/25 v4.04 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen105
+\Hy@linkcounter=\count88
+\Hy@pagecounter=\count89
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count90
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count91
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen106
+\Fld@menulength=\count92
+\Field@Width=\dimen107
+\Fld@charsize=\dimen108
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count93
+\c@Item=\count94
+\c@Hfootnote=\count95
+)
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2012/11/06 v6.83m Hyperref driver for XeTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box26
+\c@Hy@AnnotLevel=\count96
+\HyField@AnnotCount=\count97
+\Fld@listcount=\count98
+\c@bookmark@seq@number=\count99
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
+)
+\Hy@SectionHShift=\skip43
+)
+Package hyperref Info: Option `linktocpage' set `true' on input line 35.
+Package hyperref Info: Option `colorlinks' set `true' on input line 35.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count100
+\lst@gtempboxa=\box27
+\lst@token=\toks15
+\lst@length=\count101
+\lst@currlwidth=\dimen109
+\lst@column=\count102
+\lst@pos=\count103
+\lst@lostspace=\dimen110
+\lst@width=\dimen111
+\lst@newlines=\count104
+\lst@lineno=\count105
+\lst@maxwidth=\dimen112
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count106
+\lst@skipnumbers=\count107
+\lst@framebox=\box28
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@ContinuedFloat=\count108
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count109
+\sf@farskip=\skip44
+\sf@captopadj=\dimen120
+\sf@capskip=\skip45
+\sf@nearskip=\skip46
+\c@subfigure=\count110
+\c@subfigure@save=\count111
+\c@lofdepth=\count112
+\c@subtable=\count113
+\c@subtable@save=\count114
+\c@lotdepth=\count115
+\sf@top=\skip47
+\sf@bottom=\skip48
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen121
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen122
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count116
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count117
+\leftroot@=\count118
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count119
+\DOTSCASE@=\count120
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen123
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count121
+\c@MaxMatrixCols=\count122
+\dotsspace@=\muskip11
+\c@parentequation=\count123
+\dspbrk@lvl=\count124
+\tag@help=\toks17
+\row@=\count125
+\column@=\count126
+\maxfields@=\count127
+\andhelp@=\toks18
+\eqnshift@=\dimen124
+\alignsep@=\dimen125
+\tagshift@=\dimen126
+\tagwidth@=\dimen127
+\totwidth@=\dimen128
+\lineht@=\dimen129
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks26
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip55
+\bibsep=\skip56
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count128
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box31
+\beforetitleunit=\skip57
+\aftertitleunit=\skip58
+\ttl@plus=\dimen130
+\ttl@minus=\dimen131
+\ttl@toksa=\toks27
+\titlewidth=\dimen132
+\titlewidthlast=\dimen133
+\titlewidthfirst=\dimen134
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/units/units.sty
+Package: units 1998/08/04 v0.9b Typesetting units
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip59
+\L@UnitsRaiseTextstyle=\skip60
+\L@UnitsRaiseScriptstyle=\skip61
+LaTeX Info: Redefining \nicefrac on input line 131.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: xetex.def on input line 142.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 44.
+\cftparskip=\skip62
+\cftbeforetoctitleskip=\skip63
+\cftaftertoctitleskip=\skip64
+\cftbeforepartskip=\skip65
+\cftpartnumwidth=\skip66
+\cftpartindent=\skip67
+\cftbeforechapskip=\skip68
+\cftchapindent=\skip69
+\cftchapnumwidth=\skip70
+\cftbeforesecskip=\skip71
+\cftsecindent=\skip72
+\cftsecnumwidth=\skip73
+\cftbeforesubsecskip=\skip74
+\cftsubsecindent=\skip75
+\cftsubsecnumwidth=\skip76
+\cftbeforesubsubsecskip=\skip77
+\cftsubsubsecindent=\skip78
+\cftsubsubsecnumwidth=\skip79
+\cftbeforeparaskip=\skip80
+\cftparaindent=\skip81
+\cftparanumwidth=\skip82
+\cftbeforesubparaskip=\skip83
+\cftsubparaindent=\skip84
+\cftsubparanumwidth=\skip85
+\cftbeforeloftitleskip=\skip86
+\cftafterloftitleskip=\skip87
+\cftbeforefigskip=\skip88
+\cftfigindent=\skip89
+\cftfignumwidth=\skip90
+
+
+/usr/local/texlive/2015/texmf-dist/tex/latex/tocloft/tocloft.sty:607: LaTeX Err
+or: Command \c@lofdepth already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.607   \newcounter{lofdepth}
+                             \setcounter{lofdepth}{1}
+? ?
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? R
+OK, entering \nonstopmode...
+
+/usr/local/texlive/2015/texmf-dist/tex/latex/tocloft/tocloft.sty:608: LaTeX Err
+or: Command \c@lotdepth already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.608   \newcounter{lotdepth}
+                             \setcounter{lotdepth}{1}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\cftbeforelottitleskip=\skip91
+\cftafterlottitleskip=\skip92
+\cftbeforetabskip=\skip93
+\cfttabindent=\skip94
+\cfttabnumwidth=\skip95
+)
+./harvard-thesis.cls:91: Undefined control sequence.
+l.91 \justify
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdfsync/pdfsync.sty
+Package: pdfsync 2008/01/26 v1.1
+)
+(./fltpage.sty
+Package: fltpage 1998/10/29 v.0.3 Floats on full page (SMU)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks30
+\AP@partial=\box32
+\AP@footins=\box33
+)
+\c@FP@figureC=\count129
+\c@FP@tableC=\count130
+\FP@floatCorpusBOX=\box34
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/bibentry.sty
+Package: bibentry 2007/10/30 1.5 (PWD)
+)
+No file thesis.bbl.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2015/02/16 v1.8 (Daniel Flipo)
+\c@DefaultLines=\count131
+\c@DefaultDepth=\count132
+\DefaultFindent=\dimen135
+\DefaultNindent=\dimen136
+\DefaultSlope=\dimen137
+\DiscardVskip=\dimen138
+\L@lbox=\box35
+\L@tbox=\box36
+\c@L@lines=\count133
+\c@L@depth=\count134
+\L@Pindent=\dimen139
+\L@Findent=\dimen140
+\L@Nindent=\dimen141
+\L@lraise=\dimen142
+\L@first=\dimen143
+\L@next=\dimen144
+\L@slope=\dimen145
+\L@height=\dimen146
+\L@novskip=\dimen147
+\LettrineWidth=\dimen148
+\LettrineHeight=\dimen149
+\LettrineDepth=\dimen150
+
+Loading lettrine.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/lettrine/lettrine.cfg))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count135
+\Gm@cntv=\count136
+\c@Gm@tempcnt=\count137
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
+\Gm@dimlist=\toks31
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip96
+\f@ncyO@elh=\skip97
+\f@ncyO@erh=\skip98
+\f@ncyO@olh=\skip99
+\f@ncyO@orh=\skip100
+\f@ncyO@elf=\skip101
+\f@ncyO@erf=\skip102
+\f@ncyO@olf=\skip103
+\f@ncyO@orf=\skip104
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/quotchap/quotchap.sty
+Package: quotchap 2012/10/20 v1.1 Decorative Chapter Headings with Quotes
+\@quotebox=\box37
+)
+Package color Info: Redefining color chaptergrey on input line 110.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip105
+\thanksmargin=\skip106
+\droptitle=\skip107
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count138
+\@cmidlb=\count139
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count140
+\@lastruleclass=\count141
+\@thisrulewidth=\dimen171
+)
+Package caption Info: We need package `newfloat' on input line 115.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/newfloat.sty
+Package: newfloat 2013/05/11 v1.1-91 Defining new floating environments (AR)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/xelatex/mathspec/mathspec.sty
+Package: mathspec 2009/09/30 v0.2 LaTeX Package (Mathematics font selection for
+ XeLaTeX)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count142
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2015/03/14 v2.4c Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2015/03/01 v5547 L3 programming layer (loader) 
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2015/03/01 v5547 L3 programming layer (code) 
+L3 Module: l3bootstrap 2015/02/28 v5542 L3 Bootstrap code
+L3 Module: l3names 2015/02/24 v5535 L3 Namespace for primitives
+L3 Module: l3basics 2015/01/27 v5500 L3 Basic definitions
+L3 Module: l3expan 2014/11/27 v5472 L3 Argument expansion
+L3 Module: l3tl 2015/01/27 v5500 L3 Token lists
+L3 Module: l3str 2015/03/01 v5545 L3 Strings
+L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
+L3 Module: l3int 2015/02/21 v5529 L3 Integers
+\c_max_int=\count143
+\l_tmpa_int=\count144
+\l_tmpb_int=\count145
+\g_tmpa_int=\count146
+\g_tmpb_int=\count147
+L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
+L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
+\g__prg_map_int=\count148
+L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
+L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
+L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
+L3 Module: l3msg 2015/02/26 v5537 L3 Messages
+L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
+\l_iow_line_count_int=\count149
+\l__iow_target_count_int=\count150
+\l__iow_current_line_int=\count151
+\l__iow_current_word_int=\count152
+\l__iow_current_indentation_int=\count153
+L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
+\c_zero_dim=\dimen172
+\c_max_dim=\dimen173
+\l_tmpa_dim=\dimen174
+\l_tmpb_dim=\dimen175
+\g_tmpa_dim=\dimen176
+\g_tmpb_dim=\dimen177
+\c_zero_skip=\skip108
+\c_max_skip=\skip109
+\l_tmpa_skip=\skip110
+\l_tmpb_skip=\skip111
+\g_tmpa_skip=\skip112
+\g_tmpb_skip=\skip113
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2015/01/27 v5500 L3 Key-value interfaces
+\g__keyval_level_int=\count154
+\l_keys_choice_int=\count155
+L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
+\c__fp_leading_shift_int=\count156
+\c__fp_middle_shift_int=\count157
+\c__fp_trailing_shift_int=\count158
+\c__fp_big_leading_shift_int=\count159
+\c__fp_big_middle_shift_int=\count160
+\c__fp_big_trailing_shift_int=\count161
+\c__fp_Bigg_leading_shift_int=\count162
+\c__fp_Bigg_middle_shift_int=\count163
+\c__fp_Bigg_trailing_shift_int=\count164
+L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+\c_empty_box=\box38
+\l_tmpa_box=\box39
+\l_tmpb_box=\box40
+\g_tmpa_box=\box41
+\g_tmpb_box=\box42
+L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+\l__coffin_internal_box=\box43
+\l__coffin_internal_dim=\dimen178
+\l__coffin_offset_x_dim=\dimen179
+\l__coffin_offset_y_dim=\dimen180
+\l__coffin_x_dim=\dimen181
+\l__coffin_y_dim=\dimen182
+\l__coffin_x_prime_dim=\dimen183
+\l__coffin_y_prime_dim=\dimen184
+\c_empty_coffin=\box44
+\l__coffin_aligned_coffin=\box45
+\l__coffin_aligned_internal_coffin=\box46
+\l_tmpa_coffin=\box47
+\l_tmpb_coffin=\box48
+\l__coffin_display_coffin=\box49
+\l__coffin_display_coord_coffin=\box50
+\l__coffin_display_pole_coffin=\box51
+\l__coffin_display_offset_dim=\dimen185
+\l__coffin_display_x_dim=\dimen186
+\l__coffin_display_y_dim=\dimen187
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2015/03/01 v5544 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen188
+\l__box_bottom_dim=\dimen189
+\l__box_left_dim=\dimen190
+\l__box_right_dim=\dimen191
+\l__box_top_new_dim=\dimen192
+\l__box_bottom_new_dim=\dimen193
+\l__box_left_new_dim=\dimen194
+\l__box_right_new_dim=\dimen195
+\l__box_internal_box=\box52
+\l__coffin_bounding_shift_dim=\dimen196
+\l__coffin_left_corner_dim=\dimen197
+\l__coffin_right_corner_dim=\dimen198
+\l__coffin_bottom_corner_dim=\dimen199
+\l__coffin_top_corner_dim=\dimen200
+\l__coffin_scaled_total_height_dim=\dimen201
+\l__coffin_scaled_width_dim=\dimen202
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2015/03/01 v5544 L3 Experimental driver: xdvipdfmx
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count165
+\l__xparse_m_args_int=\count166
+\l__xparse_mandatory_args_int=\count167
+\l__xparse_processor_int=\count168
+\l__xparse_v_nesting_int=\count169
+)
+\l_fontspec_script_int=\count170
+\l_fontspec_language_int=\count171
+\l_fontspec_strnum_int=\count172
+\l__fontspec_tmpa_dim=\dimen203
+\l__fontspec_tmpb_dim=\dimen204
+\l__fontspec_tmpc_dim=\dimen205
+Variant \tl_gset:cV already defined; not changing it on line 71
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+Package: fontspec-patches 2015/03/14 v2.4c Font selection for XeLaTeX and LuaLa
+TeX
+LaTeX Info: Redefining \em on input line 49.
+LaTeX Info: Redefining \emph on input line 57.
+LaTeX Info: Redefining \- on input line 60.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 155.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 159.
+.................................................
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2015/03/14 v2.4c Font selection for XeLaTeX and LuaLaTe
+X
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1enc.def
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(/usr/local/texlive/2015/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmss.fd
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\tipaTiiicode=\count173
+\tipasavetokens=\toks32
+\tipachecktokens=\toks33
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 42.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'om' on line 44.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'om' on line 54.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'om' on line 64.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'om' on line 74.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'om' on line 88.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'om' on line 96.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'om' on line 104.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'om' on line 112.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mom' on line 126.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mom' on line 141.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 155.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 210.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 221.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 229.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 237.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 261.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 270.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 275.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 301.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 321.
+.................................................
+Variant \prop_gput:cnV already defined; not changing it on line 704
+Variant \prop_gput:cnx already defined; not changing it on line 705
+\l__fontspec_tmp_int=\count174
+LaTeX Info: Redefining \itshape on input line 2232.
+LaTeX Info: Redefining \slshape on input line 2237.
+LaTeX Info: Redefining \scshape on input line 2242.
+LaTeX Info: Redefining \upshape on input line 2247.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+)
+\XKV@depth=\count175
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@eu@=\count176
+\c@eu@i=\count177
+\c@mkern=\count178
+)
+\g__file_internal_ior=\read2
+\g__fontspec_family_ArnoPro_int=\count179
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'ArnoPro(0)' created for font 'ArnoPro' with options [Path =
+. fonts/,Extension =
+. .otf,UprightFont=ArnoPro-Regular,BoldFont=ArnoPro-Bold,ItalicFont=ArnoPro-Ita
+lic,BoldItalicFont=ArnoPro-BoldItalic,Numbers={OldStyle,Proportional}].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"[fonts/ArnoPro-Regular.otf]/OT:script=latn;language=DFLT;+onum;+pnum;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Regular.otf]/OT:script=latn;language=DFLT;+onum;+pnum;+smc
+p;"
+. and font adjustment code:
+. 
+. 
+. * 'bold' with NFSS spec.:
+. <->"[fonts/ArnoPro-Bold.otf]/OT:script=latn;language=DFLT;+onum;+pnum;"
+. 
+. * 'bold small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Bold.otf]/OT:script=latn;language=DFLT;+onum;+pnum;+smcp;"
+
+. and font adjustment code:
+. 
+. 
+. * 'italic' with NFSS spec.:
+. <->"[fonts/ArnoPro-Italic.otf]/OT:script=latn;language=DFLT;+onum;+pnum;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Italic.otf]/OT:script=latn;language=DFLT;+onum;+pnum;+smcp
+;"
+. and font adjustment code:
+. 
+. 
+. * 'bold italic' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-BoldItalic.otf]/OT:script=latn;language=DFLT;+onum;+pnum;"
+
+. 
+. * 'bold small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-BoldItalic.otf]/OT:script=latn;language=DFLT;+onum;+pnum;+
+smcp;"
+. and font adjustment code:
+. 
+.................................................
+\symDigits:m:n=\mathgroup7
+\symLatin:m:n=\mathgroup8
+\symLatin:m:it=\mathgroup9
+\symGreek:m:n=\mathgroup10
+\symGreek:m:it=\mathgroup11
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'ArnoPro(1)' created for font 'ArnoPro' with options [Path =
+. fonts/,Extension =
+. .otf,UprightFont=ArnoPro-Regular,BoldFont=ArnoPro-Bold,ItalicFont=ArnoPro-Ita
+lic,BoldItalicFont=ArnoPro-BoldItalic].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"[fonts/ArnoPro-Regular.otf]/OT:script=latn;language=DFLT;"
+. 
+. * 'small caps' with NFSS spec.:
+. <->"[fonts/ArnoPro-Regular.otf]/OT:script=latn;language=DFLT;+smcp;"
+. and font adjustment code:
+. 
+. 
+. * 'bold' with NFSS spec.:
+. <->"[fonts/ArnoPro-Bold.otf]/OT:script=latn;language=DFLT;"
+. 
+. * 'bold small caps' with NFSS spec.:
+. <->"[fonts/ArnoPro-Bold.otf]/OT:script=latn;language=DFLT;+smcp;"
+. and font adjustment code:
+. 
+. 
+. * 'italic' with NFSS spec.:
+. <->"[fonts/ArnoPro-Italic.otf]/OT:script=latn;language=DFLT;"
+. 
+. * 'small caps' with NFSS spec.:
+. <->"[fonts/ArnoPro-Italic.otf]/OT:script=latn;language=DFLT;+smcp;"
+. and font adjustment code:
+. 
+. 
+. * 'bold italic' with NFSS spec.:
+. <->"[fonts/ArnoPro-BoldItalic.otf]/OT:script=latn;language=DFLT;"
+. 
+. * 'bold small caps' with NFSS spec.:
+. <->"[fonts/ArnoPro-BoldItalic.otf]/OT:script=latn;language=DFLT;+smcp;"
+. and font adjustment code:
+. 
+.................................................
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 138.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  EU1/ArnoPro(1)/m/n --> EU1/ArnoPro(1)/bx/n on input lin
+e 138.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 138.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/ArnoPro(1)/m/it on input line 138.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/ArnoPro(1)/m/it on input line 138
+.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/ArnoPro(1)/bx/n on input line 138.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/ArnoPro(1)/bx/n on input line 138.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  EU1/ArnoPro(1)/m/it --> EU1/ArnoPro(1)/bx/it on input l
+ine 138.
+\symOperators:m:n=\mathgroup12
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xltxtra/xltxtra.sty
+Package: xltxtra 2010/09/20 v0.5e Improvements for the "XeLaTeX" format
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/realscripts/realscripts.sty
+Package: realscripts 2013/03/18 v0.3c Access OpenType subscripts and superscrip
+ts
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesubscript with sig. 'm' on line 19.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesuperscript with sig. 'm' on line 22.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsubscript with sig. 's' on line 25.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsuperscript with sig. 's' on line 28.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsubscript with sig. 'm' on line 45.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsuperscript with sig. 'm' on line 60.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsubsuperscript with sig. 'sO{l}mm' on line 138.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsupersubscript with sig. 'sO{l}mm' on line 143.
+.................................................
+\subsupersep=\dimen206
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks36
+\xl@@everylogo=\toks37
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\xxt@tempbox=\box53
+)
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Contextuals=Swash,Alternate' (+cswh) not available for
+* font 'ArnoPro-RegularSubhead' with script 'Latin' and language 'Default'.
+*************************************************
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Contextuals=Swash,Alternate' (+cswh) not available for
+* font 'ArnoPro-RegularSubhead' with script 'Latin' and language 'Default'.
+*************************************************
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Contextuals=Swash,Alternate' (+cswh) not available for
+* font 'ArnoPro-RegularDisplay' with script 'Latin' and language 'Default'.
+*************************************************
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Contextuals=Swash,Alternate' (+cswh) not available for
+* font 'ArnoPro-RegularDisplay' with script 'Latin' and language 'Default'.
+*************************************************
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'ArnoPro(2)' created for font 'ArnoPro' with options
+. [Mapping=tex-text,Numbers=OldStyle,Ligatures=TeX,Path = fonts/,Extension =
+. .otf,Mapping=tex-text,Numbers=OldStyle,Ligatures={Common},SizeFeatures={{Size
+={-10},
+. Font=*-RegularCaption}, {Size={10-13.0}, Font=*}, {Size={13.01-19.9},
+. Font=*-RegularSubhead, Ligatures=Rare, Contextuals={Swash,Alternate}},
+. {Size={19.91-},Font=*-RegularDisplay, Ligatures=Rare,
+. Contextuals={Swash,Alternate}}},UprightFont=ArnoPro-Regular,BoldFont=ArnoPro-
+Bold,ItalicFont=ArnoPro-Italic,BoldItalicFont=ArnoPro-BoldItalic].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <-10>"[fonts/ArnoPro-RegularCaption.otf]/OT:script=latn;language=DFLT;mapping
+=tex-text;+onum;mapping=tex-text;mapping=tex-text;+onum;+liga;"<10-13.0>"[fonts
+/ArnoPro.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;mapping=tex-t
+ext;mapping=tex-text;+onum;+liga;"<13.01-19.9>"[fonts/ArnoPro-RegularSubhead.ot
+f]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;mapping=tex-text;mapping
+=tex-text;+onum;+liga;+dlig;+calt;"<19.91->"[fonts/ArnoPro-RegularDisplay.otf]/
+OT:script=latn;language=DFLT;mapping=tex-text;+onum;mapping=tex-text;mapping=te
+x-text;+onum;+liga;+dlig;+calt;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <-10>"[fonts/ArnoPro-RegularCaption.otf]/OT:script=latn;language=DFLT;mapping
+=tex-text;+onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+smcp;"<10-13.0>"
+[fonts/ArnoPro.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;mapping
+=tex-text;mapping=tex-text;+onum;+liga;+smcp;"<13.01-19.9>"[fonts/ArnoPro-Regul
+arSubhead.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;mapping=tex-
+text;mapping=tex-text;+onum;+liga;+dlig;+calt;+smcp;"<19.91->"[fonts/ArnoPro-Re
+gularDisplay.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;mapping=t
+ex-text;mapping=tex-text;+onum;+liga;+dlig;+calt;+smcp;"
+. and font adjustment code:
+. 
+. 
+. * 'bold' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+o
+num;mapping=tex-text;mapping=tex-text;+onum;+liga;"
+. 
+. * 'bold small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+o
+num;mapping=tex-text;mapping=tex-text;+onum;+liga;+smcp;"
+. and font adjustment code:
+. 
+. 
+. * 'italic' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Italic.otf]/OT:script=latn;language=DFLT;mapping=tex-text;
++onum;mapping=tex-text;mapping=tex-text;+onum;+liga;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Italic.otf]/OT:script=latn;language=DFLT;mapping=tex-text;
++onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+smcp;"
+. and font adjustment code:
+. 
+. 
+. * 'bold italic' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+onum;mapping=tex-text;mapping=tex-text;+onum;+liga;"
+. 
+. * 'bold small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+smcp;"
+. and font adjustment code:
+. 
+.................................................
+) (./thesis.aux (./chapters/chapter1.aux) (./chapters/chapter2.aux)
+(./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux)
+(./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/chapter8.aux)
+(./endmatter/appendix.aux) (./endmatter/colophon.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 6.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 6.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 6.
+\AtBeginShipoutBox=\box54
+Package hyperref Info: Link coloring ON on input line 6.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count180
+)
+LaTeX Info: Redefining \ref on input line 6.
+LaTeX Info: Redefining \pageref on input line 6.
+LaTeX Info: Redefining \nameref on input line 6.
+
+(./thesis.out) (./thesis.out)
+\@outlinefile=\write3
+\openout3 = `thesis.out'.
+
+\c@lstlisting=\count181
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: fltpage package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package caption Info: We need package `ragged2e' on input line 6.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip114
+\RaggedLeftLeftskip=\skip115
+\RaggedRightLeftskip=\skip116
+\CenteringRightskip=\skip117
+\RaggedLeftRightskip=\skip118
+\RaggedRightRightskip=\skip119
+\CenteringParfillskip=\skip120
+\RaggedLeftParfillskip=\skip121
+\RaggedRightParfillskip=\skip122
+\JustifyingParfillskip=\skip123
+\CenteringParindent=\skip124
+\RaggedLeftParindent=\skip125
+\RaggedRightParindent=\skip126
+\JustifyingParindent=\skip127
+)
+Configuring pdfsync
+\PDFSYNC@ut=\write4
+\openout4 = `thesis.pdfsync'.
+
+\PDFSYNCf@li@=\count182
+\PDFSYNC@rder=\count183
+**** pdfsync.sty: Synchronizing at \everypar
+\PDFSYNCeveryp@r=\toks38
+**** pdfsync.sty: Synchronizing at \everymath
+\PDFSYNCeverym@th=\toks39
+**** pdfsync.sty: Synchronizing at \everyhbox
+\PDFSYNCeveryhb@x=\toks40
+**** pdfsync.sty: Synchronizing at \everyvbox
+\PDFSYNCeveryvb@x=\toks41
+**** pdfsync.sty: started
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(126.4725pt, 361.34999pt, 126.4725pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=361.34999pt
+* \textheight=556.47656pt
+* \oddsidemargin=54.20251pt
+* \evensidemargin=54.20251pt
+* \topmargin=-8.74641pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=47.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./frontmatter/coverpage.tex)
+File: figures/upc-logo.png Graphic file (type QTm)
+ <use  "figures/upc-logo.png" >
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
+
+)
+[1
+
+] [2] (./frontmatter/abstract.tex)
+LaTeX Font Info:    Font shape `EU1/ArnoPro(2)/m/sl' in size <12> not available
+
+(Font)              Font shape `EU1/ArnoPro(2)/m/it' tried instead on input lin
+e 12.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3] [4]
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 13.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+(./thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 1.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) [5
+
+]
+Overfull \hbox (16.11491pt too wide) in paragraph at lines 45--45
+ [][][][] []\EU1/ArnoPro(2)/m/sc/12 Web tracking: how advertising networks coll
+ect users’ brows- 
+ []
+
+
+Overfull \hbox (13.52689pt too wide) in paragraph at lines 54--54
+ [][][][] []\EU1/ArnoPro(2)/m/sc/12 An information-theoretic model for measurin
+g the anonymity 
+ []
+
+)
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
+
+ [6] (./thesis.lof [7
+
+]
+Overfull \hbox (0.28725pt too wide) detected at line 40
+[][]\EU1/ArnoPro(2)/m/n/12 5.3.10 
+ []
+
+
+Overfull \hbox (1.01772pt too wide) in paragraph at lines 46--46
+ [][][][] []\EU1/ArnoPro(2)/m/n/12 Information projection $[][][][]$ of a refer
+ence distribution $[][][]$ onto a con- 
+ []
+
+
+Overfull \hbox (1.265pt too wide) in paragraph at lines 48--48
+ \OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 :[][][]; []:[][][]; []:[][][]\OT1/cmr/m/n/
+12 )$\EU1/ArnoPro(2)/m/n/12 , the user’s profile $[][][][] \OT1/cmr/m/n/12 = ([
+]\OML/cmm/m/it/12 :[][][]; []:[][][]; []:[][][]\OT1/cmr/m/n/12 )$\EU1/ArnoPro(2
+)/m/n/12 , 
+ []
+
+[8]
+Overfull \hbox (56.05566pt too wide) in paragraph at lines 56--56
+ \EU1/ArnoPro(2)/m/n/12 reference population distribution for two facebook user
+s (Figs. [][]6.3.4b[][], [][]6.3.4d[][]), 
+ []
+
+)
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+ [9] (./frontmatter/dedication.tex) [10] (./frontmatter/thanks.tex) [11
+
+]
+\openout2 = `chapters/chapter1.aux'.
+
+
+(./chapters/chapter1.tex
+LaTeX Font Info:    Font shape `EU1/ArnoPro(2)/m/sl' in size <10> not available
+
+(Font)              Font shape `EU1/ArnoPro(2)/m/it' tried instead on input lin
+e 1.
+
+Chapter 1.
+[1
+
+
+]
+
+Package natbib Warning: Citation `library-briefing' on page 2 undefined on inpu
+t line 10.
+
+[2]
+File: figures/thesis-map.eps Graphic file (type eps)
+ <figures/thesis-map.eps>
+Overfull \hbox (0.41545pt too wide) in paragraph at lines 43--45
+\EU1/ArnoPro(2)/m/it/12 content-based recommendation and user privacy in social
+-tagging systems. \EU1/ArnoPro(2)/m/n/12 Com-
+ []
+
+[3] [4]
+Overfull \hbox (16.88205pt too wide) in paragraph at lines 79--80
+[][][]\EU1/ArnoPro(2)/m/n/12 The second chapter presents a literature review of
+ the problems considered through-
+ []
+
+[5] [6]) [7]
+\openout2 = `chapters/chapter2.aux'.
+
+ (./chapters/chapter2.tex
+Chapter 2.
+
+Package natbib Warning: Citation `warren1890right' on page 8 undefined on input
+ line 8.
+
+[8
+
+
+
+]
+
+Package natbib Warning: Citation `assembly1948universal' on page 9 undefined on
+ input line 14.
+
+
+Package natbib Warning: Citation `michael2013location' on page 9 undefined on i
+nput line 18.
+
+
+Package natbib Warning: Citation `solove2006taxonomy' on page 9 undefined on in
+put line 18.
+
+[9] [10]
+
+Package natbib Warning: Citation `irani-et-al' on page 11 undefined on input li
+ne 108.
+
+
+Package natbib Warning: Citation `sweeney' on page 11 undefined on input line 1
+08.
+
+
+Package natbib Warning: Citation `paridhi-et-al' on page 11 undefined on input 
+line 110.
+
+
+Package natbib Warning: Citation `chen-et-al' on page 11 undefined on input lin
+e 112.
+
+[11]
+
+Package natbib Warning: Citation `acquisti-et-al' on page 12 undefined on input
+ line 114.
+
+
+Package natbib Warning: Citation `cryto-gram' on page 12 undefined on input lin
+e 116.
+
+
+Package natbib Warning: Citation `Kumaragur-et-all' on page 12 undefined on inp
+ut line 116.
+
+
+Package natbib Warning: Citation `brown-et-all' on page 12 undefined on input l
+ine 116.
+
+
+Package natbib Warning: Citation `viswanath2012keeping' on page 12 undefined on
+ input line 118.
+
+
+Package natbib Warning: Citation `jagtap2011preserving' on page 12 undefined on
+ input line 120.
+
+
+Package natbib Warning: Citation `carrascal2013your' on page 12 undefined on in
+put line 122.
+
+
+Package natbib Warning: Citation `cranor2012can' on page 12 undefined on input 
+line 122.
+
+[12]
+
+Package natbib Warning: Citation `consolvo2005location' on page 13 undefined on
+ input line 124.
+
+
+Package natbib Warning: Citation `toch2013locality' on page 13 undefined on inp
+ut line 126.
+
+
+Package natbib Warning: Citation `melia-segui-et-al' on page 13 undefined on in
+put line 128.
+
+
+Package natbib Warning: Citation `zhu-et-al' on page 13 undefined on input line
+ 128.
+
+
+Package natbib Warning: Citation `li2014all' on page 13 undefined on input line
+ 131.
+
+
+Package natbib Warning: Citation `internet-freedom' on page 13 undefined on inp
+ut line 133.
+
+[13]
+
+Package natbib Warning: Citation `a01' on page 14 undefined on input line 141.
+
+[14]
+
+Package natbib Warning: Citation `Shen07SIGIR' on page 15 undefined on input li
+ne 145.
+
+
+Overfull \hbox (12.19936pt too wide) in paragraph at lines 145--146
+\EU1/ArnoPro(2)/m/n/12 form. These approaches can be grouped around four main s
+trategies [\EU1/ArnoPro(2)/bx/n/12 ? \EU1/ArnoPro(2)/m/n/12 ]: encryption-
+ []
+
+
+Package natbib Warning: Citation `SocialNumber' on page 15 undefined on input l
+ine 147.
+
+[15]
+
+Package natbib Warning: Citation `Reiter98ISS' on page 16 undefined on input li
+ne 151.
+
+[16]
+
+Package natbib Warning: Citation `Domingo09DKE' on page 17 undefined on input l
+ine 153.
+
+
+Package natbib Warning: Citation `Rebollo09COMCOM' on page 17 undefined on inpu
+t line 153.
+
+
+Package natbib Warning: Citation `Domingo12INS' on page 17 undefined on input l
+ine 153.
+
+
+Package natbib Warning: Citation `Polat03SDM' on page 17 undefined on input lin
+e 155.
+
+
+Package natbib Warning: Citation `Kargupta03ICDM' on page 17 undefined on input
+ line 155.
+
+
+Package natbib Warning: Citation `Huang05SIGMOD' on page 17 undefined on input 
+line 155.
+
+
+Package natbib Warning: Citation `Polat05SAC' on page 17 undefined on input lin
+e 157.
+
+
+Package natbib Warning: Citation `Agrawal01SIGMOD' on page 17 undefined on inpu
+t line 157.
+
+
+Package natbib Warning: Citation `Movielens' on page 17 undefined on input line
+ 157.
+
+
+Package natbib Warning: Citation `Jester' on page 17 undefined on input line 15
+7.
+
+[17]
+
+Package natbib Warning: Citation `Rebollo10IT' on page 18 undefined on input li
+ne 160.
+
+
+Package natbib Warning: Citation `parra2014optimal' on page 18 undefined on inp
+ut line 160.
+
+
+Package natbib Warning: Citation `Rebollo10IT' on page 18 undefined on input li
+ne 160.
+
+
+Package natbib Warning: Citation `parra2012privacy' on page 18 undefined on inp
+ut line 160.
+
+
+Package natbib Warning: Citation `Parra10TB' on page 18 undefined on input line
+ 162.
+
+
+Package natbib Warning: Citation `rebollo2012query' on page 18 undefined on inp
+ut line 162.
+
+
+Package natbib Warning: Citation `parra2012optimal' on page 18 undefined on inp
+ut line 162.
+
+
+Package natbib Warning: Citation `Parra13KDE' on page 18 undefined on input lin
+e 162.
+
+
+Package natbib Warning: Citation `Parra12DKE' on page 18 undefined on input lin
+e 162.
+
+
+Package natbib Warning: Citation `parra2014measuring' on page 18 undefined on i
+nput line 162.
+
+
+Package natbib Warning: Citation `puglisi2015content' on page 18 undefined on i
+nput line 162.
+
+
+Package natbib Warning: Citation `Parra12TKDE' on page 18 undefined on input li
+ne 162.
+
+
+Package natbib Warning: Citation `puglisi2015content' on page 18 undefined on i
+nput line 162.
+
+
+Package natbib Warning: Citation `parra2016shall' on page 18 undefined on input
+ line 162.
+
+
+Package natbib Warning: Citation `jaynes1957information' on page 18 undefined o
+n input line 164.
+
+
+Package natbib Warning: Citation `jaynes1982rationale' on page 18 undefined on 
+input line 164.
+
+
+Package natbib Warning: Citation `rodriguez2015entropy' on page 18 undefined on
+ input line 164.
+
+
+Package natbib Warning: Citation `parra2014measuring' on page 18 undefined on i
+nput line 164.
+
+[18]
+
+Package natbib Warning: Citation `veeningen2014line' on page 19 undefined on in
+put line 170.
+
+
+Package natbib Warning: Citation `getoor2012entity' on page 19 undefined on inp
+ut line 170.
+
+
+Package natbib Warning: Citation `eckersley2010unique' on page 19 undefined on 
+input line 170.
+
+
+Package natbib Warning: Citation `boda2012user' on page 19 undefined on input l
+ine 172.
+
+
+Package natbib Warning: Citation `mowery2011fingerprinting' on page 19 undefine
+d on input line 172.
+
+[19]
+
+Package natbib Warning: Citation `castelluccia2012behavioural' on page 20 undef
+ined on input line 174.
+
+
+Package natbib Warning: Citation `rao2015they' on page 20 undefined on input li
+ne 174.
+
+
+Package natbib Warning: Citation `kalavri2016like' on page 20 undefined on inpu
+t line 176.
+
+
+Package natbib Warning: Citation `schelter2016tracking' on page 20 undefined on
+ input line 176.
+
+
+Package natbib Warning: Citation `gomer2013network' on page 20 undefined on inp
+ut line 178.
+
+
+Package natbib Warning: Citation `gomer2013network' on page 20 undefined on inp
+ut line 178.
+
+
+Package natbib Warning: Citation `gomer2013network' on page 20 undefined on inp
+ut line 178.
+
+[20]
+
+Package natbib Warning: Citation `hoofnagle2012behavioral' on page 21 undefined
+ on input line 180.
+
+
+Package natbib Warning: Citation `angwin2010web' on page 21 undefined on input 
+line 180.
+
+
+Package natbib Warning: Citation `barrat2004architecture' on page 21 undefined 
+on input line 182.
+
+
+Package natbib Warning: Citation `pastor2001dynamical' on page 21 undefined on 
+input line 182.
+
+
+Package natbib Warning: Citation `maslov2002specificity' on page 21 undefined o
+n input line 182.
+
+
+Package natbib Warning: Citation `newman2002assortative' on page 21 undefined o
+n input line 182.
+
+
+Package natbib Warning: Citation `holland1983stochastic' on page 21 undefined o
+n input line 184.
+
+
+Package natbib Warning: Citation `faust1992blockmodels' on page 21 undefined on
+ input line 184.
+
+[21]
+
+Package natbib Warning: Citation `peixoto2012entropy' on page 22 undefined on i
+nput line 186.
+
+
+Package natbib Warning: Citation `peixoto2014hierarchical' on page 22 undefined
+ on input line 186.
+
+
+Package natbib Warning: Citation `peixoto2014efficient' on page 22 undefined on
+ input line 186.
+
+
+Package natbib Warning: Citation `privacy-badger' on page 22 undefined on input
+ line 188.
+
+
+Package natbib Warning: Citation `lightbeam' on page 22 undefined on input line
+ 188.
+
+
+Package natbib Warning: Citation `ghostery' on page 22 undefined on input line 
+188.
+
+
+Package natbib Warning: Citation `adblock' on page 22 undefined on input line 1
+88.
+
+
+Package natbib Warning: Citation `degeling2016your' on page 22 undefined on inp
+ut line 190.
+
+[22]
+
+Package natbib Warning: Citation `ard2013confidentiality' on page 23 undefined 
+on input line 192.
+
+
+Package natbib Warning: Citation `krishnamurthy2009privacy' on page 23 undefine
+d on input line 196.
+
+
+Package natbib Warning: Citation `lightbeam' on page 23 undefined on input line
+ 198.
+
+
+Package natbib Warning: Citation `FTE' on page 23 undefined on input line 198.
+
+
+Package natbib Warning: Citation `data-selfie' on page 23 undefined on input li
+ne 198.
+
+[23]
+
+Package natbib Warning: Citation `SciAMMag' on page 24 undefined on input line 
+200.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+
+Package natbib Warning: Citation `bizer2013deployment' on page 24 undefined on 
+input line 204.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+[24]
+Overfull \hbox (0.52473pt too wide) in paragraph at lines 206--207
+\EU1/ArnoPro(2)/m/n/12 used as containers for the exchanged messages. In this e
+xtent, an ’Hypermedia API’
+ []
+
+[25]
+Overfull \hbox (5.56201pt too wide) in paragraph at lines 214--223
+ [][][][] 
+ []
+
+
+Package natbib Warning: Citation `kapadia2007virtual' on page 26 undefined on i
+nput line 243.
+
+
+Package natbib Warning: Citation `malandrino2013privacy' on page 26 undefined o
+n input line 247.
+
+
+Package natbib Warning: Citation `zhai2016anonrep' on page 26 undefined on inpu
+t line 249.
+
+
+Package natbib Warning: Citation `back2002hashcash' on page 26 undefined on inp
+ut line 249.
+
+
+Package natbib Warning: Citation `back2002hashcash2' on page 26 undefined on in
+put line 249.
+
+
+Package natbib Warning: Citation `nakamoto2008bitcoin' on page 26 undefined on 
+input line 249.
+
+
+Package natbib Warning: Citation `tschorsch2015bitcoin' on page 26 undefined on
+ input line 249.
+
+
+Package natbib Warning: Citation `sprankel2013technical' on page 26 undefined o
+n input line 249.
+
+[26]
+
+Package natbib Warning: Citation `buterin2014next' on page 27 undefined on inpu
+t line 251.
+
+
+Package natbib Warning: Citation `slockit' on page 27 undefined on input line 2
+53.
+
+
+Package natbib Warning: Citation `kosba2016hawk' on page 27 undefined on input 
+line 253.
+
+
+Overfull \hbox (3.35408pt too wide) in paragraph at lines 251--254
+[][][]\EU1/ArnoPro(2)/m/n/12 The Ethereum project builds upon previous work on 
+the usage of a cryptographic
+ []
+
+[27]
+
+Package natbib Warning: Citation `ruan2014privacy' on page 28 undefined on inpu
+t line 255.
+
+
+Package natbib Warning: Citation `hardjono2016cloud' on page 28 undefined on in
+put line 257.
+
+
+Package natbib Warning: Citation `zyskind2015decentralizing' on page 28 undefin
+ed on input line 257.
+
+
+Overfull \hbox (8.75404pt too wide) in paragraph at lines 257--258
+\EU1/ArnoPro(2)/m/n/12 to anonymously register device commissioning and decommi
+ssioning.ChainAnchor
+ []
+
+
+Overfull \hbox (2.05673pt too wide) in paragraph at lines 257--258
+\EU1/ArnoPro(2)/m/n/12 and off-blockchain storage instead. This combination is 
+used to construct a privacy-
+ []
+
+[28]
+
+Package natbib Warning: Citation `wilson2015pretty' on page 29 undefined on inp
+ut line 259.
+
+
+Package natbib Warning: Citation `cryptoeprint:2016:469' on page 29 undefined o
+n input line 259.
+
+
+Package natbib Warning: Citation `fromknecht2014decentralized' on page 29 undef
+ined on input line 261.
+
+
+Package natbib Warning: Citation `maheswaran2013crypto' on page 29 undefined on
+ input line 263.
+
+
+Package natbib Warning: Citation `isaakidis2016unlimitid' on page 29 undefined 
+on input line 263.
+
+) [29] [30] [31]
+\openout2 = `chapters/chapter3.aux'.
+
+ (./chapters/chapter3.tex
+Chapter 3.
+
+Package natbib Warning: Citation `puglisi2015content' on page 32 undefined on i
+nput line 10.
+
+[32
+
+
+
+]
+
+Package natbib Warning: Citation `twitter' on page 33 undefined on input line 1
+6.
+
+
+Package natbib Warning: Citation `facebook' on page 33 undefined on input line 
+16.
+
+
+Package natbib Warning: Citation `youtube' on page 33 undefined on input line 1
+6.
+
+
+Package natbib Warning: Citation `instagram' on page 33 undefined on input line
+ 16.
+
+[33]
+
+Package natbib Warning: Citation `delicious' on page 34 undefined on input line
+ 23.
+
+
+Package natbib Warning: Citation `Rebollo10IT' on page 34 undefined on input li
+ne 23.
+
+
+Package natbib Warning: Citation `Howe06B' on page 34 undefined on input line 2
+3.
+
+
+Overfull \hbox (2.3221pt too wide) in paragraph at lines 23--24
+[][][]\EU1/ArnoPro(2)/m/n/12 The primary goal of this work is to investigate th
+e effects of tag forgery to content-
+ []
+
+
+Package natbib Warning: Citation `parra2014measuring' on page 34 undefined on i
+nput line 27.
+
+
+Package natbib Warning: Citation `a02' on page 34 undefined on input line 27.
+
+[34]
+
+Package natbib Warning: Citation `a02' on page 35 undefined on input line 35.
+
+
+Package natbib Warning: Citation `parra2014measuring' on page 35 undefined on i
+nput line 43.
+
+
+Package natbib Warning: Citation `Parra13PhD' on page 35 undefined on input lin
+e 43.
+
+
+Package natbib Warning: Citation `parra2014optimal' on page 35 undefined on inp
+ut line 43.
+
+
+Overfull \hbox (3.03407pt too wide) in paragraph at lines 43--44
+[][][]\EU1/ArnoPro(2)/m/n/12 In our model, we suppose that the privacy attacker
+ aims at profiling users through
+ []
+
+[35]
+
+Package natbib Warning: Citation `Parra10TB' on page 36 undefined on input line
+ 47.
+
+
+Package natbib Warning: Citation `Parra12DKE' on page 36 undefined on input lin
+e 47.
+
+
+Package natbib Warning: Citation `Parra12TKDE' on page 36 undefined on input li
+ne 47.
+
+
+Package natbib Warning: Citation `Parra13PhD' on page 36 undefined on input lin
+e 47.
+
+File: figures/UPRel.pdf Graphic file (type QTm)
+<use  "figures/UPRel.pdf" > [36]
+File: figures/PPRel.pdf Graphic file (type QTm)
+ <use  "figures/PPRel.pdf" > [37]
+
+Package natbib Warning: Citation `Cover06B' on page 38 undefined on input line 
+76.
+
+[38]
+
+Package natbib Warning: Citation `parra2014measuring' on page 39 undefined on i
+nput line 90.
+
+
+Package natbib Warning: Citation `Jaynes82P' on page 39 undefined on input line
+ 92.
+
+[39]
+
+Package natbib Warning: Citation `Rebollo10IT' on page 40 undefined on input li
+ne 108.
+
+[40]
+
+Package natbib Warning: Citation `Rebollo10IT' on page 41 undefined on input li
+ne 112.
+
+
+Package natbib Warning: Citation `Howe06B' on page 41 undefined on input line 1
+12.
+
+
+Package natbib Warning: Citation `a24' on page 41 undefined on input line 117.
+
+[41]
+
+Package natbib Warning: Citation `Chow09WPES' on page 42 undefined on input lin
+e 119.
+
+
+Package natbib Warning: Citation `a22' on page 42 undefined on input line 119.
+
+
+Package natbib Warning: Citation `Howe06B' on page 42 undefined on input line 1
+24.
+
+
+Package natbib Warning: Citation `Howe06B' on page 42 undefined on input line 1
+24.
+
+
+Package natbib Warning: Citation `Rebollo10IT' on page 42 undefined on input li
+ne 132.
+
+
+Package natbib Warning: Citation `Howe06B' on page 42 undefined on input line 1
+33.
+
+[42]
+
+Package natbib Warning: Citation `a25' on page 43 undefined on input line 142.
+
+[43]
+
+Package natbib Warning: Citation `collfilt' on page 44 undefined on input line 
+147.
+
+
+Package natbib Warning: Citation `a04' on page 44 undefined on input line 147.
+
+
+Package natbib Warning: Citation `Lops11B' on page 44 undefined on input line 1
+49.
+
+
+Overfull \hbox (3.31407pt too wide) in paragraph at lines 149--150
+[][][]\EU1/ArnoPro(2)/m/n/12 In the coming sections, we shall use a generic con
+tent-based filtering algorithm [\EU1/ArnoPro(2)/bx/n/12 ?
+ []
+
+
+Package natbib Warning: Citation `recc-sys-handbook' on page 44 undefined on in
+put line 153.
+
+[44]
+
+Package natbib Warning: Citation `Markines09WWW' on page 45 undefined on input 
+line 159.
+
+
+Package natbib Warning: Citation `a16' on page 45 undefined on input line 167.
+
+
+Package natbib Warning: Citation `a17' on page 45 undefined on input line 168.
+
+[45] [46]
+File: figures/architecture.eps Graphic file (type eps)
+ <figures/architecture.eps> [47] [48]
+File: figures/strategy.pdf Graphic file (type QTm)
+ <use  "figures/strategy.pdf" >
+File: figures/Fig4b.pdf Graphic file (type QTm)
+
+<use  "figures/Fig4b.pdf" >
+File: figures/Fig4a.pdf Graphic file (type QTm)
+ <use  "figures/Fig4a.pdf" > [49] [50]
+File: figures/Fig5a.pdf Graphic file (type QTm)
+
+<use  "figures/Fig5a.pdf" >
+
+Package natbib Warning: Citation `a02' on page 51 undefined on input line 260.
+
+
+Package natbib Warning: Citation `a03' on page 51 undefined on input line 260.
+
+
+Package natbib Warning: Citation `a23' on page 51 undefined on input line 260.
+
+File: figures/Fig5b.pdf Graphic file (type QTm)
+<use  "figures/Fig5b.pdf" >
+
+Package natbib Warning: Citation `delicious' on page 51 undefined on input line
+ 268.
+
+
+Package natbib Warning: Citation `a21' on page 51 undefined on input line 268.
+
+
+Package natbib Warning: Citation `a22' on page 51 undefined on input line 268.
+
+
+Overfull \hbox (10.81732pt too wide) in paragraph at lines 268--269
+\EU1/ArnoPro(2)/m/n/12 corresponds to the first and second taxonomy levels of t
+he ODP classification scheme
+ []
+
+File: figures/Fig6a.pdf Graphic file (type QTm)
+<use  "figures/Fig6a.pdf" >
+
+Package natbib Warning: Citation `a22' on page 51 undefined on input line 276.
+
+[51]
+File: figures/Fig6b.pdf Graphic file (type QTm)
+ <use  "figures/Fig6b.pdf" >
+File: figures/Fig7.pdf Graphic file (type QTm)
+ <use  "figures/Fig7.pdf" >
+Overfull \hbox (1.10811pt too wide) in paragraph at lines 297--298
+\EU1/ArnoPro(2)/m/n/12 (Fig. [][]3.3.6[][]), $[][]\OMS/cmsy/m/n/12 R$ \EU1/Arno
+Pro(2)/m/n/12 is decreasing for all three strategies, although with optimised f
+orgery
+ []
+
+[52]
+Overfull \hbox (13.11333pt too wide) in paragraph at lines 306--308
+\EU1/ArnoPro(2)/m/n/12 crease their privacy risk as a consequence of having app
+lied a certain PET (Figs. [][]3.3.8[][]).
+ []
+
+[53] [54] [55])
+Overfull \hbox (3.72206pt too wide) in paragraph at lines 335--26
+[][][]\EU1/ArnoPro(2)/m/n/12 This study furthermore shows in a simple experimen
+tal evaluation, of a real world
+ []
+
+[56] [57] [58] [59] [60] [61] [62] [63] [64]
+\openout2 = `chapters/chapter4.aux'.
+
+ (./chapters/chapter4.tex
+Chapter 4.
+
+Package natbib Warning: Citation `puglisi2015potential' on page 65 undefined on
+ input line 10.
+
+
+Package natbib Warning: Citation `puglisi2016mobilitapp' on page 65 undefined o
+n input line 10.
+
+[65
+
+
+
+] [66] [67]
+
+Package natbib Warning: Citation `tinder' on page 68 undefined on input line 34
+.
+
+[68]
+
+Package natbib Warning: Citation `ibm2015report' on page 69 undefined on input 
+line 39.
+
+[69]
+File: figures/figure_time.png Graphic file (type QTm)
+ <use  "figures/figure_time.png" > [70] [71] [72]
+
+Package natbib Warning: Citation `tinder' on page 73 undefined on input line 98
+.
+
+
+Package natbib Warning: Citation `tinderusers' on page 73 undefined on input li
+ne 98.
+
+
+Package natbib Warning: Citation `happn' on page 73 undefined on input line 99.
+
+
+
+Package natbib Warning: Citation `happnusers' on page 73 undefined on input lin
+e 99.
+
+
+Package natbib Warning: Citation `lovoo' on page 73 undefined on input line 100
+.
+
+
+Package natbib Warning: Citation `lovoousers' on page 73 undefined on input lin
+e 100.
+
+
+Package natbib Warning: Citation `grindr' on page 73 undefined on input line 10
+1.
+
+
+Package natbib Warning: Citation `grindrusers' on page 73 undefined on input li
+ne 101.
+
+
+Package natbib Warning: Citation `badoo' on page 73 undefined on input line 102
+.
+
+
+Package natbib Warning: Citation `badoousers' on page 73 undefined on input lin
+e 102.
+
+
+Package natbib Warning: Citation `tinder' on page 73 undefined on input line 11
+7.
+
+
+Package natbib Warning: Citation `happn' on page 73 undefined on input line 118
+.
+
+
+Package natbib Warning: Citation `lovoo' on page 73 undefined on input line 119
+.
+
+
+Package natbib Warning: Citation `grindr' on page 73 undefined on input line 12
+0.
+
+
+Package natbib Warning: Citation `badoo' on page 73 undefined on input line 121
+.
+
+
+Overfull \hbox (70.72203pt too wide) in paragraph at lines 112--125
+ [][][][] 
+ []
+
+[73] [74]
+File: figures/user_mlat.jpg Graphic file (type QTm)
+ <use  "figures/user_mlat.jpg" > [75]
+
+Package natbib Warning: Citation `pagedata' on page 76 undefined on input line 
+172.
+
+File: figures/figure_connections.png Graphic file (type QTm)
+<use  "figures/figure_connections.png" >
+File: figures/attack_scenario.png Graphic file (type QTm)
+ <use  "figures/attack_scenario.png" >
+[76] [77] [78]
+Overfull \hbox (9.81807pt too wide) in paragraph at lines 214--215
+[][][]\EU1/ArnoPro(2)/m/n/12 We have analysed a set of popular dating applicati
+on, and observed how proximity-
+ []
+
+[79]) [80]
+\openout2 = `chapters/chapter5.aux'.
+
+ (./chapters/chapter5.tex
+Chapter 5.
+
+Overfull \hbox (16.83807pt too wide) in paragraph at lines 8--9
+[][]\EU1/ArnoPro(2)/m/sc/12 In the early age of the Internet users enjoyed a la
+rge level of anonymity.
+ []
+
+
+Package natbib Warning: Citation `puglisi2016web' on page 81 undefined on input
+ line 10.
+
+
+Package natbib Warning: Citation `puglisi2015you' on page 81 undefined on input
+ line 10.
+
+
+Package natbib Warning: Citation `puglisi2017web' on page 81 undefined on input
+ line 10.
+
+
+Overfull \hbox (0.26074pt too wide) in paragraph at lines 12--13
+\EU1/ArnoPro(2)/m/n/12 their product network. For application providers this me
+ans tracking users’ actions
+ []
+
+[81
+
+
+
+] [82]
+
+Package natbib Warning: Citation `puglisi2016web' on page 83 undefined on input
+ line 19.
+
+
+Package natbib Warning: Citation `puglisi2015you' on page 83 undefined on input
+ line 19.
+
+[83]
+
+Package natbib Warning: Citation `Parra12DKE' on page 84 undefined on input lin
+e 37.
+
+
+Package natbib Warning: Citation `Parra12TKDE' on page 84 undefined on input li
+ne 37.
+
+
+Package natbib Warning: Citation `a22' on page 84 undefined on input line 39.
+
+[84] [85]
+File: figures/advertising-loop.png Graphic file (type QTm)
+ <use  "figures/advertising-loop.png" >
+
+Package natbib Warning: Citation `puglisi2016web' on page 86 undefined on input
+ line 62.
+
+
+Package natbib Warning: Citation `puglisi2015you' on page 86 undefined on input
+ line 62.
+
+[86] [87] [88]
+
+Package natbib Warning: Citation `Parra14FGCS' on page 89 undefined on input li
+ne 122.
+
+
+Package natbib Warning: Citation `Rebollo11SecTech' on page 89 undefined on inp
+ut line 122.
+
+[89] [90]
+File: figures/tracker-request.png Graphic file (type QTm)
+ <use  "figures/tracker-request.png" >
+File: figures/graph-map.png Graphic file (type QTm)
+
+<use  "figures/graph-map.png" > [91] [92]
+
+Package natbib Warning: Citation `newman2002assortative' on page 93 undefined o
+n input line 169.
+
+
+Package natbib Warning: Citation `peixoto2014efficient' on page 93 undefined on
+ input line 175.
+
+
+Package natbib Warning: Citation `peixoto2013parsimonious' on page 93 undefined
+ on input line 175.
+
+
+Package natbib Warning: Citation `peixoto2012entropy' on page 93 undefined on i
+nput line 175.
+
+File: figures/absolute-population-profile-eps-converted-to.pdf Graphic file (ty
+pe QTm)
+<use  "figures/absolute-population-profile-eps-converted-to.pdf" > [93]
+[94]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 200.
+ [95] [96]
+
+Package natbib Warning: Citation `puglisi2015you' on page 97 undefined on input
+ line 280.
+
+[97]
+
+Package natbib Warning: Citation `noldus2015assortativity' on page 98 undefined
+ on input line 286.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[98]
+File: figures/deg-dist.pdf Graphic file (type QTm)
+ <use  "figures/deg-dist.pdf" >
+File: figures/blockmodel.pdf Graphic file (type QTm)
+ <use  "figures/blockmodel.pdf" >
+File: figures/blockstate.pdf Graphic file (type QTm)
+
+<use  "figures/blockstate.pdf" >
+File: figures/pagerank.pdf Graphic file (type QTm)
+ <use  "figures/pagerank.pdf" >
+LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 345.
+
+File: figures/average_1_norm.eps Graphic file (type eps)
+
+<figures/average_1_norm.eps>
+File: figures/average_2_norm.eps Graphic file (type eps)
+ <figures/average_2_norm.eps>
+File: figures/average_inf_norm.eps Graphic file (type eps)
+
+<figures/average_inf_norm.eps>
+File: figures/average_kl.eps Graphic file (type eps)
+ <figures/average_kl.eps>
+File: figures/facebook-tracking-page-norm-1.eps Graphic file (type eps)
+
+<figures/facebook-tracking-page-norm-1.eps>
+File: figures/facebook-tracking-page-norm-2.eps Graphic file (type eps)
+
+<figures/facebook-tracking-page-norm-2.eps>
+File: figures/facebook-tracking-page-norm-inf.eps Graphic file (type eps)
+
+<figures/facebook-tracking-page-norm-inf.eps>
+File: figures/facebook-tracking-page-kl.eps Graphic file (type eps)
+
+<figures/facebook-tracking-page-kl.eps>
+File: figures/facebook-tracking-tags-norm-1.eps Graphic file (type eps)
+
+<figures/facebook-tracking-tags-norm-1.eps>
+File: figures/facebook-tracking-tags-norm-2.eps Graphic file (type eps)
+
+<figures/facebook-tracking-tags-norm-2.eps>
+File: figures/facebook-tracking-tags-norm-inf.eps Graphic file (type eps)
+
+<figures/facebook-tracking-tags-norm-inf.eps>
+File: figures/facebook-tracking-tags-kl.eps Graphic file (type eps)
+
+<figures/facebook-tracking-tags-kl.eps> [99] [100] [101] [102] [103] [104]
+[105] [106]) [107]
+\openout2 = `chapters/chapter6.aux'.
+
+ (./chapters/chapter6.tex
+Chapter 6.
+[108
+
+
+
+]
+
+Package natbib Warning: Citation `puglisi2017anonymity' on page 109 undefined o
+n input line 10.
+
+
+Package natbib Warning: Citation `facebook' on page 109 undefined on input line
+ 16.
+
+
+Overfull \hbox (7.1981pt too wide) in paragraph at lines 18--19
+[][][]\EU1/ArnoPro(2)/m/n/12 Users’ profiles also change over time, reflecting 
+how real-world individuals change
+ []
+
+
+Package natbib Warning: Citation `google' on page 109 undefined on input line 2
+0.
+
+
+Package natbib Warning: Citation `facebook' on page 109 undefined on input line
+ 20.
+
+[109] [110]
+Overfull \hbox (7.1381pt too wide) in paragraph at lines 32--33
+\EU1/ArnoPro(2)/m/n/12 user profiles due to a marginal release of novel informa
+tion, based on an information-
+ []
+
+
+Package natbib Warning: Citation `FTE' on page 111 undefined on input line 34.
+
+
+Overfull \hbox (14.20207pt too wide) in paragraph at lines 38--39
+[][][]\EU1/ArnoPro(2)/m/n/12 More precisely, we propose a series of refinements
+ of a recent information-theoretic
+ []
+
+[111]
+Overfull \hbox (9.63676pt too wide) in paragraph at lines 43--44
+\EU1/ArnoPro(2)/m/n/12 chapter consists in the extension of the aforementioned 
+model to time-varying
+ []
+
+[112]
+Overfull \hbox (21.4211pt too wide) in paragraph at lines 55--55
+ [][][][]|[]\EU1/ArnoPro(2)/m/sc/14.4 An information-theoretic model for measur
+ing anonymity
+ []
+
+
+Package natbib Warning: Citation `Rebollo10IT' on page 113 undefined on input l
+ine 61.
+
+
+Package natbib Warning: Citation `Rebollo11SecTech' on page 113 undefined on in
+put line 61.
+
+
+Package natbib Warning: Citation `Parra14FGCS' on page 113 undefined on input l
+ine 61.
+
+[113] [114] [115]
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Contextuals=Swash,Alternate' (+cswh) not available for
+* font 'ArnoPro-RegularSubhead' with script 'Latin' and language 'Default'.
+*************************************************
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Contextuals=Swash,Alternate' (+cswh) not available for
+* font 'ArnoPro-RegularSubhead' with script 'Latin' and language 'Default'.
+*************************************************
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Contextuals=Swash,Alternate' (+cswh) not available for
+* font 'ArnoPro-RegularDisplay' with script 'Latin' and language 'Default'.
+*************************************************
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Contextuals=Swash,Alternate' (+cswh) not available for
+* font 'ArnoPro-RegularDisplay' with script 'Latin' and language 'Default'.
+*************************************************
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'ArnoPro(3)' created for font 'ArnoPro' with options
+. [Mapping=tex-text,Numbers=OldStyle,Ligatures=TeX,Path = fonts/,Extension =
+. .otf,Mapping=tex-text,Numbers=OldStyle,Ligatures={Common},SizeFeatures={{Size
+={-10},
+. Font=*-RegularCaption}, {Size={10-13.0}, Font=*}, {Size={13.01-19.9},
+. Font=*-RegularSubhead, Ligatures=Rare, Contextuals={Swash,Alternate}},
+. {Size={19.91-},Font=*-RegularDisplay, Ligatures=Rare,
+. Contextuals={Swash,Alternate}}},UprightFont=ArnoPro-Regular,BoldFont=ArnoPro-
+Bold,ItalicFont=ArnoPro-Italic,BoldItalicFont=ArnoPro-BoldItalic,VerticalPositi
+on=Superior].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <-10>"[fonts/ArnoPro-RegularCaption.otf]/OT:script=latn;language=DFLT;mapping
+=tex-text;+onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;"<10-13.0>"
+[fonts/ArnoPro.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;mapping
+=tex-text;mapping=tex-text;+onum;+liga;+sups;"<13.01-19.9>"[fonts/ArnoPro-Regul
+arSubhead.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;mapping=tex-
+text;mapping=tex-text;+onum;+liga;+sups;+dlig;+calt;"<19.91->"[fonts/ArnoPro-Re
+gularDisplay.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;mapping=t
+ex-text;mapping=tex-text;+onum;+liga;+sups;+dlig;+calt;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <-10>"[fonts/ArnoPro-RegularCaption.otf]/OT:script=latn;language=DFLT;mapping
+=tex-text;+onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;+smcp;"<10-
+13.0>"[fonts/ArnoPro.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;m
+apping=tex-text;mapping=tex-text;+onum;+liga;+sups;+smcp;"<13.01-19.9>"[fonts/A
+rnoPro-RegularSubhead.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+onum;
+mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;+dlig;+calt;+smcp;"<19.91->
+"[fonts/ArnoPro-RegularDisplay.otf]/OT:script=latn;language=DFLT;mapping=tex-te
+xt;+onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;+dlig;+calt;+smcp;
+"
+. and font adjustment code:
+. 
+. 
+. * 'bold' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+o
+num;mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;"
+. 
+. * 'bold small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+o
+num;mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;+smcp;"
+. and font adjustment code:
+. 
+. 
+. * 'italic' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Italic.otf]/OT:script=latn;language=DFLT;mapping=tex-text;
++onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-Italic.otf]/OT:script=latn;language=DFLT;mapping=tex-text;
++onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;+smcp;"
+. and font adjustment code:
+. 
+. 
+. * 'bold italic' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;"
+. 
+. * 'bold small caps' with NFSS spec.:
+. 
+. <->"[fonts/ArnoPro-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+onum;mapping=tex-text;mapping=tex-text;+onum;+liga;+sups;+smcp;"
+. and font adjustment code:
+. 
+.................................................
+
+Package natbib Warning: Citation `cover91b' on page 116 undefined on input line
+ 128.
+
+File: figures/ConvProj.pdf Graphic file (type QTm)
+<use  "figures/ConvProj.pdf" > [116]
+File: figures/triplex_profiles.pdf Graphic file (type QTm)
+ <use  "figures/triplex_profiles.pdf" >
+File: figures/triplex_alpha.png Graphic file (type QTm)
+
+<use  "figures/triplex_alpha.png" >
+Overfull \hbox (4.39807pt too wide) in paragraph at lines 151--151
+ [][][][]|[]\EU1/ArnoPro(2)/m/sc/12 Differential update of the anonymity risk d
+ue to revealing new
+ []
+
+
+Overfull \hbox (0.35674pt too wide) in paragraph at lines 154--156
+[][]\EU1/ArnoPro(2)/m/n/12 Under this simple model, we consider the following p
+roblem. Suppose that the dis-
+ []
+
+[117] [118]
+Overfull \hbox (0.4581pt too wide) in paragraph at lines 168--170
+\EU1/ArnoPro(2)/m/n/12 On the other hand, we may resort to our previous gradien
+t analysis in §[][]6.2.2[][], specif-
+ []
+
+
+Overfull \hbox (9.38283pt too wide) detected at line 177
+[] [] \OMS/cmsy/m/n/12 ^^@ []\OT1/cmr/m/n/12 ([][]\OMS/cmsy/m/n/12 k[]\OT1/cmr/
+m/n/12 ) = [] [] + []([][])\OML/cmm/m/it/12 ;
+ []
+
+[119]
+
+Package natbib Warning: Citation `Rebollo10IT' on page 120 undefined on input l
+ine 212.
+
+[120]
+Overfull \hbox (46.90929pt too wide) detected at line 219
+[] [] \U/msa/m/n/12 > [] [] \OT1/cmr/m/n/12 + [] [] \OML/cmm/m/it/12 :
+ []
+
+[121] [122]
+File: figures/example_1_D.eps Graphic file (type eps)
+ <figures/example_1_D.eps>
+File: figures/example_1_H.eps Graphic file (type eps)
+ <figures/example_1_H.eps> [123]
+File: figures/example_2_D.eps Graphic file (type eps)
+
+<figures/example_2_D.eps>
+File: figures/example_2_H.eps Graphic file (type eps)
+ <figures/example_2_H.eps> [124]
+Overfull \hbox (2.81009pt too wide) in paragraph at lines 303--305
+[][][]\EU1/ArnoPro(2)/m/n/12 In the entropy case, our analysis, summarised in t
+he minimisation problem [],
+ []
+
+
+Package natbib Warning: Citation `Rebollo10IT' on page 125 undefined on input l
+ine 309.
+
+[125]
+
+Package natbib Warning: Citation `FTE' on page 126 undefined on input line 314.
+
+
+
+Overfull \hbox (11.69894pt too wide) detected at line 317
+[] \OT1/cmr/m/n/12 = ([]\OML/cmm/m/it/12 :[][][][]; []:[][][][]; []:[][][][]; [
+]:[][][][]; []:[][][][]; []:[][][][]; []:[][][][]; []:[][][][]; []:[][][][]; []
+:[][][][]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
+ []
+
+File: figures/sliding_window.png Graphic file (type QTm)
+<use  "figures/sliding_window.png" >
+Overfull \hbox (30.42575pt too wide) detected at line 330
+[]\OT1/cmr/m/n/12 ([])[] = ([]\OML/cmm/m/it/12 :[][][][]; []:[][][][]; []:[][][
+][]; []:[][][][]; []:[][][][]; []:[][][][]; []:[][][][]; []:[][][][]; []:[][][]
+[]; []:[][][][]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
+ []
+
+[126]
+Overfull \hbox (43.25371pt too wide) detected at line 331
+[]\OT1/cmr/m/n/12 ([])[] = ([]\OML/cmm/m/it/12 :[][][][]; []:[][][][]; []:[][][
+][]; []:[][][][]; []:[][][][]; []:[][][][]; []:[][][][]; []:[][][][]; []:[][][]
+[]; []:[][][][]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
+ []
+
+File: figures/experiment1_A.eps Graphic file (type eps)
+<figures/experiment1_A.eps>
+File: figures/experiment2_A.eps Graphic file (type eps)
+ <figures/experiment2_A.eps>
+File: figures/experiment1_B.eps Graphic file (type eps)
+
+<figures/experiment1_B.eps>
+File: figures/experiment2_B.eps Graphic file (type eps)
+ <figures/experiment2_B.eps>
+Underfull \hbox (badness 1226) in paragraph at lines 346--346
+[][][]\EU1/lmss/bx/n/10.95 Figure 6.3.4: |\EU1/lmss/m/n/10.95 The figure consid
+ers the privacy risk between a user 
+ []
+
+
+Overfull \hbox (0.99806pt too wide) in paragraph at lines 350--351
+[][][]\EU1/ArnoPro(2)/m/n/12 These experiments confirm the theoretical analysis
+ and examples presented, ver-
+ []
+
+[127] [128]
+Overfull \hbox (4.83006pt too wide) in paragraph at lines 368--369
+[][][]\EU1/ArnoPro(2)/m/n/12 We investigate the profile updates leading to the 
+best and worst overall anonymity
+ []
+
+[129]) [130]
+\openout2 = `chapters/chapter7.aux'.
+
+ (./chapters/chapter7.tex
+Chapter 7.
+
+Package natbib Warning: Citation `puglisi2015restful' on page 131 undefined on 
+input line 9.
+
+
+Package natbib Warning: Citation `puglisi2015potential' on page 131 undefined o
+n input line 9.
+
+[131
+
+
+
+]
+
+Package natbib Warning: Citation `maheswaran2013crypto' on page 132 undefined o
+n input line 16.
+
+
+Package natbib Warning: Citation `isaakidis2016unlimitid' on page 132 undefined
+ on input line 16.
+
+
+Package natbib Warning: Citation `tsang2007blacklistable' on page 132 undefined
+ on input line 16.
+
+[132]
+Overfull \hbox (0.74072pt too wide) in paragraph at lines 21--22
+[][]\EU1/ArnoPro(2)/m/n/12 Users interact with web services and applications wi
+th hypermedia protocols. Each
+ []
+
+[133]
+Overfull \hbox (13.21005pt too wide) in paragraph at lines 29--30
+[][][]\EU1/ArnoPro(2)/m/n/12 The uniformity of web interfaces as defined by the
+ RESTful architectural paradigms
+ []
+
+
+Package natbib Warning: Citation `Jsonapi' on page 134 undefined on input line 
+31.
+
+[134] [135]
+Overfull \hbox (0.14531pt too wide) in paragraph at lines 62--63
+[][][]\EU1/ArnoPro(2)/m/n/12 A service implementing the described model of the 
+user identity can either be an
+ []
+
+[136] [137] [138]
+
+Package natbib Warning: Citation `fetterfc' on page 139 undefined on input line
+ 124.
+
+
+Package natbib Warning: Citation `goldberg2012off' on page 139 undefined on inp
+ut line 124.
+
+
+Package natbib Warning: Citation `hardt2012oauth' on page 139 undefined on inpu
+t line 124.
+
+
+Package natbib Warning: Citation `jones2015json' on page 139 undefined on input
+ line 124.
+
+
+Overfull \hbox (0.15408pt too wide) in paragraph at lines 122--125
+\EU1/ArnoPro(2)/m/n/12 to give users more control over their data and desired f
+ootprint, given the hyperme-
+ []
+
+File: figures/OAuth2Flow.png Graphic file (type QTm)
+<use  "figures/OAuth2Flow.png" > [139] [140]
+
+Package natbib Warning: Citation `jones2015json' on page 141 undefined on input
+ line 151.
+
+
+Package natbib Warning: Citation `jones2014n' on page 141 undefined on input li
+ne 151.
+
+
+Package natbib Warning: Citation `jones2015jwe' on page 141 undefined on input 
+line 151.
+
+
+Overfull \hbox (2.69408pt too wide) in paragraph at lines 155--157
+[][]\EU1/ArnoPro(2)/m/n/12 The WebSocket is a protocol created for web applicat
+ion to establish a bi-directional
+ []
+
+[141]
+Overfull \hbox (5.25006pt too wide) in paragraph at lines 171--172
+[][][]\EU1/ArnoPro(2)/m/n/12 Before starting an authentication and subsequent a
+uthorisation process the client
+ []
+
+
+Package natbib Warning: Citation `jones2015jwa' on page 142 undefined on input 
+line 178.
+
+
+Package natbib Warning: Citation `krawczyk1997rfc' on page 142 undefined on inp
+ut line 178.
+
+
+Overfull \hbox (1.58607pt too wide) in paragraph at lines 177--179
+\EU1/ArnoPro(2)/m/n/12 forming a set of cryptographic operations that allows th
+e client to register an anony-
+ []
+
+
+Overfull \hbox (19.59274pt too wide) in paragraph at lines 177--179
+\EU1/ArnoPro(2)/m/n/12 gorithms (JWA) [\EU1/ArnoPro(2)/bx/n/12 ? \EU1/ArnoPro(2
+)/m/n/12 ], provides Hash-based Message Authentication Codes (HMACs).
+ []
+
+[142]
+File: figures/PrivateFlow.png Graphic file (type QTm)
+ <use  "figures/PrivateFlow.png" > [143]
+Overfull \hbox (10.98799pt too wide) in paragraph at lines 204--205
+[][][]\EU1/ArnoPro(2)/m/n/12 The client receives an authorisation grant via a \
+EU1/ArnoPro(2)/m/it/12 JWT \EU1/ArnoPro(2)/m/n/12 encoding the 0-knowledge
+ []
+
+[144] [145]
+
+Package natbib Warning: Citation `ecpy' on page 146 undefined on input line 245
+.
+
+) [146] [147]
+\openout2 = `chapters/chapter8.aux'.
+
+ (./chapters/chapter8.tex
+Chapter 8.
+[148
+
+
+
+] [149] [150]
+Overfull \hbox (10.72206pt too wide) in paragraph at lines 27--28
+[][][]\EU1/ArnoPro(2)/m/n/12 We investigated the profile updates leading to the
+ best and worst overall anonymity
+ []
+
+) [151] [152]
+\openout2 = `endmatter/appendix.aux'.
+
+ (./endmatter/appendix.tex [153
+
+
+
+] [154] [155] [156] [157] [158])
+[159]
+No file thesis.bbl.
+\openout2 = `endmatter/colophon.aux'.
+
+(./endmatter/colophon.tex) [160
+
+
+
+
+]
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+(./thesis.aux (./chapters/chapter1.aux) (./chapters/chapter2.aux)
+(./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux)
+(./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/chapter8.aux)
+(./endmatter/appendix.aux) (./endmatter/colophon.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 45.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
+ )
+(\end occurred inside a group at level 2)
+
+### semi simple group (level 2) entered at line 12 (\begingroup)
+### semi simple group (level 1) entered at line 12 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 28100 strings out of 493706
+ 507838 string characters out of 6145769
+ 752571 words of memory out of 5000000
+ 30917 multiletter control sequences out of 15000+600000
+ 16072 words of font info for 140 fonts, out of 8000000 for 9000
+ 1332 hyphenation exceptions out of 8191
+ 51i,32n,90p,10409b,2220s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on thesis.pdf (171 pages).
