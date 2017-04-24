@@ -16,6 +16,7 @@
 %HYPHENATION
 \hyphenation{Stan-ford Cat-a-lo-nia Price-wa-ter-house-Coo-pers Post-Script}
 \newcommand{\hyph}{-}
+\mathchardef\mhyphen="2D
 
 \newcommand{\FigScale}{0.95}
 \newcommand{\SmallFigScale}{0.75}

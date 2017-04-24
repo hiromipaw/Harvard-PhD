@@ -65,7 +65,7 @@ We now introduce the normalised \emph{$\alpha$-norm} as the generalised variatio
 
 \subsubsection{Norm and generalised variation}
 
-We define the $\alpha-norm$ between the partial profile as observed by an advertising platform and the genuine user profile as:
+We define the $\alpha$-norm between the partial profile as observed by an advertising platform and the genuine user profile as:
 
 $$ \| p - \hat{p} \|_\alpha = \sqrt[\alpha]{\sum_l{ {| p_l - \hat{p}_l |}^\alpha }} \quad  \text{with} \quad  \alpha \in [1, \infty] $$
 
@@ -73,39 +73,40 @@ The case for $\alpha = \infty$ is defined in the limit:
 
 $$\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha = \lim_{\alpha\to\infty} \sqrt[\alpha]{\sum_l{ {| p_l - \hat{p}_l |}^\alpha }} = \max_l { | p_l - \hat{p}_l | } $$
 
-The $\alpha-norm$ is a distance in $\mathbb{R}^L$ with the following properties:
+The $\alpha$-norm is defined in $\mathbb{R}^L$ with the following properties:
 
 \begin{itemize}
  \item Absolute homogeneity.
- \item Positive definite: $ \| p - \hat{p} \|_\alpha \ge 0$ and $  \| p - \hat{p} \|_\alpha = 0 \Leftrightarrow p = \hat{p} $ 
- \item $ \| p - \hat{p} \|_\alpha = \sqrt[\alpha]{2}$ $\Leftrightarrow$  $p$ and $\hat{p}$ are orthogonal deltas.
- \item Triangle equality.
+ \item Positive definiteness: $ \| p - \hat{p} \|_\alpha \ge 0$ and $  \| p - \hat{p} \|_\alpha = 0 \Leftrightarrow p = \hat{p} $ 
+ \item $ \| p - \hat{p} \|_\alpha \le \sqrt[\alpha]{2}$ 
+ \item $ \| p - \hat{p} \|_\alpha = \sqrt[\alpha]{2}$ $\Leftrightarrow$ $p$ and $\hat{p}$ are orthogonal deltas.
+ \item Triangle inequality.
 \end{itemize}
 
 For $\alpha = 1$ we define the \emph{1-norm} between the partial and the genuine user profiles as:
 
 $$ \| p - \hat{p} \|_1 = \sum_l{ | p_{l} - \hat{p}_{l} | }  $$
 
-The \emph{1-norm} represent the average discrepancy between the two profiles. For $\alpha = 2$ we define the \emph{2-norm} as:
+The \emph{1-norm} represents the average discrepancy between the two profiles. For $\alpha = 2$ we define the \emph{2-norm} as:
 
-$$ \| p - \hat{p} \|_2 = \sqrt{\sum_l{ {| {p_{l} - \hat{p}_{l}} |}^2 }} $$
+$$ \| p - \hat{p} \|_2 = \sqrt{\sum_l{ {( {p_{l} - \hat{p}_{l}} )}^2 }} $$
 
 The \emph{2-norm} represents the Euclidean distance between the two distributions. When considering the \emph{2-norm} it is possible to highlight larger discrepancies on the set of categories analysed. An interesting property is that \emph{norms} are also nested. Hence:
 
 $$ \| p - \hat{p} \|_\infty \leqslant \| p - \hat{p} \|_2 \leqslant \| p - \hat{p} \|_1 $$
 
-We hence define the generalised variation $\text{GV}(p, \hat{p})$, based on $\alpha$-norm as:
+We hence define the generalised variation $\text{GV}_\alpha(p, \hat{p})$, based on $\alpha$-norm as:
 
-$$ \text{GV}(p, \hat{p})_\alpha = \frac {1} {\sqrt[\alpha]{2}}  {\| p - \hat{p} \|}_\alpha =  \frac {1} {\sqrt[\alpha]{2}} \sqrt[\alpha]{{ \sum_l{ ( p_{l} - \hat{p}_{l})^\alpha } }} ,\quad  \alpha \in [1,\infty]$$
+$$ \text{GV}_\alpha(p, \hat{p}) = \frac {1} {\sqrt[\alpha]{2}}  {\| p - \hat{p} \|}_\alpha =  \sqrt[\alpha]{{ \sum_l{ \frac {1}{2} ( p_{l} - \hat{p}_{l})^\alpha } }} ,\quad  \alpha \in [1,\infty]$$
 
-The coefficient $\frac {1} {\sqrt[\alpha]{2}}$ normalises the range of values of the \emph{$\alpha-norm$} in $[0, 1]$. Therefore, $\text{GV}(p, \hat{p})$ is a norm, is positive definite, absolutely homogeneous and satisfies the triangle inequality:
+The coefficient $\frac {1} {\sqrt[\alpha]{2}}$ normalises the range of values of the \emph{$\alpha$-norm} in $[0, 1]$. Therefore, $\text{GV}_\alpha(p, \hat{p})$ is a norm, is positive definite, absolutely homogeneous and satisfies the triangle inequality:
 
 \begin{itemize}
- \item $\text{GV}(p, \hat{p}) \geq 0 $ with equality if and only if $p = \hat{p}$
- \item $\text{GV}(p, \hat{p}) \leq 1$ with equality if and only if $p$ and $\hat{p}$ are orthogonal canonical vectors (discrete deltas).
+ \item $\text{GV}_\alpha(p, \hat{p}) \geq 0 $ with equality if and only if $p = \hat{p}$
+ \item $\text{GV}_\alpha(p, \hat{p}) \leq 1$ with equality if and only if $p$ and $\hat{p}$ are orthonormal canonical vectors (discrete deltas).
 \end{itemize}
 
-Note that for $\alpha = 1$ the generalised variation $\text{GV}(p, \hat{p})$ is equal to the total variation $\text{TV}(p, \hat{p}) $:
+Note that for $\alpha = 1$ the generalised variation $\text{GV}_\alpha(p, \hat{p})$ is equal to the total variation $\text{TV}(p, \hat{p}) $:
 
 $$ \text{TV}(p, \hat{p})= \frac {1} {2}  \| p - \hat{p} \|_1 =  \frac {1} {2} \sum_l{ | p_{l} - \hat{p}_{l} | } $$
 
@@ -113,7 +114,7 @@ For $\alpha = 2$ we have the normalised \emph{2-norm}:
 
 $$ \text{GV}_2 = \frac {1} {\sqrt{2}}  {\| p - \hat{p} \|}_2 =  \frac {1} {\sqrt{2}} \sqrt{{ \sum_l{ | p_{l} - \hat{p}_{l}|^2 } }} $$
 
-Finally, the case for $\alpha = \infty$, $\lim_{\alpha\to\infty} \text{GV}(p, \hat{p})_\alpha = \| p - \hat{p} \|_\infty $ between $p$ and $\hat{p}$. The reason is that for $\alpha \gg 1$ the greatest difference dominates in the sum $\sum_l{ {| p_l - \hat{p}_l |}^\alpha }$. Therefore $\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha \approx \max_l { | p_l - \hat{p}_l | } $.
+Finally, the case for $\alpha = \infty$, $\lim_{\alpha\to\infty} \text{GV}_\alpha(p, \hat{p}) = \| p - \hat{p} \|_\infty $ between $p$ and $\hat{p}$. The reason is that for $\alpha \gg 1$ the greatest difference dominates in the sum $\sum_l{ {| p_l - \hat{p}_l |}^\alpha }$. Therefore $\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha \approx \max_l { | p_l - \hat{p}_l | } $.
 
 One might interpret these norms as $\alpha = 1$ been an average-case metric, $\alpha=\infty$ being a worst-case scenario, and $\alpha=2$ a robust middle ground.
 
@@ -135,7 +136,7 @@ While the user visits a webpage and reads its content a series of snippets of co
 
 \subsection{Proposing a model of third-party requests on web pages}
 \noindent
-When a user visits a web page, the browser sends an HTTP request to the server to request a representation of the resource described through the URL. The server provides the resource representation in the form of a HTML document and the browser parses it. The HTML document contains a number of links to other resources, such as JavaScript code, videos, audios or images (Fig.~\ref{fig:third-party}). Some of these can be stored on the same domain as the requested page, some may be requested to third-party services. Such is the case of services like Google Analytics, share buttons from different social networks, or advertising banners. Together with the HTTP request, a number of parameters are included. These contains keywords, users? preferences, information regarding the user device and session, in page information sent to the third-party service from the website or application.
+When a user visits a web page, the browser sends an HTTP request to the server to request a representation of the resource described through the URL. The server provides the resource representation in the form of a HTML document and the browser parses it. The HTML document contains a number of links to other resources, such as JavaScript code, videos, audios or images (Fig.~\ref{fig:third-party}). Some of these can be stored on the same domain as the requested page, some may be requested to third-party services. Such is the case of services like Google Analytics, share buttons from different social networks, or advertising banners. Together with the HTTP request, a number of parameters are included. These contains keywords, users' preferences, information regarding the user device and session, in page information sent to the third-party service from the website or application.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/tracker-request.png}
@@ -192,7 +193,7 @@ Pages per users    & 100 & Total pages      & 5000 \\[2.5mm] \hline
 \end{tabular}
 \end{table}
 
-We profiled 50 users and each user visited a series of 100 pages. In total we analysed 5000 different pages (Table:~\ref{table:DatasetStat}). For each user we calculated how each page contributed to the user profile and also how third-party services adapted to the user profile by returning certain information in form of ads. Information that advertising services request from the visited page may vary in length and type (Listings~\ref{lst:amazon},~\ref{lst:krxd},~\ref{lst:facebook}). Some trackers might include only the referrer \emph{url} and some devices information and user triggered parameters (Listings~\ref{lst:amazon},~\ref{lst:facebook}) while other services might be more lengthily in what is sent from the page (Listing~\ref{lst:krxd}). Some of the information sent through third-party request cannot be categorised, since they include hashed users? ids and internal keywords and code belonging to the tracking service. Other information, like the keywords retrieved from the page (Listing~\ref{lst:krxd}) can be categorised into category of interest that we assume the tracking service uses to profile the user through their interests.
+We profiled 50 users and each user visited a series of 100 pages. In total we analysed 5000 different pages (Table:~\ref{table:DatasetStat}). For each user we calculated how each page contributed to the user profile and also how third-party services adapted to the user profile by returning certain information in form of ads. Information that advertising services request from the visited page may vary in length and type (Listings~\ref{lst:amazon},~\ref{lst:krxd},~\ref{lst:facebook}). Some trackers might include only the referrer \emph{url} and some devices information and user triggered parameters (Listings~\ref{lst:amazon},~\ref{lst:facebook}) while other services might be more lengthily in what is sent from the page (Listing~\ref{lst:krxd}). Some of the information sent through third-party request cannot be categorised, since they include hashed users' ids and internal keywords and code belonging to the tracking service. Other information, like the keywords retrieved from the page (Listing~\ref{lst:krxd}) can be categorised into category of interest that we assume the tracking service uses to profile the user through their interests.
 
 It is interesting to not how among the parameters sent to the third-party tracking services are not included just in page keywords regarding the topic of the page, but also specific browser information. Some of the device's preferences are included in the HTTP headers, like the user-agent identifying the browser and the Operative System. Other information regard how long the page took to load or how soon the content was ready (Listing~\ref{lst:krxd}).
 
