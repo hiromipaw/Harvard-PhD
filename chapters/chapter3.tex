@@ -44,7 +44,7 @@ In our model, we suppose that the privacy attacker aims at profiling users throu
 
 \subsection{Modelling the User/Item Profiles}
 \label{sec:mod-profiles}
-A tractable model of the user profile as a probability mass function (PMF) is proposed in~\cite{Parra10TB,Parra12DKE,Parra12TKDE,Parra13PhD} to express how each tag contributes to expose how many times the user has expressed a preference toward a specific category of interest. This model follows the intuitive assumption that a particular category is weighted according to the number of times this has been used in the user or item profile.
+A tractable model of the user profile as a probability mass function (PMF) is proposed in~\cite{Parra10TB,parra2012optimal,Parra12TKDE,Parra13PhD} to express how each tag contributes to expose how many times the user has expressed a preference toward a specific category of interest. This model follows the intuitive assumption that a particular category is weighted according to the number of times this has been used in the user or item profile.
 
 \begin{figure}[htb]
 \includegraphics[width=\textwidth]{figures/UPRel.pdf}
@@ -89,7 +89,7 @@ Similarly, we define the \emph{(final) privacy risk}~$\mathcal{R}$ as the KL div
 Next, we justify the Shannon entropy and the KL divergence as measures of privacy when an attacker aims to individuate users based on their tag profiles.
 The rationale behind the use of these two information-theoretic quantities as privacy metrics is documented in greater detail in~\cite{parra2014measuring}.
 
-Leveraging on a celebrated information-theoretic rationale by Jaynes~\cite{Jaynes82P}, the Shannon entropy of an apparent user profile may be regarded as a measure of privacy, or more accurately, anonymity.
+Leveraging on a celebrated information-theoretic rationale by Jaynes~\cite{jaynes1982rationale}, the Shannon entropy of an apparent user profile may be regarded as a measure of privacy, or more accurately, anonymity.
 The leading idea is that the method of types from information theory establishes an approximate monotonic relationship between the likelihood of a PMF in a stochastic system and its entropy. Loosely speaking and in our context, the higher the entropy of a profile, the more likely it is, and the more users behave according to it. Under this interpretation, entropy is a measure of anonymity, although not in the sense that the user's identity remains unknown. Entropy has, therefore, the meaning that the higher likelihood of an apparent profile can help the user go unnoticed. In fact, the apparent user profile makes the user more typical to an external observer, and hopefully, less attractive to an attacker whose objective is to target peculiar users.
 
 If an aggregated histogram of the population is available as a reference profile, as we assume in this work, the extension of Jaynes' argument to relative entropy also gives an acceptable measure of anonymity.
@@ -150,7 +150,7 @@ In the coming sections, we shall use a generic content-based filtering algorithm
 
 We have chosen a content-based recommender because this class of algorithms models users and items as histograms of tags, which is essentially the model assumed for our adversary (\S  \ref{sec:mod-profiles}). Loosely speaking a content-based recommendation system is composed of: a proper technique for representing the items and users' profiles, a strategy to compare items and users and produce a recommendation. The field of content recommendation is particularly vast and developed in the literature and its applications are numerous. Recommendation systems in fact span different topics in computer science, information retrieval and artificial intelligence. 
 
-For the scope of this job we are only concentrating on applying a suitable measure of similarity within items and users' profiles. The recommendation algorithm we have implemented therefore aims to find items that are closer to a particular user profile (i.e. more similar). Three commons measurement of similarity between objects are usually considered in the literature. These are namely: Euclidean distance, Pearson correlation and Cosine similarity~\cite{recc-sys-handbook}. 
+For the scope of this job we are only concentrating on applying a suitable measure of similarity within items and users' profiles. The recommendation algorithm we have implemented therefore aims to find items that are closer to a particular user profile (i.e. more similar). Three commons measurement of similarity between objects are usually considered in the literature. These are namely: Euclidean distance, Pearson correlation and Cosine similarity~\cite{Lops11B}. 
 
 The Euclidean distance is the simplest and most common example of a distance measure. The Pearson correlation is instead a measurement of the linear relationship between objects. While there are certainly different correlation coefficients that have been considered and applied, the Pearson correlation is among the most commonly used. 
 
