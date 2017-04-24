@@ -112,7 +112,7 @@ $$ \text{TV}(p, \hat{p})= \frac {1} {2}  \| p - \hat{p} \|_1 =  \frac {1} {2} \s
 
 For $\alpha = 2$ we have the normalised \emph{2-norm}:
 
-$$ \text{GV}_2 = \frac {1} {\sqrt{2}}  {\| p - \hat{p} \|}_2 =  \sqrt{{\frac {1} {2}} { \sum_l{ | p_{l} - \hat{p}_{l}|^2 } }} $$
+$$ \text{GV}_2 = \frac {1} {\sqrt{2}}  {\| p - \hat{p} \|}_2 =  \sqrt{{\frac {1} {2}} { \sum_l{ (p_{l} - \hat{p}_{l})^2 } }} $$
 
 Finally, the case for $\alpha = \infty$, $\lim_{\alpha\to\infty} \text{GV}_\alpha(p, \hat{p}) = \| p - \hat{p} \|_\infty $ between $p$ and $\hat{p}$. The reason is that for $\alpha \gg 1$ the greatest difference dominates in the sum $\sum_l{ {| p_l - \hat{p}_l |}^\alpha }$. Therefore $\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha = \max_l { | p_l - \hat{p}_l | } $.
 
