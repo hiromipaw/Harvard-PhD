@@ -203,25 +203,25 @@ Once a user location has being inferred, we can continue tracking the same users
 \noindent
 Application developers could implement a number of techniques that would mitigate the actions of a possible attacker. Firstly, in their current implementation, the applications examined probe the user device for location information with the maximum precision possible. This information is then transferred to the server and the relative distance between users is returned to be displayed. Yet, for most of the application functionality this precision is not needed, and a lower precision could be used and sent to the server. This would make position attacks more difficult to perform.
 
-Secondly, to sparkle interest between users, social proximity application often share common Facebook pages between parties involved. This information can then be used to easily identify unique Facebook accounts. Instead, the app could opt to display only the category of interest to which the Facebook page belongs. This way a possible attacker would not know what actual pages the user has liked.
+Secondly, to sparkle interest between users, social proximity applications often share common Facebook pages between parties involved. This information can then be used to easily identify unique Facebook accounts. Instead, the app could opt to display only the category of interest to which the Facebook page belongs. This way a possible attacker would not know what actual pages the user has liked.
 
-Thirdly, an individual birth-date if combined with their location and first and/or last name can be used to infer sensitive information about them. Therefore even sharing the user's zodiac sign with passive observer need to be considered potentially dangerous for the final user's privacy.
+Thirdly, an individual birth-date if combined with their location and first and/or last name can be used to infer sensitive information about them. Therefore, even sharing the user's zodiac sign with passive observer need to be considered potentially dangerous for the final user's privacy.
 
-To conclude, to avoid exposing users to direct threats of \emph{collection} and \emph{processing} of private information, mobile apps should have the option not to supply any personal details to the platform. Users should not obliged to disclose their personal data. To avoid \emph{dissemination} and \emph{invasion}, user data collected by mobile applications should be communicated encrypted to the server.
+To conclude, to avoid exposing users to direct threats of \emph{collection} and \emph{processing} of private information, mobile apps should have the option not to supply any personal details to the platform. Users should not be obliged to disclose their personal data. To avoid \emph{dissemination} and \emph{invasion}, user data collected by mobile applications should be communicated encrypted to the server.
 
 \section{Discussion}
 \noindent
 A new class of social application uses the users' actual location to provide personalised recommendation and allow for new interactions especially in urban settings. We have shown how these applications can expose their users to different privacy attacks that can be easily overlooked.
 
-We have analysed a set of  popular dating application, and observed how proximity-based social applications have access to certain identity information that could lead a possible privacy attacker to easily identify users on Facebook and link their online profiles to physical identities.
+We have analysed a set of popular dating application, and observed how proximity-based social applications have access to certain identity information that could lead a possible privacy attacker to easily identify users on Facebook and link their online profiles to physical identities.
 
-Furthermore we have shown how users constantly sharing their relative distance to other users can be ~\emph{followed} by an attacker in their movement without their knowledge. We have demonstrated how this information can be used for a multilateration attack with arbitrary precision. There is in fact no restriction to the number of distance samples that a possible attacker might be able to measure.
+Furthermore, we have shown how users constantly sharing their relative distance to other users can be ~\emph{followed} by an attacker in their movement without their knowledge. We have demonstrated how this information can be used for a multilateration attack with arbitrary precision. There is in fact no restriction to the number of distance samples that a possible attacker might be able to measure.
 
 We followed a formal framework to identify the classes of privacy violation to which users are subjected to without being aware of it and we have shown how these violations can all be carried out for the applications examined.
 
 This shows how using third party profiles to provide access to a specific applications may cause a security \emph{honey pot} for a possible attacker.
 
-We have also stressed how In order to make the registration process easier, these applications often leverage on third party services to provide a login mechanism, while at the same time acquiring certain private information about their new users. The third parties used are often services such as Facebook or Google, and the information accessed concern the public profile of the users on such platforms.
+We have also stressed how, in order to make the registration process easier, these applications often leverage on third party services to provide a login mechanism, while at the same time acquiring certain private information about their new users. The third parties used are often services such as Facebook or Google, and the information accessed concern the public profile of the users on such platforms.
 
 While this technique certainly allows people to quickly sign up to an application and create a new profile, it also creates different privacy threats for users of such services. Primarily, it concerns who can gain access to such data and how information shared with third parties can also be stored and eventually transferred without the user explicit consent.
 
