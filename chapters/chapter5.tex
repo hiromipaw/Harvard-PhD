@@ -67,58 +67,55 @@ We now introduce the normalised \emph{$\alpha$-norm} as the generalised variatio
 
 \subsubsection{Norm and generalised variation}
 
-We define the $\alpha$-norm between the partial profile as observed by an advertising platform and the genuine user profile as:
+We wish to find a systematic measure of the discrepancy between the partial profile $\hat{p}$, as observed by an advertising platform, and the genuine user profile $p$. As those profiles are Probability Mass Functions (PMFs) over $L$ categories of interest, they may be more generally viewed as vectors in the $L$-dimensional Euclidean space $\mathbb{R}^L$. A class of candidate measures is then given by the $\alpha$--\emph{norm} of the difference between those vectors.
 
-$$ \| p - \hat{p} \|_\alpha = \sqrt[\alpha]{\sum_l{ {| p_l - \hat{p}_l |}^\alpha }} \quad  \text{with} \quad  \alpha \in [1, \infty] $$
+Precisely, we shall consider the $\alpha$-\emph{norm} of the difference between the apparent profile $\hat{p}$ and the original one $p$, that is,
+$$ \| p - \hat{p} \|_\alpha = \sqrt[\alpha]{\sum_l{ {| p_l - \hat{p}_l |}^\alpha }} \quad  \text{with} \quad  \alpha \in [1, \infty],$$
+where the case for $\alpha = \infty$ is actually defined in the limit
+$$\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha = \lim_{\alpha\to\infty} \sqrt[\alpha]{\sum_l{ {| p_l - \hat{p}_l |}^\alpha }} = \max_l { | p_l - \hat{p}_l | }.$$
+The $\alpha$ parameter will enable us to index a family of quantifiable measures of discrepancy between profiles, along a spectrum running from $\alpha=1$ to $\alpha=\infty$, extremes representing average-case and worst-case distances, respectively.
 
-The case for $\alpha = \infty$ is defined in the limit:
+Recall that the $\alpha$-\emph{norm} is a norm in $\mathbb{R}^L$ with the following defining properties. For any vectors $p$ and $\hat{p}$ in $\mathbb{R}^L$, and any scalar $\lambda\in\mathbb{R}$,
+\begin{enumerate}
+	\item $\| \lambda p \|_\alpha = |\lambda| \|p\|_\alpha$ (absolute homogeneity),
+	\item $ \| p - \hat{p} \|_\alpha \geqslant 0$, with equality if, and only if, $p = \hat{p}$ (positive definiteness),
+	\item $\|p+\hat{p}\|_\alpha\leqslant \|p\|_\alpha+\|\hat{p}\|_\alpha$ (subadditivity or triangle inequality).
+\end{enumerate}
+This implies that the norm of a difference is a \emph{distance}, in the mathematical sense of the term, as it defines a symmetric, positive definite discrepancy, satisfying a triangle inequality.
 
-$$\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha = \lim_{\alpha\to\infty} \sqrt[\alpha]{\sum_l{ {| p_l - \hat{p}_l |}^\alpha }} = \max_l { | p_l - \hat{p}_l | } $$
+In the special case of $\alpha = 1$, the \emph{1-norm} between the partial and the genuine user profiles is
+$$ \| p - \hat{p} \|_1 = \sum_l{ | p_{l} - \hat{p}_{l} | }.$$
+The 1-norm thus yields the sum of absolute differences between the components of the two profiles. 
+For $\alpha = 2$, the \emph{2-norm} is
+$$ \| p - \hat{p} \|_2 = \sqrt{\sum_l{ {( {p_{l} - \hat{p}_{l}} )}^2 }}.$$
+The 2-norm represents the Euclidean distance between the two distributions. When considering the \emph{2-norm} it is possible to highlight larger discrepancies on the set of categories analysed. 
+Increasing $\alpha$ further takes us to the extreme case $\alpha=\infty$ in which the norm becomes the maximum of the absolute differences.
+Recall also that the norms are nested, in general decreasing with $\alpha$, so that, in particular,
+$$ \| p - \hat{p} \|_\infty \leqslant \| p - \hat{p} \|_2 \leqslant \| p - \hat{p} \|_1.$$
 
-The $\alpha$-norm is defined in $\mathbb{R}^L$ with the following properties:
+Turning back to the special case of $p$ and $\hat{p}$ being PMFs, that is, vectors with non-negative entries adding up to one, it is important to remark that, under such restrictions, we have observed that
+$$ \| p - \hat{p} \|_\alpha \leqslant \sqrt[\alpha]{2},$$
+with equality if, and only if, $p$ and $\hat{p}$ are orthonormal deltas.
 
-\begin{itemize}
- \item Absolute homogeneity.
- \item Positive definiteness: $ \| p - \hat{p} \|_\alpha \ge 0$ and $  \| p - \hat{p} \|_\alpha = 0 \Leftrightarrow p = \hat{p} $ 
- \item $ \| p - \hat{p} \|_\alpha \le \sqrt[\alpha]{2}$ 
- \item $ \| p - \hat{p} \|_\alpha = \sqrt[\alpha]{2}$ $\Leftrightarrow$ $p$ and $\hat{p}$ are orthogonal deltas.
- \item Triangle inequality.
-\end{itemize}
+This upper bound on the $\alpha$-norm for probability mass functions leads us to propose the following normalised metric, which we term \emph{generalised variation} $\mathrm{GV}_\alpha(p, \hat{p})$, and define as
+$$ \mathrm{GV}_\alpha(p, \hat{p}) = \frac {1} {\sqrt[\alpha]{2}}  {\| p - \hat{p} \|}_\alpha =  \sqrt[\alpha]{{ {\frac {1} {2}} {\sum_l{ | p_{l} - \hat{p}_{l}|^\alpha }} }} ,\quad  \alpha \in [1,\infty].$$
+By virtue of the previous bound, the coefficient $\frac {1} {\sqrt[\alpha]{2}}$ normalises the range of values of $\mathrm{GV}_\alpha$ in $[0, 1]$. 
 
-For $\alpha = 1$ we define the \emph{1-norm} between the partial and the genuine user profiles as:
+Clearly, $\mathrm{GV}_\alpha(p, \hat{p})$ is still a norm, as it remains positive definite, absolutely homogeneous, and satisfies the triangle inequality. In particular,
+\begin{enumerate}
+	\item $\mathrm{GV}_\alpha(p,\hat{p})\geqslant 0$, with equality if, and only if, $p=\hat{p}$
+	\item $\mathrm{GV}_\alpha(p,\hat{p})\leqslant 1$, with equality if, and only if, $p$ and $\hat{p}$ are orthonormal canonical vectors, i.e., discrete deltas.
+\end{enumerate}
 
-$$ \| p - \hat{p} \|_1 = \sum_l{ | p_{l} - \hat{p}_{l} | }  $$
+The reason we name this measure generalised variation is that, for $\alpha = 1$, the quantity $\mathrm{GV}_\alpha(p, \hat{p})$ becomes the well-known \emph{total variation} $\mathrm{TV}(p, \hat{p}) $:
+$$ \mathrm{GV}_1(p,\hat{p})= \frac {1} {2}  \| p - \hat{p} \|_1 =  \frac {1} {2} \sum_l | p_{l} - \hat{p}_{l} |=\mathrm{TV}(p, \hat{p}).$$
+For $\alpha = 2$ we have the normalised \emph{2-norm}
+$$ \mathrm{GV}_2(p,\hat{p}) = \frac {1} {\sqrt{2}}  {\| p - \hat{p} \|}_2 =  \sqrt{{\frac {1} {2}} { \sum_l{ (p_{l} - \hat{p}_{l})^2 } }}.$$
+Finally, in the case for $\alpha = \infty$, 
+$$\mathrm{GV}_\infty(p,\hat{p})=\lim_{\alpha\to\infty} \mathrm{GV}_\alpha(p, \hat{p}) = \mathrm{max}_l\,|p_l-\hat{p}_l|.$$
+Intuitively, for $\alpha \gg 1$ the greatest difference dominates the sum $\sum_l{ {| p_l - \hat{p}_l |}^\alpha }$, and in fact, $\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha = \max_l { | p_l - \hat{p}_l | } $ and $\lim_{\alpha\to\infty} 1/\sqrt[\alpha]{2}=1$.
 
-The \emph{1-norm} represents the average discrepancy between the two profiles. For $\alpha = 2$ we define the \emph{2-norm} as:
-
-$$ \| p - \hat{p} \|_2 = \sqrt{\sum_l{ {( {p_{l} - \hat{p}_{l}} )}^2 }} $$
-
-The \emph{2-norm} represents the Euclidean distance between the two distributions. When considering the \emph{2-norm} it is possible to highlight larger discrepancies on the set of categories analysed. An interesting property is that \emph{norms} are also nested. Hence:
-
-$$ \| p - \hat{p} \|_\infty \leqslant \| p - \hat{p} \|_2 \leqslant \| p - \hat{p} \|_1 $$
-
-We hence define the generalised variation $\text{GV}_\alpha(p, \hat{p})$, based on $\alpha$-norm as:
-
-$$ \text{GV}_\alpha(p, \hat{p}) = \frac {1} {\sqrt[\alpha]{2}}  {\| p - \hat{p} \|}_\alpha =  \sqrt[\alpha]{{ {\frac {1} {2}} {\sum_l{ ( p_{l} - \hat{p}_{l})^\alpha }} }} ,\quad  \alpha \in [1,\infty]$$
-
-The coefficient $\frac {1} {\sqrt[\alpha]{2}}$ normalises the range of values of the \emph{$\alpha$-norm} in $[0, 1]$. Therefore, $\text{GV}_\alpha(p, \hat{p})$ is a norm, is positive definite, absolutely homogeneous and satisfies the triangle inequality:
-
-\begin{itemize}
- \item $\text{GV}_\alpha(p, \hat{p}) \geq 0 $ with equality if and only if $p = \hat{p}$
- \item $\text{GV}_\alpha(p, \hat{p}) \leq 1$ with equality if and only if $p$ and $\hat{p}$ are orthonormal canonical vectors (discrete deltas).
-\end{itemize}
-
-Note that for $\alpha = 1$ the generalised variation $\text{GV}_\alpha(p, \hat{p})$ is equal to the total variation $\text{TV}(p, \hat{p}) $:
-
-$$ \text{TV}(p, \hat{p})= \frac {1} {2}  \| p - \hat{p} \|_1 =  \frac {1} {2} \sum_l{ | p_{l} - \hat{p}_{l} | } $$
-
-For $\alpha = 2$ we have the normalised \emph{2-norm}:
-
-$$ \text{GV}_2 = \frac {1} {\sqrt{2}}  {\| p - \hat{p} \|}_2 =  \sqrt{{\frac {1} {2}} { \sum_l{ (p_{l} - \hat{p}_{l})^2 } }} $$
-
-Finally, the case for $\alpha = \infty$, $\lim_{\alpha\to\infty} \text{GV}_\alpha(p, \hat{p}) = \| p - \hat{p} \|_\infty $ between $p$ and $\hat{p}$. The reason is that for $\alpha \gg 1$ the greatest difference dominates in the sum $\sum_l{ {| p_l - \hat{p}_l |}^\alpha }$. Therefore $\lim_{\alpha\to\infty} \| p - \hat{p} \|_\alpha = \max_l { | p_l - \hat{p}_l | } $.
-
-One might interpret these norms as $\alpha = 1$ been an average-case metric, $\alpha=\infty$ being a worst-case scenario, and $\alpha=2$ a robust middle ground.
+Consequently, one may then interpret these norms as $\alpha = 1$ being (proportional to) an average-case metric, $\alpha=\infty$ being a worst-case scenario, and $\alpha=2$ a robust middle ground. All of those norms range from 0, in the case of equal profiles, all the way to 1, in the case of profiles centred around a single yet different category of interest.
 
 \subsubsection{KL-Divergence}
 

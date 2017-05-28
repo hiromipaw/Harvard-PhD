@@ -86,9 +86,12 @@
 \setcounter{tocdepth}{1}
 \renewcommand{\cftchapfont}{\normalsize \scshape}
 
-\renewcommand\bibname{References}
+\renewcommand\bibname{References}{
+    \pagenumbering{roman}
+    \setcounter{page}{9}}
 \renewcommand\listfigurename{Listing of figures}
-%\raggedright
+\renewcommand\listtablename{Listing of tables}
+
 \justify
 
 \RequirePackage{pdfsync} %do pdf synchronization [andy]
@@ -116,6 +119,8 @@
 \onehalfspacing
 
 \usepackage{pifont}
+
+\setlength{\headheight}{16pt}
 
 %\justify
 
@@ -177,16 +182,18 @@ BoldItalicFont=ArnoPro-BoldItalic
 \renewcommand{\maketitle}{ 
 	\singlespacing
 	\thispagestyle{empty}
-	\vspace*{\fill} \vspace{80pt} \begin{center}
+	\vspace*{\fill} \vspace{40pt} \begin{center}
 	\Huge \textcolor{Crimson}{\textit{\thetitle}} \normalsize \\ \sc \vspace{100pt}
 	a dissertation presented \\ by\\
 	\theauthor\\ to\\ The \@department\\ 
-	\vspace{10pt}
-	in partial fulfillment of the requirements\\ 
+	\vspace{16pt}
+	in partial fulfilment of the requirements\\ 
 	for the degree of\\ \@degree\\ 
 	in the subject of\\ \@field\\
-	\vspace{10pt}
+	\vspace{16pt}
 	\frontispiece
+	\vspace{16pt}
+	advisers: \@advisors \\
 	\@university\\ \@universitycity, \@universitystate\\ 
 	\@degreemonth\ \@degreeyear
 	\end{center} \vspace*{\fill}
@@ -219,6 +226,42 @@ BoldItalicFont=ArnoPro-BoldItalic
 	\newpage \lhead{} \rhead{}
 	\cfoot{\thepage}
 	\onehalfspacing
+	% Abstract ES
+	\newpage
+	\pagenumbering{roman}
+	\setcounter{page}{5}
+	\pagestyle{fancy}
+	\renewcommand{\headrulewidth}{0.0pt} 
+	\begin{center}
+	\vspace*{1pt}
+	\Large \textcolor{Crimson}{\textit{An\'alisis, modelado y protecci\'on de datos privados en l\'inea}} \normalsize\\
+	\vspace*{15pt}
+	\sc Resumen \\ \rm
+	\end{center}
+	\doublespace %Harvard registrar requests that abstract is double spaced
+	\input{frontmatter/abstract_es}
+	\doublespace %Harvard registrar requests that abstract is double spaced	
+	\newpage \lhead{} \rhead{}
+	\cfoot{\thepage}
+	\onehalfspacing
+	% Abstract CAT
+	\newpage
+	\pagenumbering{roman}
+	\setcounter{page}{7}
+	\pagestyle{fancy}
+	\renewcommand{\headrulewidth}{0.0pt} 
+	\begin{center}
+	\vspace*{1pt}
+	\Large \textcolor{Crimson}{\textit{An\`alisi, modelat i protecci\'o de dades privades en línea}} \normalsize\\
+	\vspace*{15pt}
+	\sc Resum \\ \rm
+	\end{center}
+	\doublespace %Harvard registrar requests that abstract is double spaced
+	\input{frontmatter/abstract_cat}
+	\doublespace %Harvard registrar requests that abstract is double spaced	
+	\newpage \lhead{} \rhead{}
+	\cfoot{\thepage}
+	\onehalfspacing
 }
 
 \newcommand{\frontispiece}{
@@ -239,7 +282,7 @@ BoldItalicFont=ArnoPro-BoldItalic
 	\pagestyle{fancy}
 	\newpage
 	\thispagestyle{fancy} 
-	\chapter*{Author List}
+	\chapter*{}
 	\noindent \input{frontmatter/authorlist}
 	\newpage \rm
 	}
